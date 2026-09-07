@@ -10,9 +10,9 @@
           * { box-sizing: border-box; }
           #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; pointer-events: none; }
           #caption-stage { position: absolute; left: 120px; right: 120px; top: 1190px; height: 150px; display: grid; place-items: center; }
-          .cue { position: absolute; max-width: 840px; padding: 16px 25px 18px; background: var(--tpc-sheet, #fffaf0); border: 4px solid var(--tpc-ink, #25231f); box-shadow: 7px 7px 0 var(--tpc-ink, #25231f); color: var(--tpc-ink, #25231f); font: 700 46px/1.12 "Montserrat", sans-serif; text-align: center; opacity: 0; transform: rotate(-1deg); }
+          .cue { position: absolute; max-width: 840px; padding: 16px 25px 18px; background: var(--tpc-sheet, #FAF6EF); border: 4px solid var(--tpc-ink, #2B1E19); box-shadow: 7px 7px 0 var(--tpc-ink, #2B1E19); color: var(--tpc-ink, #2B1E19); font: 700 46px/1.12 "Montserrat", sans-serif; text-align: center; opacity: 0; transform: rotate(-1deg); }
           .word { display: inline-block; margin: 0 4px; }
-          .word.active { color: var(--tpc-primary, #3159c8); transform: scale(1.05); }
+          .word.active { color: var(--tpc-primary, #C4D6DA); transform: scale(1.05); }
         </style>
         <div id="caption-stage"></div>
       </div>
@@ -58,8 +58,8 @@
           timeline.set(cue, { opacity: 0 }, group.end + 0.12);
           group.words.forEach((word, wordIndex) => {
             const target = `#tpc-cue-${groupIndex}-word-${wordIndex}`;
-            if (wordIndex > 0) timeline.set(`#tpc-cue-${groupIndex}-word-${wordIndex - 1}`, { color: "var(--tpc-ink, #25231f)", scale: 1 }, word.start);
-            timeline.set(target, { color: "var(--tpc-primary, #3159c8)", scale: 1.05 }, word.start);
+            if (wordIndex > 0) timeline.set(`#tpc-cue-${groupIndex}-word-${wordIndex - 1}`, { color: "var(--tpc-ink, #2B1E19)", scale: 1 }, word.start);
+            timeline.set(target, { color: "var(--tpc-primary, #C4D6DA)", scale: 1.05 }, word.start);
           });
         });
         window.__timelines = window.__timelines || {};
