@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiet Editorial caption</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Georgia QEUI";
+          src: url("fonts/Georgia-Regular.woff2") format("woff2");
+          font-style: normal;
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: "Georgia QEUI";
+          src: url("fonts/Georgia-Italic.woff2") format("woff2");
+          font-style: italic;
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("fonts/Inter-400-latin.woff2") format("woff2");
+          font-style: normal;
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("fonts/Inter-700-latin.woff2") format("woff2");
+          font-style: normal;
+          font-weight: 700;
+        }
+        .qeui-caption-stage {
+          position: absolute;
+          inset: 0;
+          overflow: visible;
+          pointer-events: none;
+        }
+        .qeui-caption-group {
+          position: absolute;
+          left: 0;
+          top: calc(var(--qeui-caption-y) - 80px);
+          width: 100%;
+          height: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 var(--qeui-caption-side);
+          overflow: visible;
+          opacity: 0;
+          visibility: hidden;
+          color: #0d0d0d;
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
+          line-height: 1.05;
+          text-align: center;
+          white-space: nowrap;
+        }
+        .qeui-caption-line {
+          display: inline-flex;
+          align-items: baseline;
+          justify-content: center;
+          gap: 0.24em;
+          max-width: var(--qeui-caption-width);
+          white-space: nowrap;
+        }
+        .qeui-caption-line.card {
+          padding: 18px 28px 20px;
+          border: 2px solid #d9d9d6;
+          border-radius: 16px;
+          background: rgba(247, 247, 246, 0.94);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+        .qeui-caption-word {
+          display: inline-block;
+        }
+        .qeui-caption-word.emphasis {
+          font-family: "Georgia QEUI", serif;
+          font-style: italic;
+          font-weight: 400;
+          letter-spacing: -0.035em;
+        }
+        .qeui-caption-word.success {
+          color: #10a37f;
+        }
+      </style>
+
+      <div
+        id="qeui-caption-root"
+        data-composition-id="quiet-editorial-caption"
+        data-start="0"
+        data-duration="6.8"
+        data-width="1080"
+        data-height="1920"
+        style="position:absolute;inset:0;width:1080px;height:1920px;overflow:visible;pointer-events:none"
+      >
+        <div class="qeui-caption-stage" id="qeui-cap-stage"></div>
+      </div>
+
+      <script>
+        (function () {
+          const WORDS = [
+            { id: "w0", text: "Make", start: 0.2, end: 0.58 },
+            { id: "w1", text: "the", start: 0.6, end: 0.76 },
+            { id: "w2", text: "complex", start: 0.78, end: 1.25 },
+            { id: "w3", text: "feel", start: 1.4, end: 1.72 },
+            { id: "w4", text: "clear.", start: 1.74, end: 2.22 },
+          ];
+          const EMPHASIS_WORDS = ["clear"];
+          const SUCCESS_WORDS = [];
+          const SURFACE_MODE = "card";
+          const MAX_WORDS = 2;
+          const PAUSE_BREAK = 0.15;
+
+          const root = document.getElementById("qeui-caption-root");
+          const stage = document.getElementById("qeui-cap-stage");
+          const width = Number(root.dataset.width);
+          const height = Number(root.dataset.height);
+          const shortEdge = Math.min(width, height);
+          const ratio = width / height;
+          const layout = ratio < 0.75
+            ? { maxWidth: width * (840 / 1080), centerY: height * (1270 / 1920), side: width * (120 / 1080) }
+            : ratio > 1.25
+              ? { maxWidth: width * (1640 / 1920), centerY: height * (890 / 1080), side: width * (140 / 1920) }
+              : { maxWidth: width * (900 / 1080), centerY: height * (840 / 1080), side: width * (90 / 1080) };
+
+          root.style.setProperty("--qeui-caption-width", layout.maxWidth + "px");
+          root.style.setProperty("--qeui-caption-y", layout.centerY + "px");
+          root.style.setProperty("--qeui-caption-side", layout.side + "px");
+
+          function clean(text) {
+            return String(text || "").replace(/[^\p{L}\p{N}'’-]+/gu, "").trim();
+          }
+
+          function groupsFrom(words) {
+            const groups = [];
+            let current = [];
+            words.forEach((word, index) => {
+              const original = String(word.text || "");
+              const display = clean(original);
+              if (!display) return;
+              current.push({ ...word, display });
+              const next = words[index + 1];
+              const pause = next ? Number(next.start) - Number(word.end) : Infinity;
+              const punctuation = /[.!?,;:]$/.test(original.trim());
+              const naturalBreak = current.length >= 2 && (punctuation || pause >= PAUSE_BREAK);
+              if (current.length >= MAX_WORDS || naturalBreak || !next) {
+                groups.push({ words: current, start: Number(current[0].start), end: Number(current[current.length - 1].end) });
+                current = [];
+              }
+            });
+            return groups;
+          }
+
+          const emphasis = new Set(EMPHASIS_WORDS.map((word) => word.toLowerCase()));
+          const success = new Set(SUCCESS_WORDS.map((word) => word.toLowerCase()));
+          const groups = groupsFrom(WORDS);
+          const timeline = gsap.timeline({ paused: true });
+
+          groups.forEach((group, groupIndex) => {
+            const groupEl = document.createElement("div");
+            groupEl.className = "qeui-caption-group";
+            groupEl.id = "qeui-cap-group-" + groupIndex;
+
+            const lineEl = document.createElement("div");
+            lineEl.className = "qeui-caption-line" + (SURFACE_MODE === "card" ? " card" : "");
+
+            group.words.forEach((word, wordIndex) => {
+              const wordEl = document.createElement("span");
+              const key = word.display.toLowerCase();
+              wordEl.className = "qeui-caption-word" + (emphasis.has(key) ? " emphasis" : "") + (success.has(key) ? " success" : "");
+              wordEl.id = "qeui-cap-word-" + groupIndex + "-" + wordIndex;
+              wordEl.textContent = word.display;
+              lineEl.appendChild(wordEl);
+            });
+
+            groupEl.appendChild(lineEl);
+            stage.appendChild(groupEl);
+
+            const text = group.words.map((word) => word.display).join(" ");
+            const scaleGuard = group.words.some((word) => emphasis.has(word.display.toLowerCase())) ? 1.06 : 1;
+            const fit = window.__hyperframes && window.__hyperframes.fitTextFontSize
+              ? window.__hyperframes.fitTextFontSize(text, {
+                  fontFamily: "Inter",
+                  fontWeight: 700,
+                  maxWidth: layout.maxWidth / scaleGuard,
+                  baseFontSize: Math.round(shortEdge * (112 / 1080)),
+                  minFontSize: Math.round(shortEdge * (96 / 1080)),
+                  step: 2,
+                })
+              : { fontSize: Math.round(shortEdge * (96 / 1080)) };
+            groupEl.style.fontSize = fit.fontSize + "px";
+
+            const entranceEnd = Math.min(group.start + 0.28, group.end - 0.13);
+            const exitStart = Math.max(entranceEnd, group.end - 0.12);
+            timeline.set(groupEl, { visibility: "visible", opacity: 0 }, group.start);
+            timeline.fromTo(
+              groupEl,
+              { opacity: 0, y: 18 },
+              { opacity: 1, y: 0, duration: Math.max(0.01, entranceEnd - group.start), ease: "power3.out" },
+              group.start,
+            );
+            timeline.to(groupEl, { opacity: 0, y: -8, duration: Math.max(0.01, group.end - exitStart), ease: "power2.in" }, exitStart);
+            timeline.set(groupEl, { opacity: 0, visibility: "hidden" }, group.end);
+          });
+
+          groups.forEach((group, groupIndex) => {
+            const el = document.getElementById("qeui-cap-group-" + groupIndex);
+            timeline.seek(group.end + 0.01);
+            const computed = window.getComputedStyle(el);
+            if (computed.opacity !== "0" && computed.visibility !== "hidden") {
+              console.warn("[quiet-editorial-caption] group " + groupIndex + " remains visible after cue end");
+            }
+          });
+          timeline.seek(0);
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["quiet-editorial-caption"] = timeline;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

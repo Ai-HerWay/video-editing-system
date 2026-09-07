@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" data-composition-id="tactile-safe-zones" data-composition-duration="8">
+  <head><meta charset="UTF-8" /><title>Tactile Safe Zones</title></head>
+  <body>
+    <template>
+      <div id="root" data-composition-id="tactile-safe-zones" data-start="0" data-duration="8" data-fps="30" data-width="1080" data-height="1920" data-layout-ignore>
+        <style>
+          * { box-sizing: border-box; }
+          #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; pointer-events: none; font-family: monospace; }
+          .critical { position: absolute; left: 8.333%; right: 8.333%; top: 12.5%; bottom: 20.833%; border: 4px dashed #e13f32; background: rgba(225, 63, 50, 0.04); }
+          .caption { position: absolute; left: 11.111%; right: 11.111%; top: 61.979%; height: 7.813%; border: 4px dashed #3159c8; background: rgba(49, 89, 200, 0.08); }
+          .label { position: absolute; padding: 8px 12px; background: #fffaf0; border: 2px solid #25231f; color: #25231f; font-size: 22px; font-weight: 700; }
+          .critical .label { left: 8px; top: 8px; }
+          .caption .label { right: 0; top: -52px; }
+        </style>
+        <div class="critical"><span class="label" data-layout-allow-occlusion>CRITICAL CONTENT</span></div>
+        <div class="caption"><span class="label" data-layout-allow-occlusion>CAPTION LANE</span></div>
+      </div>
+      <script>
+        window.__timelines = window.__timelines || {};
+        window.__timelines["tactile-safe-zones"] = gsap.timeline({ paused: true });
+      </script>
+    </template>
+  </body>
+</html>

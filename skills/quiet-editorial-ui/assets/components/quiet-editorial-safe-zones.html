@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiet Editorial safe-zone overlay</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        .qeui-safe-layer {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+          opacity: 0;
+          font: 700 18px/1.2 Arial, sans-serif;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+        .qeui-safe-box {
+          position: absolute;
+          border: 3px solid rgba(16, 163, 127, 0.9);
+          background: rgba(16, 163, 127, 0.06);
+        }
+        .qeui-caption-box {
+          position: absolute;
+          border: 3px dashed rgba(13, 13, 13, 0.86);
+          background: rgba(247, 247, 246, 0.2);
+        }
+        .qeui-safe-label {
+          position: absolute;
+          left: 12px;
+          top: 10px;
+          padding: 7px 10px;
+          border-radius: 999px;
+          background: #0d0d0d;
+          color: #fff;
+          white-space: nowrap;
+        }
+      </style>
+
+      <div
+        id="qeui-safe-root"
+        data-composition-id="quiet-editorial-safe-zones"
+        data-start="0"
+        data-duration="8"
+        data-width="1080"
+        data-height="1920"
+        style="position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden;pointer-events:none"
+      >
+        <div class="qeui-safe-layer" id="qeui-safe-layer" data-layout-ignore>
+          <div class="qeui-safe-box" id="qeui-safe-critical" data-layout-ignore><span class="qeui-safe-label" data-layout-ignore>Critical area</span></div>
+          <div class="qeui-caption-box" id="qeui-safe-caption" data-layout-ignore><span class="qeui-safe-label" data-layout-ignore>Caption lane</span></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const root = document.getElementById("qeui-safe-root");
+          const width = Number(root.dataset.width);
+          const height = Number(root.dataset.height);
+          const ratio = width / height;
+          const layout = ratio < 0.75
+            ? { critical: [90 / 1080, 240 / 1920, 900 / 1080, 1280 / 1920], caption: [120 / 1080, 1190 / 1920, 840 / 1080, 160 / 1920] }
+            : ratio > 1.25
+              ? { critical: [96 / 1920, 54 / 1080, 1728 / 1920, 918 / 1080], caption: [140 / 1920, 820 / 1080, 1640 / 1920, 140 / 1080] }
+              : { critical: [72 / 1080, 72 / 1080, 936 / 1080, 936 / 1080], caption: [90 / 1080, 760 / 1080, 900 / 1080, 160 / 1080] };
+
+          function place(id, box) {
+            const el = document.getElementById(id);
+            el.style.left = box[0] * width + "px";
+            el.style.top = box[1] * height + "px";
+            el.style.width = box[2] * width + "px";
+            el.style.height = box[3] * height + "px";
+          }
+
+          place("qeui-safe-critical", layout.critical);
+          place("qeui-safe-caption", layout.caption);
+
+          const timeline = gsap.timeline({ paused: true });
+          timeline.fromTo("#qeui-safe-layer", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, 0);
+          window.__timelines = window.__timelines || {};
+          window.__timelines["quiet-editorial-safe-zones"] = timeline;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

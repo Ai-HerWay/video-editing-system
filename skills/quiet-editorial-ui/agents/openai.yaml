@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quiet Editorial UI"
+  short_description: "Apply a quiet editorial HyperFrames style"
+  default_prompt: "Use $quiet-editorial-ui to apply the Quiet Editorial UI style to this HyperFrames project."

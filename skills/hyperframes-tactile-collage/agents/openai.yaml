@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tactile Paper Collage"
+  short_description: "Apply tactile paper collage video styling"
+  default_prompt: "Use $hyperframes-tactile-collage to apply a tactile paper collage style to this HyperFrames project."
