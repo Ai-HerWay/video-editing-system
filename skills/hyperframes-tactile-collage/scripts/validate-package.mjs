@@ -73,7 +73,7 @@ const skillPath = path.join(root, "SKILL.md");
 if (fs.existsSync(skillPath)) {
   const skill = fs.readFileSync(skillPath, "utf8");
   if (skill.split(/\r?\n/).length > 500) failures.push("SKILL.md exceeds 500 lines");
-  const frontmatter = skill.match(/^---\n([\s\S]*?)\n---/);
+  const frontmatter = skill.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!frontmatter) failures.push("SKILL.md frontmatter is missing");
   else {
     const keys = frontmatter[1].split(/\r?\n/).filter(Boolean).map((line) => line.split(":", 1)[0]);

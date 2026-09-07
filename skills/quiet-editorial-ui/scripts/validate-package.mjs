@@ -27,7 +27,8 @@ const required = [
   "assets/fonts/PlayfairDisplay-var.woff2",
   "assets/fonts/PlayfairDisplay-Italic-var.woff2",
   "assets/fonts/Montserrat-var.woff2",
-  "assets/fonts/OFL-Montserrat-PlayfairDisplay.txt",
+  "assets/fonts/OFL-PlayfairDisplay.txt",
+  "assets/fonts/OFL-Montserrat.txt",
   "references/font-setup.md",
   "scripts/preflight.mjs",
 ];
