@@ -16,8 +16,8 @@ The component groups words synchronously. It breaks at punctuation, pauses of at
 
 ## Visual behavior
 
-- Use Inter 700 for the full caption.
-- Use Georgia italic only for explicitly listed emphasis words.
+- Use Montserrat 700 for the full caption.
+- Use Playfair Display italic only for explicitly listed emphasis words.
 - Use the success green only when the word itself means completion or confirmation.
 - Use `SURFACE_MODE = "clean"` for a quiet, high-contrast ground.
 - Use `SURFACE_MODE = "card"` for busy, bright, or moving footage.

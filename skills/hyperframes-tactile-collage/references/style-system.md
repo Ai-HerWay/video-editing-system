@@ -21,8 +21,8 @@ Use no more than three accents in one frame. Approved brand colors may replace a
 ## Typography
 
 - Use Permanent Marker for short handwritten emphasis, not paragraphs.
-- Use Courier Prime Bold for files, labels, checklists, diagrams, and captions.
-- Pair bundled faces with an existing approved display face when available; otherwise use a heavy local sans-serif for large editorial statements.
+- Use Montserrat Bold for files, labels, checklists, diagrams, captions, and operational copy.
+- Use Playfair Display (bold/black weight) for every display statement, headline, stat, pull quote, and italic accent.
 - Keep display statements short and phone-readable. Use size and position before adding more decoration.
 - At a 1080px short edge, keep primary headlines at least 54px, operational copy at least 28px, and captions at least 42px.
 

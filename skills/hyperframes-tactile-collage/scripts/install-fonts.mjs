@@ -24,7 +24,8 @@ const skillDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const encodedDir = path.join(skillDir, "assets", "fonts");
 const fonts = [
   ["permanent-marker-400.woff2.b64", "permanent-marker-400.woff2"],
-  ["courier-prime-700.woff2.b64", "courier-prime-700.woff2"]
+  ["playfair-display-var.woff2.b64", "playfair-display-var.woff2"],
+  ["montserrat-var.woff2.b64", "montserrat-var.woff2"]
 ];
 
 if (!fs.existsSync(compositionDir) || !fs.statSync(compositionDir).isDirectory()) {

@@ -1,15 +1,14 @@
 # Font setup
 
-The skill bundles Inter but does not distribute Georgia. Obtain licensed webfont files through the user's own font license and place them in the composition's `public/fonts/` directory with these exact names:
+The skill bundles both webfonts it needs — Playfair Display (display serif) and Montserrat (UI sans). Both are licensed under the SIL Open Font License and are redistributable, so no user-supplied font files are required. Copy them from this skill's `assets/fonts/` directory into the composition's `public/fonts/` directory, keeping these exact names:
 
 ```text
-Georgia-Regular.woff2
-Georgia-Italic.woff2
-Inter-400-latin.woff2
-Inter-700-latin.woff2
+PlayfairDisplay-var.woff2
+PlayfairDisplay-Italic-var.woff2
+Montserrat-var.woff2
 ```
 
-Copy the Inter files from this skill's `assets/fonts/` directory. Do not rename another serif to Georgia.
+Each is a variable font covering the full 400–900 weight range; do not rename another serif or sans to these families.
 
 Run:
 
@@ -23,18 +22,25 @@ Use these declarations in project compositions:
 
 ```css
 @font-face {
-  font-family: "Georgia QEUI";
-  src: url("fonts/Georgia-Regular.woff2") format("woff2");
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-var.woff2") format("woff2");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 900;
 }
 
 @font-face {
-  font-family: "Georgia QEUI";
-  src: url("fonts/Georgia-Italic.woff2") format("woff2");
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic-var.woff2") format("woff2");
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400 900;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-var.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 900;
 }
 ```
 
-Reference the internal family name `Georgia QEUI` so the composition cannot silently resolve to a machine-installed copy.
+Reference the internal family names `Playfair Display` and `Montserrat` so the composition cannot silently resolve to a machine-installed copy.

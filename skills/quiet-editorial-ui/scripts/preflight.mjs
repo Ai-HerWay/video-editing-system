@@ -18,10 +18,9 @@ const publicDir = publicIndex >= 0
   : path.join(projectDir, "public");
 const fontDir = path.join(publicDir, "fonts");
 const required = [
-  "Georgia-Regular.woff2",
-  "Georgia-Italic.woff2",
-  "Inter-400-latin.woff2",
-  "Inter-700-latin.woff2",
+  "PlayfairDisplay-var.woff2",
+  "PlayfairDisplay-Italic-var.woff2",
+  "Montserrat-var.woff2",
 ];
 
 function isWoff2(filePath) {
@@ -47,7 +46,7 @@ if (invalid.length) {
   console.error("Quiet Editorial UI preflight failed.");
   console.error(`Required WOFF2 files missing or invalid in ${fontDir}:`);
   invalid.forEach((name) => console.error(`- ${name}`));
-  console.error("Supply licensed Georgia files and copy the bundled Inter files before rendering.");
+  console.error("Copy the bundled Playfair Display and Montserrat files from assets/fonts/ before rendering.");
   process.exit(2);
 }
 

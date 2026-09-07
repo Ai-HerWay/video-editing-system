@@ -22,7 +22,7 @@ Resolve this skill's directory as `<skill-dir>`. Read these references as needed
 - Caption construction: `references/captions.md`
 - Platform safety and collision rules: `references/safe-zones.md`
 - Motion vocabulary: `references/motion-language.md`
-- Licensed Georgia setup: `references/font-setup.md`
+- Bundled font setup (Playfair Display + Montserrat): `references/font-setup.md`
 
 ## Apply the style
 
@@ -33,14 +33,14 @@ Resolve this skill's directory as `<skill-dir>`. Read these references as needed
    - `direct-overlay`: footage owns the frame and graphics must sit over it.
    - `full-frame`: no footage is present, or a beat intentionally gives graphics the whole frame.
 4. Preserve an existing conflicting `frame.md` as `frame.pre-quiet-editorial-ui.md`, unless that exact backup already exists. Then copy `assets/frame.md` to the project as the effective `frame.md` and merge only approved logos, copy rules, and semantic brand colors into its `Approved Entities` section. Quiet Editorial UI owns typography, surfaces, spacing, hierarchy, captions, and motion.
-5. Copy the bundled Inter files from `assets/fonts/` into the composition's `public/fonts/`. Do not copy or distribute Georgia. Require the user-supplied files described in `references/font-setup.md`.
+5. Copy the bundled Playfair Display and Montserrat files from `assets/fonts/` into the composition's `public/fonts/` as described in `references/font-setup.md`. Both are redistributable OFL fonts; no user-supplied font files are required.
 6. Run the font preflight before any render-affecting command:
 
    ```bash
    node <skill-dir>/scripts/preflight.mjs <composition-dir>
    ```
 
-   Stop if the preflight reports missing or invalid Georgia files. Do not silently substitute another serif.
+   Stop if the preflight reports missing or invalid font files. Do not silently substitute another serif or sans.
 7. Build the visual treatment with the selected layout mode. Keep one dominant idea per beat, use the token values exactly, and keep source content recognizable.
 8. If captions are needed, copy `assets/components/quiet-editorial-caption.html` into the project and follow `references/captions.md`. If placement is uncertain, temporarily add `assets/components/quiet-editorial-safe-zones.html` as a top-track sub-composition; remove or hide it before delivery.
 9. Validate with `npx hyperframes lint`, `npx hyperframes check`, and snapshots at representative beats. Inspect the result at phone scale as well as full resolution.
@@ -53,7 +53,7 @@ Resolve this skill's directory as `<skill-dir>`. Read these references as needed
 - Do not introduce product-specific names, logos, toggles, prompts, interface replicas, example files, or branded icons from any reference source.
 - Do not use the success green as a general brand accent.
 - Do not shrink captions below the documented floor to solve a collision; choose another safe lane.
-- Do not render with a fallback display face when licensed Georgia is unavailable.
+- Do not render with a fallback display face when the bundled Playfair Display files are unavailable.
 
 ## Bundled assets
 
@@ -61,7 +61,7 @@ Resolve this skill's directory as `<skill-dir>`. Read these references as needed
 - `assets/components/quiet-editorial-caption.html`: transcript-timed caption sub-composition.
 - `assets/components/quiet-editorial-safe-zones.html`: removable safety overlay.
 - `assets/examples/golden-frames.html`: neutral visual benchmark across three aspect ratios.
-- `assets/fonts/Inter-400-latin.woff2` and `Inter-700-latin.woff2`: redistributable UI fonts.
+- `assets/fonts/PlayfairDisplay-var.woff2`, `PlayfairDisplay-Italic-var.woff2`, and `Montserrat-var.woff2`: redistributable OFL display and UI fonts.
 
 Run package validation after changing the skill:
 

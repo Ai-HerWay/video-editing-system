@@ -8,28 +8,22 @@
     <template>
       <style>
         @font-face {
-          font-family: "Georgia QEUI";
-          src: url("fonts/Georgia-Regular.woff2") format("woff2");
+          font-family: "Playfair Display";
+          src: url("fonts/PlayfairDisplay-var.woff2") format("woff2");
           font-style: normal;
-          font-weight: 400;
+          font-weight: 400 900;
         }
         @font-face {
-          font-family: "Georgia QEUI";
-          src: url("fonts/Georgia-Italic.woff2") format("woff2");
+          font-family: "Playfair Display";
+          src: url("fonts/PlayfairDisplay-Italic-var.woff2") format("woff2");
           font-style: italic;
-          font-weight: 400;
+          font-weight: 400 900;
         }
         @font-face {
-          font-family: "Inter";
-          src: url("fonts/Inter-400-latin.woff2") format("woff2");
+          font-family: "Montserrat";
+          src: url("fonts/Montserrat-var.woff2") format("woff2");
           font-style: normal;
-          font-weight: 400;
-        }
-        @font-face {
-          font-family: "Inter";
-          src: url("fonts/Inter-700-latin.woff2") format("woff2");
-          font-style: normal;
-          font-weight: 700;
+          font-weight: 400 900;
         }
         .qeui-caption-stage {
           position: absolute;
@@ -51,7 +45,7 @@
           opacity: 0;
           visibility: hidden;
           color: #0d0d0d;
-          font-family: "Inter", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 700;
           line-height: 1.05;
           text-align: center;
@@ -76,7 +70,7 @@
           display: inline-block;
         }
         .qeui-caption-word.emphasis {
-          font-family: "Georgia QEUI", serif;
+          font-family: "Playfair Display", serif;
           font-style: italic;
           font-weight: 400;
           letter-spacing: -0.035em;
@@ -182,7 +176,7 @@
             const scaleGuard = group.words.some((word) => emphasis.has(word.display.toLowerCase())) ? 1.06 : 1;
             const fit = window.__hyperframes && window.__hyperframes.fitTextFontSize
               ? window.__hyperframes.fitTextFontSize(text, {
-                  fontFamily: "Inter",
+                  fontFamily: "Montserrat",
                   fontWeight: 700,
                   maxWidth: layout.maxWidth / scaleGuard,
                   baseFontSize: Math.round(shortEdge * (112 / 1080)),

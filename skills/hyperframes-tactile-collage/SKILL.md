@@ -59,7 +59,7 @@ Resolve this skill's directory as `<skill-dir>`. Read:
 - `assets/frame.md`: generic design-spec template.
 - `assets/components/tactile-caption.html`: configurable transcript-timed caption treatment.
 - `assets/components/tactile-safe-zones.html`: removable safe-zone overlay.
-- `assets/fonts/*.woff2.b64`: encoded open-licensed Permanent Marker and Courier Prime fonts.
+- `assets/fonts/*.woff2.b64`: encoded open-licensed Permanent Marker, Playfair Display, and Montserrat fonts (Courier Prime retained under its OFL license for history, no longer installed or applied by default).
 - `scripts/install-fonts.mjs`: decode and install the fonts into a composition.
 - `scripts/validate-package.mjs`: validate structure, portability, licenses, and source isolation.
 

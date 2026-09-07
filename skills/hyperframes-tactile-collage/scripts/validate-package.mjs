@@ -22,6 +22,8 @@ const required = [
   "assets/components/tactile-caption.html",
   "assets/components/tactile-safe-zones.html",
   "assets/fonts/permanent-marker-400.woff2.b64",
+  "assets/fonts/playfair-display-var.woff2.b64",
+  "assets/fonts/montserrat-var.woff2.b64",
   "assets/fonts/courier-prime-700.woff2.b64",
   "assets/fonts/LICENSE-Permanent-Marker.txt",
   "assets/fonts/OFL-Courier-Prime.txt",
@@ -79,7 +81,7 @@ if (fs.existsSync(skillPath)) {
   }
 }
 
-for (const font of ["permanent-marker-400.woff2.b64", "courier-prime-700.woff2.b64"]) {
+for (const font of ["permanent-marker-400.woff2.b64", "playfair-display-var.woff2.b64", "montserrat-var.woff2.b64", "courier-prime-700.woff2.b64"]) {
   const fontPath = path.join(root, "assets", "fonts", font);
   if (!fs.existsSync(fontPath)) continue;
   const bytes = Buffer.from(fs.readFileSync(fontPath, "utf8").replace(/\s+/g, ""), "base64");

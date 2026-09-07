@@ -37,8 +37,8 @@ The skill automatically chooses between three layout modes:
 
 ## Visual system
 
-- Georgia regular and italic for editorial display typography
-- Inter 400 and 700 for interface copy, labels, body text, and captions
+- Playfair Display (regular and italic) for editorial display typography
+- Montserrat for interface copy, labels, body text, and captions
 - Warm near-white surfaces, black ink, thin rules, subtle depth, and generous negative space
 - Green reserved for genuine completion or confirmation
 - Cursor-led interactions, selections, document objects, cards, and progress paths
@@ -54,19 +54,18 @@ The skill includes reusable caption and safe-zone components with:
 - Safe placement guidance for 9:16, 16:9, and 1:1 compositions
 - An optional debug overlay for collision checks
 
-## Georgia font requirement
+## Fonts
 
-Georgia is not bundled. Before rendering, provide licensed WOFF2 files at:
+Both fonts are bundled under the SIL Open Font License, so no user-supplied files are required. Before rendering, copy the bundled WOFF2 files from `assets/fonts/` into the composition at:
 
 ```text
-public/fonts/Georgia-Regular.woff2
-public/fonts/Georgia-Italic.woff2
+public/fonts/PlayfairDisplay-var.woff2
+public/fonts/PlayfairDisplay-Italic-var.woff2
+public/fonts/Montserrat-var.woff2
 ```
 
-The included preflight blocks rendering when either file is missing or invalid. See
+The included preflight blocks rendering when any file is missing or invalid. See
 [`references/font-setup.md`](references/font-setup.md) for setup details.
-
-Inter is bundled under its SIL Open Font License.
 
 ## Package contents
 
