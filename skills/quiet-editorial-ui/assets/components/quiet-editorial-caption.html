@@ -25,22 +25,22 @@
           font-style: normal;
           font-weight: 400 900;
         }
-        .qeui-caption-stage {
+        .ahw-editorial-caption-stage {
           position: absolute;
           inset: 0;
           overflow: visible;
           pointer-events: none;
         }
-        .qeui-caption-group {
+        .ahw-editorial-caption-cue {
           position: absolute;
           left: 0;
-          top: calc(var(--qeui-caption-y) - 80px);
+          top: calc(var(--ahw-caption-center-y) - 80px);
           width: 100%;
           height: 160px;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 0 var(--qeui-caption-side);
+          padding: 0 var(--ahw-caption-inset);
           overflow: visible;
           opacity: 0;
           visibility: hidden;
@@ -51,38 +51,38 @@
           text-align: center;
           white-space: nowrap;
         }
-        .qeui-caption-line {
+        .ahw-editorial-caption-line {
           display: inline-flex;
           align-items: baseline;
           justify-content: center;
           gap: 0.24em;
-          max-width: var(--qeui-caption-width);
+          max-width: var(--ahw-caption-max-width);
           white-space: nowrap;
         }
-        .qeui-caption-line.card {
+        .ahw-editorial-caption-line.framed {
           padding: 18px 28px 20px;
           border: 2px solid #C0CACE;
           border-radius: 16px;
           background: rgba(250, 246, 239, 0.94);
           box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
         }
-        .qeui-caption-word {
+        .ahw-editorial-caption-word {
           display: inline-block;
         }
-        .qeui-caption-word.emphasis {
+        .ahw-editorial-caption-word.accent {
           font-family: "Playfair Display", serif;
           font-style: italic;
           font-weight: 400;
           letter-spacing: -0.035em;
           color: #7B5A49;
         }
-        .qeui-caption-word.success {
+        .ahw-editorial-caption-word.confirm {
           color: #AAB6A0;
         }
       </style>
 
       <div
-        id="qeui-caption-root"
+        id="ahw-editorial-caption-root"
         data-composition-id="quiet-editorial-caption"
         data-start="0"
         data-duration="6.8"
@@ -90,122 +90,161 @@
         data-height="1920"
         style="position:absolute;inset:0;width:1080px;height:1920px;overflow:visible;pointer-events:none"
       >
-        <div class="qeui-caption-stage" id="qeui-cap-stage"></div>
+        <div class="ahw-editorial-caption-stage" id="ahw-editorial-caption-flow"></div>
       </div>
 
       <script>
         (function () {
-          const WORDS = [
-            { id: "w0", text: "Make", start: 0.2, end: 0.58 },
-            { id: "w1", text: "the", start: 0.6, end: 0.76 },
-            { id: "w2", text: "complex", start: 0.78, end: 1.25 },
-            { id: "w3", text: "feel", start: 1.4, end: 1.72 },
-            { id: "w4", text: "clear.", start: 1.74, end: 2.22 },
-          ];
-          const EMPHASIS_WORDS = ["clear"];
-          const SUCCESS_WORDS = [];
-          const SURFACE_MODE = "card";
-          const MAX_WORDS = 2;
-          const PAUSE_BREAK = 0.15;
+          // ---- Authoring inputs -------------------------------------------
+          const CONFIG = {
+            transcript: [
+              { id: "w0", text: "Make", start: 0.2, end: 0.58 },
+              { id: "w1", text: "the", start: 0.6, end: 0.76 },
+              { id: "w2", text: "complex", start: 0.78, end: 1.25 },
+              { id: "w3", text: "feel", start: 1.4, end: 1.72 },
+              { id: "w4", text: "clear.", start: 1.74, end: 2.22 },
+            ],
+            accentWords: ["clear"],
+            confirmWords: [],
+            ground: "framed", // "clean" | "framed"
+            wordsPerCue: 2,
+            pauseGap: 0.15,
+          };
 
-          const root = document.getElementById("qeui-caption-root");
-          const stage = document.getElementById("qeui-cap-stage");
-          const width = Number(root.dataset.width);
-          const height = Number(root.dataset.height);
-          const shortEdge = Math.min(width, height);
-          const ratio = width / height;
-          const layout = ratio < 0.75
-            ? { maxWidth: width * (840 / 1080), centerY: height * (1270 / 1920), side: width * (120 / 1080) }
-            : ratio > 1.25
-              ? { maxWidth: width * (1640 / 1920), centerY: height * (890 / 1080), side: width * (140 / 1920) }
-              : { maxWidth: width * (900 / 1080), centerY: height * (840 / 1080), side: width * (90 / 1080) };
+          // ---- Frame + lane geometry --------------------------------------
+          const root = document.getElementById("ahw-editorial-caption-root");
+          const stage = document.getElementById("ahw-editorial-caption-flow");
+          const frameW = Number(root.dataset.width);
+          const frameH = Number(root.dataset.height);
+          const shortEdge = Math.min(frameW, frameH);
+          const aspect = frameW / frameH;
 
-          root.style.setProperty("--qeui-caption-width", layout.maxWidth + "px");
-          root.style.setProperty("--qeui-caption-y", layout.centerY + "px");
-          root.style.setProperty("--qeui-caption-side", layout.side + "px");
-
-          function clean(text) {
-            return String(text || "").replace(/[^\p{L}\p{N}'’-]+/gu, "").trim();
+          function laneFor(a) {
+            if (a < 0.75) {
+              return { maxWidth: frameW * (840 / 1080), centerY: frameH * (1270 / 1920), inset: frameW * (120 / 1080) };
+            }
+            if (a > 1.25) {
+              return { maxWidth: frameW * (1640 / 1920), centerY: frameH * (890 / 1080), inset: frameW * (140 / 1920) };
+            }
+            return { maxWidth: frameW * (900 / 1080), centerY: frameH * (840 / 1080), inset: frameW * (90 / 1080) };
           }
+          const lane = laneFor(aspect);
+          root.style.setProperty("--ahw-caption-max-width", lane.maxWidth + "px");
+          root.style.setProperty("--ahw-caption-center-y", lane.centerY + "px");
+          root.style.setProperty("--ahw-caption-inset", lane.inset + "px");
 
-          function groupsFrom(words) {
-            const groups = [];
-            let current = [];
-            words.forEach((word, index) => {
-              const original = String(word.text || "");
-              const display = clean(original);
-              if (!display) return;
-              current.push({ ...word, display });
-              const next = words[index + 1];
-              const pause = next ? Number(next.start) - Number(word.end) : Infinity;
-              const punctuation = /[.!?,;:]$/.test(original.trim());
-              const naturalBreak = current.length >= 2 && (punctuation || pause >= PAUSE_BREAK);
-              if (current.length >= MAX_WORDS || naturalBreak || !next) {
-                groups.push({ words: current, start: Number(current[0].start), end: Number(current[current.length - 1].end) });
-                current = [];
+          // ---- Word cleaning + cue grouping -------------------------------
+          const stripToken = (raw) => String(raw || "").replace(/[^\p{L}\p{N}'’-]+/gu, "").trim();
+          const endsSentence = (raw) => /[.!?,;:]$/.test(String(raw).trim());
+
+          function buildCues(words, opts) {
+            const cues = [];
+            let pending = [];
+            for (let i = 0; i < words.length; i += 1) {
+              const raw = String(words[i].text || "");
+              const display = stripToken(raw);
+              if (!display) continue;
+              pending.push({ ...words[i], display });
+
+              const next = words[i + 1];
+              const gap = next ? Number(next.start) - Number(words[i].end) : Infinity;
+              const softBreak = pending.length >= 2 && (endsSentence(raw) || gap >= opts.pauseGap);
+              const atCap = pending.length >= opts.wordsPerCue;
+
+              if (atCap || softBreak || !next) {
+                cues.push({
+                  words: pending,
+                  start: Number(pending[0].start),
+                  end: Number(pending[pending.length - 1].end),
+                });
+                pending = [];
               }
-            });
-            return groups;
+            }
+            return cues;
           }
 
-          const emphasis = new Set(EMPHASIS_WORDS.map((word) => word.toLowerCase()));
-          const success = new Set(SUCCESS_WORDS.map((word) => word.toLowerCase()));
-          const groups = groupsFrom(WORDS);
-          const timeline = gsap.timeline({ paused: true });
+          const accentSet = new Set(CONFIG.accentWords.map((w) => w.toLowerCase()));
+          const confirmSet = new Set(CONFIG.confirmWords.map((w) => w.toLowerCase()));
+          const cues = buildCues(CONFIG.transcript, CONFIG);
 
-          groups.forEach((group, groupIndex) => {
-            const groupEl = document.createElement("div");
-            groupEl.className = "qeui-caption-group";
-            groupEl.id = "qeui-cap-group-" + groupIndex;
+          // ---- Render one cue's DOM ---------------------------------------
+          function renderCue(cue, index) {
+            const cueEl = document.createElement("div");
+            cueEl.className = "ahw-editorial-caption-cue";
+            cueEl.id = "ahw-caption-cue-" + index;
 
             const lineEl = document.createElement("div");
-            lineEl.className = "qeui-caption-line" + (SURFACE_MODE === "card" ? " card" : "");
+            lineEl.className = "ahw-editorial-caption-line" + (CONFIG.ground === "framed" ? " framed" : "");
 
-            group.words.forEach((word, wordIndex) => {
-              const wordEl = document.createElement("span");
+            cue.words.forEach((word, wi) => {
               const key = word.display.toLowerCase();
-              wordEl.className = "qeui-caption-word" + (emphasis.has(key) ? " emphasis" : "") + (success.has(key) ? " success" : "");
-              wordEl.id = "qeui-cap-word-" + groupIndex + "-" + wordIndex;
+              const wordEl = document.createElement("span");
+              wordEl.className =
+                "ahw-editorial-caption-word" +
+                (accentSet.has(key) ? " accent" : "") +
+                (confirmSet.has(key) ? " confirm" : "");
+              wordEl.id = "ahw-caption-word-" + index + "-" + wi;
               wordEl.textContent = word.display;
               lineEl.appendChild(wordEl);
             });
 
-            groupEl.appendChild(lineEl);
-            stage.appendChild(groupEl);
+            cueEl.appendChild(lineEl);
+            stage.appendChild(cueEl);
+            return cueEl;
+          }
 
-            const text = group.words.map((word) => word.display).join(" ");
-            const scaleGuard = group.words.some((word) => emphasis.has(word.display.toLowerCase())) ? 1.06 : 1;
-            const fit = window.__hyperframes && window.__hyperframes.fitTextFontSize
-              ? window.__hyperframes.fitTextFontSize(text, {
+          // ---- Fit each cue to its safe width -----------------------------
+          function fitCue(cueEl, cue) {
+            const phrase = cue.words.map((w) => w.display).join(" ");
+            const hasAccent = cue.words.some((w) => accentSet.has(w.display.toLowerCase()));
+            const guard = hasAccent ? 1.06 : 1;
+            const sized = window.__hyperframes && window.__hyperframes.fitTextFontSize
+              ? window.__hyperframes.fitTextFontSize(phrase, {
                   fontFamily: "Montserrat",
                   fontWeight: 700,
-                  maxWidth: layout.maxWidth / scaleGuard,
+                  maxWidth: lane.maxWidth / guard,
                   baseFontSize: Math.round(shortEdge * (112 / 1080)),
                   minFontSize: Math.round(shortEdge * (96 / 1080)),
                   step: 2,
                 })
               : { fontSize: Math.round(shortEdge * (96 / 1080)) };
-            groupEl.style.fontSize = fit.fontSize + "px";
+            cueEl.style.fontSize = sized.fontSize + "px";
+          }
 
-            const entranceEnd = Math.min(group.start + 0.28, group.end - 0.13);
-            const exitStart = Math.max(entranceEnd, group.end - 0.12);
-            timeline.set(groupEl, { visibility: "visible", opacity: 0 }, group.start);
+          // ---- Timeline: enter, hold, exit, hard-hide ---------------------
+          const timeline = gsap.timeline({ paused: true });
+
+          function scheduleCue(cueEl, cue) {
+            const enterEnd = Math.min(cue.start + 0.28, cue.end - 0.13);
+            const exitStart = Math.max(enterEnd, cue.end - 0.12);
+            timeline.set(cueEl, { visibility: "visible", opacity: 0 }, cue.start);
             timeline.fromTo(
-              groupEl,
+              cueEl,
               { opacity: 0, y: 18 },
-              { opacity: 1, y: 0, duration: Math.max(0.01, entranceEnd - group.start), ease: "power3.out" },
-              group.start,
+              { opacity: 1, y: 0, duration: Math.max(0.01, enterEnd - cue.start), ease: "power3.out" },
+              cue.start,
             );
-            timeline.to(groupEl, { opacity: 0, y: -8, duration: Math.max(0.01, group.end - exitStart), ease: "power2.in" }, exitStart);
-            timeline.set(groupEl, { opacity: 0, visibility: "hidden" }, group.end);
+            timeline.to(
+              cueEl,
+              { opacity: 0, y: -8, duration: Math.max(0.01, cue.end - exitStart), ease: "power2.in" },
+              exitStart,
+            );
+            timeline.set(cueEl, { opacity: 0, visibility: "hidden" }, cue.end);
+          }
+
+          const cueEls = cues.map((cue, index) => {
+            const cueEl = renderCue(cue, index);
+            fitCue(cueEl, cue);
+            scheduleCue(cueEl, cue);
+            return cueEl;
           });
 
-          groups.forEach((group, groupIndex) => {
-            const el = document.getElementById("qeui-cap-group-" + groupIndex);
-            timeline.seek(group.end + 0.01);
-            const computed = window.getComputedStyle(el);
-            if (computed.opacity !== "0" && computed.visibility !== "hidden") {
-              console.warn("[quiet-editorial-caption] group " + groupIndex + " remains visible after cue end");
+          // ---- Self-check: nothing lingers past its cue end ---------------
+          cues.forEach((cue, index) => {
+            timeline.seek(cue.end + 0.01);
+            const style = window.getComputedStyle(cueEls[index]);
+            if (style.opacity !== "0" && style.visibility !== "hidden") {
+              console.warn("[quiet-editorial-caption] cue " + index + " remains visible after its end");
             }
           });
           timeline.seek(0);

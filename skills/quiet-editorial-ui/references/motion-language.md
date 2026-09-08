@@ -1,29 +1,32 @@
 # Motion language
 
-Motion should explain selection, grouping, progress, or completion.
+Motion here has one job: to explain a selection, a grouping, progress, or a completion. If a move explains none of those, it does not belong.
 
 ## Timing
 
-- Primary entrances: 0.35–0.62s.
-- Small labels and rules: 0.25–0.4s.
-- Cursor travel: 0.55–0.9s, scaled to distance.
-- Selection response: 0.18–0.42s.
-- Scene exits: 0.12–0.22s.
-- Typical entrance travel: 12–42px at 1080px short-edge resolution.
+| Move | Duration |
+|---|---|
+| Primary entrance | 0.35–0.62s |
+| Small label or rule | 0.25–0.4s |
+| Cursor travel | 0.55–0.9s, scaled to distance |
+| Selection response | 0.18–0.42s |
+| Scene exit | 0.12–0.22s |
+
+Typical entrance travel is 12–42px at 1080px short-edge resolution.
 
 ## Choreography
 
-- Reveal the label, then the hero, then the operational object.
-- Make cursor motion causal: travel, select, then show the state change.
-- Use `power3.out` for precise entrances, `expo.out` for display type, and restrained `back.out(1.2–1.4)` only for compact selection feedback.
-- Preserve spatial continuity when one object becomes another state.
-- Use opacity to support translation, scale, or a masked reveal; do not build sequences from floaty fades alone.
-- Keep all render-critical motion on a synchronous paused timeline.
+- Reveal in order: label, then hero, then operational object.
+- Make cursor motion causal — it travels, it selects, and then the state changes.
+- Ease with `power3.out` for precise entrances, `expo.out` for display type, and a restrained `back.out(1.2–1.4)` only for compact selection feedback.
+- Keep spatial continuity when one object turns into another state.
+- Let opacity ride alongside translation, scale, or a masked reveal — never build a sequence from floaty fades alone.
+- Keep every render-critical move on a single paused, synchronous timeline.
 
-## Constraints
+## Limits
 
-- Animate transforms, opacity, color, background color, border color, or radius only.
-- Do not animate layout properties.
-- Do not use infinite loops, runtime clocks, unseeded randomness, or input events.
-- Do not animate a cursor unless it causes an observable change.
-- Do not use more than one success signal at a time.
+- Animate transforms, opacity, colour, background colour, border colour, or radius — nothing else.
+- Never animate layout properties.
+- No infinite loops, runtime clocks, unseeded randomness, or input events.
+- Never animate a cursor that causes no observable change.
+- Never run two success signals at once.

@@ -23,92 +23,232 @@
         font-style: normal;
         font-weight: 400 900;
       }
+
+      :root {
+        --canvas: #F2EBDD;
+        --ink: #2B1E19;
+        --muted: #6b6b6b;
+        --border: #C0CACE;
+        --surface: #fff;
+        --quiet: #f5f5f3;
+        --sage: #AAB6A0;
+      }
+
       * { box-sizing: border-box; }
       html, body { margin: 0; min-height: 100%; background: #e9e9e7; }
-      body { padding: 48px; font-family: "Montserrat", sans-serif; color: #2B1E19; }
-      .sheet { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 40px; }
-      .example { display: grid; gap: 12px; }
-      .example-label { color: #6b6b6b; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-      .frame { position: relative; overflow: hidden; background: #F2EBDD; box-shadow: 0 20px 50px rgba(0,0,0,.12); }
-      .portrait { width: 270px; height: 480px; }
-      .landscape { width: 480px; height: 270px; }
-      .square { width: 340px; height: 340px; }
-      .kicker { display: flex; align-items: center; gap: 8px; font-size: 7px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-      .kicker::before { content: ""; width: 18px; height: 1px; background: #2B1E19; }
-      .hero { margin: 0; font-family: "Playfair Display"; font-style: italic; font-weight: 400; letter-spacing: -.055em; line-height: .9; }
-      .card { border: 1px solid #C0CACE; border-radius: 7px; background: #fff; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
-      .portrait .content { position: absolute; inset: 52px 24px 104px; }
-      .portrait .hero { margin-top: 22px; font-size: 46px; }
-      .portrait .stack { position: absolute; left: 24px; right: 24px; top: 205px; display: grid; gap: 8px; }
-      .portrait .row { display: flex; align-items: center; justify-content: space-between; padding: 12px 13px; font-size: 8px; font-weight: 700; }
-      .portrait .row.quiet { color: #6b6b6b; background: #f5f5f3; }
-      .portrait .status { color: #AAB6A0; }
-      .portrait .caption { position: absolute; left: 30px; right: 30px; bottom: 66px; padding: 8px 10px; border: 1px solid #C0CACE; border-radius: 6px; background: rgba(250,246,239,.94); font-size: 13px; font-weight: 700; text-align: center; }
-      .landscape .media { position: absolute; inset: 18px 250px 18px 18px; border-radius: 8px; background: #dededb; overflow: hidden; }
-      .landscape .media::before { content: ""; position: absolute; inset: 22px; border: 1px solid #bdbdb8; border-radius: 50%; opacity: .7; }
-      .landscape .media::after { content: ""; position: absolute; left: 50%; top: 32%; width: 42px; height: 62px; border-radius: 24px 24px 14px 14px; background: #bdbdb8; transform: translateX(-50%); }
-      .landscape .content { position: absolute; left: 268px; right: 24px; top: 40px; }
-      .landscape .hero { margin-top: 17px; font-size: 33px; }
-      .landscape .module { margin-top: 23px; padding: 13px; }
-      .landscape .module-head { color: #6b6b6b; font-size: 6px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-      .landscape .rail { position: relative; height: 34px; margin-top: 13px; }
-      .landscape .rail::before { content: ""; position: absolute; left: 8px; right: 8px; top: 8px; height: 1px; background: #C0CACE; }
-      .landscape .nodes { position: relative; display: flex; justify-content: space-between; font-size: 6px; font-weight: 700; }
-      .landscape .node { display: grid; place-items: center; width: 17px; height: 17px; border: 1px solid #2B1E19; border-radius: 50%; background: #fff; }
-      .landscape .node.done { border-color: #AAB6A0; background: #AAB6A0; color: #fff; }
-      .square .wash { position: absolute; inset: 0; background: #d7d7d4; }
-      .square .wash::after { content: ""; position: absolute; left: 44px; top: 46px; width: 128px; height: 210px; border-radius: 72px 72px 32px 32px; background: #b7b7b3; }
-      .square .overlay { position: absolute; right: 22px; top: 38px; width: 170px; padding: 18px; }
-      .square .hero { margin-top: 14px; font-size: 31px; }
-      .square .copy { margin: 14px 0 0; color: #6b6b6b; font-size: 8px; line-height: 1.45; }
-      .square .caption { position: absolute; left: 40px; right: 40px; bottom: 42px; padding: 9px 12px; border: 1px solid #C0CACE; border-radius: 7px; background: rgba(250,246,239,.94); font-size: 13px; font-weight: 700; text-align: center; }
+      body { padding: 48px; font-family: "Montserrat", sans-serif; color: var(--ink); }
+
+      .ahw-editorial-sheet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+      }
+      .ahw-editorial-plate { display: grid; gap: 12px; }
+      .ahw-editorial-plate__label {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      /* Shared frame + editorial primitives */
+      .ahw-editorial-frame {
+        position: relative;
+        overflow: hidden;
+        background: var(--canvas);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      }
+      .ahw-editorial-kicker {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 7px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .ahw-editorial-kicker::before {
+        content: "";
+        width: 18px;
+        height: 1px;
+        background: var(--ink);
+      }
+      .ahw-editorial-hero {
+        margin: 0;
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.055em;
+        line-height: 0.9;
+      }
+      .ahw-editorial-card {
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        background: var(--surface);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      .ahw-editorial-caption-chip {
+        position: absolute;
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: rgba(250, 246, 239, 0.94);
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      /* 9:16 — full frame */
+      .ahw-editorial-frame--portrait { width: 270px; height: 480px; }
+      .ahw-editorial-frame--portrait .ahw-editorial-frame__body { position: absolute; inset: 52px 24px 104px; }
+      .ahw-editorial-frame--portrait .ahw-editorial-hero { margin-top: 22px; font-size: 46px; }
+      .ahw-editorial-frame--portrait .ahw-editorial-stack {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        top: 205px;
+        display: grid;
+        gap: 8px;
+      }
+      .ahw-editorial-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 13px;
+        font-size: 8px;
+        font-weight: 700;
+      }
+      .ahw-editorial-row--quiet { color: var(--muted); background: var(--quiet); }
+      .ahw-editorial-row__done { color: var(--sage); }
+      .ahw-editorial-frame--portrait .ahw-editorial-caption-chip { left: 30px; right: 30px; bottom: 66px; }
+
+      /* 16:9 — available area */
+      .ahw-editorial-frame--landscape { width: 480px; height: 270px; }
+      .ahw-editorial-frame--landscape .ahw-editorial-plate__media {
+        position: absolute;
+        inset: 18px 250px 18px 18px;
+        border-radius: 8px;
+        background: #dededb;
+        overflow: hidden;
+      }
+      .ahw-editorial-frame--landscape .ahw-editorial-plate__media::before {
+        content: "";
+        position: absolute;
+        inset: 22px;
+        border: 1px solid #bdbdb8;
+        border-radius: 50%;
+        opacity: 0.7;
+      }
+      .ahw-editorial-frame--landscape .ahw-editorial-plate__media::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 32%;
+        width: 42px;
+        height: 62px;
+        border-radius: 24px 24px 14px 14px;
+        background: #bdbdb8;
+        transform: translateX(-50%);
+      }
+      .ahw-editorial-frame--landscape .ahw-editorial-frame__body { position: absolute; left: 268px; right: 24px; top: 40px; }
+      .ahw-editorial-frame--landscape .ahw-editorial-hero { margin-top: 17px; font-size: 33px; }
+      .ahw-editorial-module { margin-top: 23px; padding: 13px; }
+      .ahw-editorial-module__head {
+        color: var(--muted);
+        font-size: 6px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .ahw-editorial-rail { position: relative; height: 34px; margin-top: 13px; }
+      .ahw-editorial-rail::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 8px;
+        height: 1px;
+        background: var(--border);
+      }
+      .ahw-editorial-nodes { position: relative; display: flex; justify-content: space-between; font-size: 6px; font-weight: 700; }
+      .ahw-editorial-node {
+        display: grid;
+        place-items: center;
+        width: 17px;
+        height: 17px;
+        border: 1px solid var(--ink);
+        border-radius: 50%;
+        background: var(--surface);
+      }
+      .ahw-editorial-node--done { border-color: var(--sage); background: var(--sage); color: #fff; }
+
+      /* 1:1 — direct overlay */
+      .ahw-editorial-frame--square { width: 340px; height: 340px; }
+      .ahw-editorial-frame--square .ahw-editorial-plate__wash { position: absolute; inset: 0; background: #d7d7d4; }
+      .ahw-editorial-frame--square .ahw-editorial-plate__wash::after {
+        content: "";
+        position: absolute;
+        left: 44px;
+        top: 46px;
+        width: 128px;
+        height: 210px;
+        border-radius: 72px 72px 32px 32px;
+        background: #b7b7b3;
+      }
+      .ahw-editorial-overlay { position: absolute; right: 22px; top: 38px; width: 170px; padding: 18px; }
+      .ahw-editorial-frame--square .ahw-editorial-hero { margin-top: 14px; font-size: 31px; }
+      .ahw-editorial-overlay__copy { margin: 14px 0 0; color: var(--muted); font-size: 8px; line-height: 1.45; }
+      .ahw-editorial-frame--square .ahw-editorial-caption-chip { left: 40px; right: 40px; bottom: 42px; padding: 9px 12px; border-radius: 7px; }
     </style>
   </head>
   <body>
-    <main class="sheet">
-      <section class="example">
-        <div class="example-label">9:16 · Full frame</div>
-        <div class="frame portrait">
-          <div class="content">
-            <div class="kicker">One clear idea</div>
-            <h1 class="hero">organize what matters.</h1>
+    <main class="ahw-editorial-sheet">
+      <section class="ahw-editorial-plate">
+        <div class="ahw-editorial-plate__label">9:16 · Full frame</div>
+        <div class="ahw-editorial-frame ahw-editorial-frame--portrait">
+          <div class="ahw-editorial-frame__body">
+            <div class="ahw-editorial-kicker">One clear idea</div>
+            <h1 class="ahw-editorial-hero">organize what matters.</h1>
           </div>
-          <div class="stack">
-            <div class="card row quiet"><span>Collected notes</span><span>01</span></div>
-            <div class="card row"><span>Focused draft</span><span>02</span></div>
-            <div class="card row"><span>Ready to review</span><span class="status">✓</span></div>
+          <div class="ahw-editorial-stack">
+            <div class="ahw-editorial-card ahw-editorial-row ahw-editorial-row--quiet"><span>Collected notes</span><span>01</span></div>
+            <div class="ahw-editorial-card ahw-editorial-row"><span>Focused draft</span><span>02</span></div>
+            <div class="ahw-editorial-card ahw-editorial-row"><span>Ready to review</span><span class="ahw-editorial-row__done">✓</span></div>
           </div>
-          <div class="caption">make the complex feel clear</div>
+          <div class="ahw-editorial-caption-chip">make the complex feel clear</div>
         </div>
       </section>
 
-      <section class="example">
-        <div class="example-label">16:9 · Available area</div>
-        <div class="frame landscape">
-          <div class="media"></div>
-          <div class="content">
-            <div class="kicker">A deliberate path</div>
-            <h2 class="hero">from thought to finish.</h2>
-            <div class="card module">
-              <div class="module-head">Progress</div>
-              <div class="rail">
-                <div class="nodes"><span class="node">1</span><span class="node">2</span><span class="node done">✓</span></div>
+      <section class="ahw-editorial-plate">
+        <div class="ahw-editorial-plate__label">16:9 · Available area</div>
+        <div class="ahw-editorial-frame ahw-editorial-frame--landscape">
+          <div class="ahw-editorial-plate__media"></div>
+          <div class="ahw-editorial-frame__body">
+            <div class="ahw-editorial-kicker">A deliberate path</div>
+            <h2 class="ahw-editorial-hero">from thought to finish.</h2>
+            <div class="ahw-editorial-card ahw-editorial-module">
+              <div class="ahw-editorial-module__head">Progress</div>
+              <div class="ahw-editorial-rail">
+                <div class="ahw-editorial-nodes"><span class="ahw-editorial-node">1</span><span class="ahw-editorial-node">2</span><span class="ahw-editorial-node ahw-editorial-node--done">✓</span></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="example">
-        <div class="example-label">1:1 · Direct overlay</div>
-        <div class="frame square">
-          <div class="wash"></div>
-          <div class="card overlay">
-            <div class="kicker">Quiet structure</div>
-            <h2 class="hero">one useful next step.</h2>
-            <p class="copy">A bounded editorial surface keeps the message legible without taking ownership away from the footage.</p>
+      <section class="ahw-editorial-plate">
+        <div class="ahw-editorial-plate__label">1:1 · Direct overlay</div>
+        <div class="ahw-editorial-frame ahw-editorial-frame--square">
+          <div class="ahw-editorial-plate__wash"></div>
+          <div class="ahw-editorial-card ahw-editorial-overlay">
+            <div class="ahw-editorial-kicker">Quiet structure</div>
+            <h2 class="ahw-editorial-hero">one useful next step.</h2>
+            <p class="ahw-editorial-overlay__copy">A bounded editorial surface keeps the message legible without taking ownership away from the footage.</p>
           </div>
-          <div class="caption">keep the message useful</div>
+          <div class="ahw-editorial-caption-chip">keep the message useful</div>
         </div>
       </section>
     </main>

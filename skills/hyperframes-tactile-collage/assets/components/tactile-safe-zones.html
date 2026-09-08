@@ -7,14 +7,31 @@
         <style>
           * { box-sizing: border-box; }
           #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; pointer-events: none; font-family: monospace; }
-          .critical { position: absolute; left: 8.333%; right: 8.333%; top: 12.5%; bottom: 20.833%; border: 4px dashed #e13f32; background: rgba(225, 63, 50, 0.04); }
-          .caption { position: absolute; left: 11.111%; right: 11.111%; top: 61.979%; height: 7.813%; border: 4px dashed #C4D6DA; background: rgba(196, 214, 218, 0.15); }
-          .label { position: absolute; padding: 8px 12px; background: #FAF6EF; border: 2px solid #2B1E19; color: #2B1E19; font-size: 22px; font-weight: 700; }
-          .critical .label { left: 8px; top: 8px; }
-          .caption .label { right: 0; top: -52px; }
+          .ahw-tactile-zone { position: absolute; }
+          .ahw-tactile-zone--critical {
+            left: 8.333%; right: 8.333%; top: 12.5%; bottom: 20.833%;
+            border: 4px dashed #e13f32;
+            background: rgba(225, 63, 50, 0.04);
+          }
+          .ahw-tactile-zone--caption {
+            left: 11.111%; right: 11.111%; top: 61.979%; height: 7.813%;
+            border: 4px dashed #C4D6DA;
+            background: rgba(196, 214, 218, 0.15);
+          }
+          .ahw-tactile-zone-tag {
+            position: absolute;
+            padding: 8px 12px;
+            background: #FAF6EF;
+            border: 2px solid #2B1E19;
+            color: #2B1E19;
+            font-size: 22px;
+            font-weight: 700;
+          }
+          .ahw-tactile-zone--critical .ahw-tactile-zone-tag { left: 8px; top: 8px; }
+          .ahw-tactile-zone--caption .ahw-tactile-zone-tag { right: 0; top: -52px; }
         </style>
-        <div class="critical"><span class="label" data-layout-allow-occlusion>CRITICAL CONTENT</span></div>
-        <div class="caption"><span class="label" data-layout-allow-occlusion>CAPTION LANE</span></div>
+        <div class="ahw-tactile-zone ahw-tactile-zone--critical"><span class="ahw-tactile-zone-tag" data-layout-allow-occlusion>CRITICAL CONTENT</span></div>
+        <div class="ahw-tactile-zone ahw-tactile-zone--caption"><span class="ahw-tactile-zone-tag" data-layout-allow-occlusion>CAPTION LANE</span></div>
       </div>
       <script>
         window.__timelines = window.__timelines || {};

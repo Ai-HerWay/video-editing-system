@@ -1,56 +1,78 @@
 # Style system
 
-## Identity
+## What we're going for
 
-Tactile Paper Collage combines handmade paper craft with editorial information design. It should feel physical, legible, playful, and deliberately assembled—not childish, distressed beyond readability, or filled with unrelated stickers.
+The tactile paper-collage look sits where handmade craft meets editorial
+information design. A frame should read as physical, clear, and playful — paper
+that was cut, marked, and pinned on purpose. It is not a child's scrapbook, not
+weathered to the point of being hard to read, and never padded out with stickers
+that have nothing to do with what's being said.
 
-## Semantic tokens
+## Colour roles
 
-Treat `assets/frame.md` as the starting specification. Preserve these roles even when adapting colors:
+`assets/frame.md` defines the palette as a set of `--ahw-*` custom properties.
+Whatever brand colours you map in, keep these seven jobs distinct:
 
-- `paper`: warm continuous ground.
-- `sheet`: lighter foreground paper for cards and documents.
-- `ink`: near-black structure and primary copy.
-- `primary`: the main explanatory accent.
-- `signal`: warnings, contradiction, or urgency.
-- `spark`: emphasis and discovery.
-- `resolve`: completion, handoff, or success.
+- `--ahw-ground` — the warm paper the whole beat sits on.
+- `--ahw-card` — lighter paper for foreground cards and documents.
+- `--ahw-ink` — near-black structure and primary copy.
+- `--ahw-accent` — the main explanatory colour.
+- `--ahw-flag` — contradiction, warning, or urgency.
+- `--ahw-spark` — emphasis and discovery.
+- `--ahw-seal` — completion, approval, or handoff.
 
-Use no more than three accents in one frame. Approved brand colors may replace accents when their contrast and semantic role remain clear.
+Cap it at three accents in any single frame. Approved brand colours may stand in
+for the accents as long as their contrast and their role stay unambiguous.
 
-## Typography
+## Type
 
-- Use Permanent Marker for short handwritten emphasis, not paragraphs.
-- Use Montserrat Bold for files, labels, checklists, diagrams, captions, and operational copy.
-- Use Playfair Display (bold/black weight) for every display statement, headline, stat, pull quote, and italic accent.
-- Keep display statements short and phone-readable. Use size and position before adding more decoration.
-- At a 1080px short edge, keep primary headlines at least 54px, operational copy at least 28px, and captions at least 42px.
+Three faces, each with one job:
 
-## Surfaces and edges
+- **Permanent Marker** — short handwritten emphasis only, never a paragraph.
+- **Montserrat Bold** — files, labels, checklists, diagram text, captions, and
+  any operational copy.
+- **Playfair Display** (bold or black) — every display statement: headlines,
+  stats, pull quotes, and italic accents.
 
-- Use flat paper fills with subtle fibers, ruled lines, dots, or grain at low opacity.
-- Use ink outlines between 3px and 6px at a 1080px short edge.
-- Use crisp offset shadows or soft paper-lift shadows, never neon glow or glass blur.
-- Rotate important cards within roughly `-5deg` to `5deg`; use larger angles only during entrances.
-- Make tape, staples, pins, stamps, and torn edges structural: they should explain attachment, approval, grouping, or sequence.
+Keep display statements short enough to read on a phone. Reach for size and
+placement before you reach for more decoration. Measured at a 1080px short edge,
+hold headlines to at least 54px, operational copy to at least 28px, and captions
+to at least 42px.
 
-## Component grammar
+## Surfaces, edges, and attachment
 
-- Paper card: one statement or state, thick edge, modest offset shadow.
-- Folder: collection, archive, category, or reusable context.
-- Taped image: evidence, person, place, or supplied reference.
-- Stamp: verdict, contradiction, status, or chapter change.
-- Dotted route: learning, transfer, dependency, or movement between states.
-- File tag: a named artifact being created, passed, or stored.
-- Checklist: ordered work, validation, or completion.
-- Scribble: emphasis or relationship; draw it once and let it settle.
+- Fill paper flat, then add fibres, ruled lines, dots, or grain only at low
+  opacity.
+- Draw ink outlines between 3px and 6px at a 1080px short edge.
+- Cast crisp offset shadows or soft paper-lift shadows — never neon glow or
+  glassy blur.
+- Rest important cards within roughly `-5deg` to `5deg`; steeper angles belong to
+  entrances only.
+- Make every fastener structural. Tape, staples, pins, stamps, and torn edges
+  should each explain something — that a thing is attached, approved, grouped, or
+  in sequence — not just sit there as texture.
 
-## Failure signatures
+## The object vocabulary
 
-- Random scrapbook decorations unrelated to the narration.
-- Every object tilted, bouncing, or outlined equally.
-- Tiny desktop UI recreated inside a vertical frame.
-- Texture that reduces contrast or makes footage look dirty.
-- Paper cards covering faces, gestures, captions, source UI, or required logos.
-- A fixed vintage palette imposed on an established brand.
-- “Cartoon” characters added when the story does not need them.
+Each construction carries a specific meaning:
+
+- **Paper card** — one statement or one state. Thick edge, modest offset shadow.
+- **Folder** — a collection, an archive, a category, or reusable context.
+- **Taped image** — evidence, a person, a place, or a supplied reference.
+- **Stamp** — a verdict, a contradiction, a status, or a chapter break.
+- **Dotted route** — learning, transfer, dependency, or movement between states.
+- **File tag** — a named artifact being made, passed, or stored.
+- **Checklist** — ordered work, validation, or completion.
+- **Scribble** — emphasis or a relationship; draw it once, then let it rest.
+
+## When it's going wrong
+
+Watch for these tells that the style has slipped:
+
+- Scrapbook decorations that don't answer to the narration.
+- Everything tilted, bouncing, or outlined at the same weight — no hierarchy.
+- A tiny desktop UI rebuilt inside a vertical frame.
+- Texture that eats contrast or makes the footage look grubby.
+- Paper covering a face, a gesture, a caption, source UI, or a required logo.
+- A fixed vintage palette forced over an established brand.
+- Cartoon characters invented for a story that never asked for them.

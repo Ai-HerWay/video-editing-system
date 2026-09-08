@@ -7,7 +7,7 @@
   <body>
     <template>
       <style>
-        .qeui-safe-layer {
+        .ahw-editorial-safe-layer {
           position: absolute;
           inset: 0;
           overflow: hidden;
@@ -17,17 +17,17 @@
           letter-spacing: 0.08em;
           text-transform: uppercase;
         }
-        .qeui-safe-box {
+        .ahw-editorial-safe-region {
           position: absolute;
-          border: 3px solid rgba(16, 163, 127, 0.9);
-          background: rgba(16, 163, 127, 0.06);
+          border: 3px solid rgba(170, 182, 160, 0.95);
+          background: rgba(170, 182, 160, 0.08);
         }
-        .qeui-caption-box {
+        .ahw-editorial-safe-lane {
           position: absolute;
-          border: 3px dashed rgba(13, 13, 13, 0.86);
-          background: rgba(247, 247, 246, 0.2);
+          border: 3px dashed rgba(43, 30, 25, 0.86);
+          background: rgba(250, 246, 239, 0.2);
         }
-        .qeui-safe-label {
+        .ahw-editorial-safe-tag {
           position: absolute;
           left: 12px;
           top: 10px;
@@ -40,7 +40,7 @@
       </style>
 
       <div
-        id="qeui-safe-root"
+        id="ahw-editorial-safe-root"
         data-composition-id="quiet-editorial-safe-zones"
         data-start="0"
         data-duration="8"
@@ -48,37 +48,59 @@
         data-height="1920"
         style="position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden;pointer-events:none"
       >
-        <div class="qeui-safe-layer" id="qeui-safe-layer" data-layout-ignore>
-          <div class="qeui-safe-box" id="qeui-safe-critical" data-layout-ignore><span class="qeui-safe-label" data-layout-ignore>Critical area</span></div>
-          <div class="qeui-caption-box" id="qeui-safe-caption" data-layout-ignore><span class="qeui-safe-label" data-layout-ignore>Caption lane</span></div>
+        <div class="ahw-editorial-safe-layer" id="ahw-editorial-safe-layer" data-layout-ignore>
+          <div class="ahw-editorial-safe-region" id="ahw-editorial-safe-critical" data-layout-ignore><span class="ahw-editorial-safe-tag" data-layout-ignore>Critical area</span></div>
+          <div class="ahw-editorial-safe-lane" id="ahw-editorial-safe-caption" data-layout-ignore><span class="ahw-editorial-safe-tag" data-layout-ignore>Caption lane</span></div>
         </div>
       </div>
 
       <script>
         (function () {
-          const root = document.getElementById("qeui-safe-root");
-          const width = Number(root.dataset.width);
-          const height = Number(root.dataset.height);
-          const ratio = width / height;
-          const layout = ratio < 0.75
-            ? { critical: [90 / 1080, 240 / 1920, 900 / 1080, 1280 / 1920], caption: [120 / 1080, 1190 / 1920, 840 / 1080, 160 / 1920] }
-            : ratio > 1.25
-              ? { critical: [96 / 1920, 54 / 1080, 1728 / 1920, 918 / 1080], caption: [140 / 1920, 820 / 1080, 1640 / 1920, 140 / 1080] }
-              : { critical: [72 / 1080, 72 / 1080, 936 / 1080, 936 / 1080], caption: [90 / 1080, 760 / 1080, 900 / 1080, 160 / 1080] };
+          const root = document.getElementById("ahw-editorial-safe-root");
+          const frameW = Number(root.dataset.width);
+          const frameH = Number(root.dataset.height);
+          const aspect = frameW / frameH;
 
-          function place(id, box) {
-            const el = document.getElementById(id);
-            el.style.left = box[0] * width + "px";
-            el.style.top = box[1] * height + "px";
-            el.style.width = box[2] * width + "px";
-            el.style.height = box[3] * height + "px";
+          // Rectangles are stored as fractions [x, y, w, h] of the frame.
+          function rectsFor(a) {
+            if (a < 0.75) {
+              return {
+                critical: [90 / 1080, 240 / 1920, 900 / 1080, 1280 / 1920],
+                caption: [120 / 1080, 1190 / 1920, 840 / 1080, 160 / 1920],
+              };
+            }
+            if (a > 1.25) {
+              return {
+                critical: [96 / 1920, 54 / 1080, 1728 / 1920, 918 / 1080],
+                caption: [140 / 1920, 820 / 1080, 1640 / 1920, 140 / 1080],
+              };
+            }
+            return {
+              critical: [72 / 1080, 72 / 1080, 936 / 1080, 936 / 1080],
+              caption: [90 / 1080, 760 / 1080, 900 / 1080, 160 / 1080],
+            };
           }
 
-          place("qeui-safe-critical", layout.critical);
-          place("qeui-safe-caption", layout.caption);
+          function applyRect(id, rect) {
+            const el = document.getElementById(id);
+            el.style.left = rect[0] * frameW + "px";
+            el.style.top = rect[1] * frameH + "px";
+            el.style.width = rect[2] * frameW + "px";
+            el.style.height = rect[3] * frameH + "px";
+          }
+
+          const rects = rectsFor(aspect);
+          applyRect("ahw-editorial-safe-critical", rects.critical);
+          applyRect("ahw-editorial-safe-caption", rects.caption);
 
           const timeline = gsap.timeline({ paused: true });
-          timeline.fromTo("#qeui-safe-layer", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, 0);
+          timeline.fromTo(
+            "#ahw-editorial-safe-layer",
+            { opacity: 0 },
+            { opacity: 1, duration: 0.15, ease: "power2.out" },
+            0,
+          );
+
           window.__timelines = window.__timelines || {};
           window.__timelines["quiet-editorial-safe-zones"] = timeline;
         })();

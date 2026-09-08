@@ -1,33 +1,43 @@
 # Layering and safe zones
 
-## Layout modes
+## The three layout modes
 
 ### Behind subject
 
-Use when a stable transparent subject layer is already available or the owning media workflow authorizes creating one.
+Reach for this when a stable transparent subject layer already exists, or when
+the owning media workflow has cleared you to create one.
 
-Layer from back to front:
+Stack it back to front:
 
-1. Original photographic plate or treated background.
-2. Paper-world ground and nonessential texture.
+1. The original photographic plate, or a treated background.
+2. The paper ground and any non-essential texture.
 3. Load-bearing diagrams and paper objects.
-4. Transparent subject.
-5. Edge labels and foreground handoff objects.
+4. The transparent subject.
+5. Edge labels and any foreground handoff objects.
 6. Captions.
 
-Keep the face, mouth, microphone, and active gestures clear. Place important background copy above the silhouette or in stable outer columns. Never assume a fixed subject scale; inspect the actual alpha silhouette through the entire beat.
+Keep the face, mouth, microphone, and active gestures unobstructed. Park
+important background copy above the silhouette or out in the stable side
+columns. Never trust a fixed subject scale — inspect the actual alpha silhouette
+across the entire beat, because the speaker moves.
 
 ### Direct overlay
 
-Use when no cutout exists or subject extraction would not improve the edit. Anchor bounded paper objects in negative space that remains clear across the full beat. If no stable region exists, use a brief full-frame scene instead of chasing the speaker with moving overlays.
+Reach for this when there is no cutout, or when pulling the subject out wouldn't
+improve the edit. Anchor bounded paper objects in negative space that stays
+clear for the full length of the beat. If no region stays stable that long, cut
+to a short full-frame scene instead of chasing the speaker with moving overlays.
 
 ### Full frame
 
-Use when footage adds no information, a diagram needs the whole canvas, or the project is faceless. Keep one hero object and one supporting path, label, or evidence item. Do not turn the frame into a dense scrapbook page.
+Reach for this when the footage adds nothing, a diagram needs the whole canvas,
+or the project has no face at all. Hold to one hero object and one supporting
+element — a path, a label, or a piece of evidence. Don't let it thicken into a
+dense scrapbook page.
 
-## Collision priority
+## Who wins a collision
 
-Protect in this order:
+When two elements compete for the same pixels, protect them in this order:
 
 1. Face and mouth.
 2. Meaningful gestures and held objects.
@@ -37,20 +47,26 @@ Protect in this order:
 6. Explanatory collage objects.
 7. Decorative texture.
 
-Move or remove lower-priority elements first.
+Always move or drop the lower-priority element first.
 
-## Default critical areas
+## Default critical regions
 
-Coordinates use output pixels. Scale proportionally for other resolutions.
+Coordinates are in output pixels; scale them proportionally for other
+resolutions.
 
-| Format | Critical area | Preferred caption lane | Caption max width |
+| Format | Critical region | Caption lane | Caption max width |
 |---|---|---|---|
-| 1080x1920 portrait | `x=90-990`, `y=240-1520` | centered near `y=1190-1340` | 840px |
-| 1920x1080 landscape | `x=96-1824`, `y=54-972` | lower third near `y=810-955` | 1640px |
-| 1080x1080 square | `x=72-1008`, `y=72-1008` | centered near `y=750-910` | 900px |
+| 1080×1920 portrait | `x=90-990`, `y=240-1520` | centred near `y=1190-1340` | 840px |
+| 1920×1080 landscape | `x=96-1824`, `y=54-972` | lower third near `y=810-955` | 1640px |
+| 1080×1080 square | `x=72-1008`, `y=72-1008` | centred near `y=750-910` | 900px |
 
-Background footage and nonessential texture may bleed outside these regions. Reserve the chosen caption lane for the complete cue, including scale emphasis and shadow.
+Background footage and non-essential texture can bleed past these edges. The
+caption lane, though, is reserved for the whole cue — including any scale
+emphasis and its shadow.
 
-## Frame inspection
+## Sampling the frame
 
-Inspect at least the beginning, midpoint, and end of every beat. Add extra samples where the subject moves, gestures widen, source UI changes, or paper objects overshoot. A clear opening frame does not prove the entire beat is collision-free.
+Check at least the start, midpoint, and end of every beat. Add more samples
+wherever the subject moves, a gesture widens, source UI changes, or a paper
+object might overshoot its mark. A clean opening frame is no proof the rest of
+the beat stays collision-free.

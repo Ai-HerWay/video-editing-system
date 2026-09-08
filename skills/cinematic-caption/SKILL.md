@@ -1,82 +1,112 @@
 ---
 name: cinematic-caption
-description: Apply designed cinematic captions to an existing HyperFrames video by selecting hero words from speech, building ordered mixed-case stacks, placing type around a speaker, and using subject-aware depth, translucent fills, or restrained sound accents. Use for cinematic captions, editorial subtitles, dynamic real-estate or creator-reel captions, or requests to make important words, numbers, or locations large, animated, or layered around a person.
+description: Design cinematic, editorial captions inside a HyperFrames video rather than parking every line in a fixed subtitle bar. Promotes the words that actually carry a claim into large mixed-case hero moments, stacks each sentence in the order it is spoken, anchors type to the speaker, and layers depth, translucent glass fills, and sparing sound accents around the subject. Use for cinematic or editorial captions, dynamic real-estate and creator-reel captions, or any request to make a key word, number, place, or figure large, layered, animated, or wrapped around a person.
 ---
 
 # Cinematic Caption
 
-Turn a transcript into designed editorial moments that live inside the composition instead of a fixed subtitle band. Preserve the underlying edit, footage, narration, music, and brand unless the user asks to change them.
+This is AI Her Way's house method for treating captions as part of the picture. Speech becomes a small run of designed editorial beats that sit inside the frame and move with the subject, not a bottom strip the eye ignores. Work as a caption designer first and a subtitle transcriber second: decide which handful of words deserve to become the image, and let everything else stay quiet.
 
-Read `references/style-system.md` completely before designing or editing captions. When the passage contains three or more designed cues, also read `references/dynamic-layout-recipes.md` completely before writing the caption plan.
+Leave the underlying edit, footage, narration, music, and brand alone unless the request is explicitly to change them. You are dressing an existing composition, not rebuilding it.
 
-## Inputs
+Before you plan or touch a single cue, read `references/style-system.md` end to end — it holds the brand pins, the scoring rules, and the treatment catalogue. Once a passage carries three or more designed cues, also read `references/dynamic-layout-recipes.md` end to end, because the difficulty shifts from styling one moment to sequencing many.
 
-Accept the active HyperFrames project plus any combination of:
+## What you can be handed
 
-- a source video or existing composition;
-- a transcript, SRT/VTT, or word-level timing JSON;
-- a requested time range;
-- brand fonts, colors, or tone;
-- optional requests for glow, graphic inserts, or sound effects.
+Expect the active HyperFrames project, plus any mix of:
 
-Treat `$ARGUMENTS` as project, media, range, and style guidance. Discover missing project details locally when safe. Ask only when a missing choice would materially change the result.
+- source footage or an existing composition to caption;
+- a transcript, an SRT/VTT file, or word-level timing JSON;
+- a target time range;
+- brand fonts, colours, or a tone note;
+- optional asks for glow, inserted graphics, or sound effects.
 
-## Required workflow
+Read `$ARGUMENTS` as the project pointer, media, range, and style steer. Fill in missing project facts yourself when it is safe to do so, and only stop to ask when a genuinely unknown choice would change the outcome.
 
-1. Read the active project's instructions and the mandatory `hyperframes` skill. Load `talking-head-recut`, `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative`, and `hyperframes-cli` when available. If adding or changing audio, also load `media-use` and `hyperframes-audio`.
-2. Inspect the existing composition, duration, dimensions, tracks, media paths, typography, palette, and motion sidecar. Do not rewrite unrelated scenes.
-3. Resolve word-level timing. Prefer an existing transcript. If none exists, use the documented HyperFrames transcription workflow and retain the generated transcript as a project artifact. If a long-pass transcript drifts from the audible speech, retranscribe short overlapping segments and align their local timestamps; never proportionally stretch inaccurate word timings across the media duration.
-4. Edit speech into semantic groups and ordered display fragments, then assign each cue a role and emphasis level using `references/style-system.md`. Score hero candidates for semantic importance, proof value, rhetorical stress, and legibility; record why the chosen word is the hero. Do not promote a word merely because it is a noun or sounds visually interesting.
-5. Inspect the start, midpoint, and end of every designed cue. Record the motion envelope of the face, mouth, hair, shoulders, hands, products, UI, existing text, and usable negative space. Choose a coherent sequence of subject-relative anchor zones. Vary layouts between argument beats, but keep one stable anchor for fragments that belong to the same sentence or parallel list.
-   When using a foreground subject cutout, also verify its start time, frame rate, duration, scale, and crop against the base footage. Inspect moving hair, hands, and shoulders at multiple timestamps. If a faint duplicate edge remains despite matching timing, rebuild the cutout from the original source pixels plus the matte alpha instead of overlaying independently compressed RGB.
-6. Write `cinematic-caption-plan.json` before implementation. Include cue timing, exact displayed text, `semanticGroupId`, `orderIndex`, role, emphasis, `heroReason`, placement, `anchorZone`, `layoutState`, `buildMode`, `flowDirection`, optional `persistenceGroup`, `foregroundText`, `heroText`, `stackGap`, subject motion envelope, depth strategy, `fillSource`, palette, `occlusionBudget`, motion preset, optional graphic support, and optional audio accent.
-7. Search the local HyperFrames catalog for relevant caption blocks before hand-authoring. Adapt strong matches to the current composition and brand; never copy another creator's logo, identity, or proprietary assets.
-8. Implement captions as the least invasive change: either a dedicated high-numbered overlay track in the current composition or a reusable `compositions/cinematic-captions.html` sub-composition. Namespace new IDs and variables with `cc-`.
-9. Keep outer clip elements responsible for timing and layout. Animate inner wrappers. Use one paused, seek-safe timeline driven by HyperFrames time. Add or update the motion sidecar for every animated selector. When the spoken phrase builds progressively, reveal its words or semantic fragments at their actual word starts instead of landing the completed lockup early.
-10. If sound accents are requested, source local files through `media-use`, place them on dedicated audio tracks, synchronize their transient to the visual landing, and mix them under intelligible narration. Silence is an intentional option.
-11. Run HyperFrames lint/check at cue midpoints and motion boundaries. Capture early, midpoint, and late frames for subject-layered heroes plus one chronological contact sheet. Review semantic timing, reading order, within-group spacing, controlled variation, face clearance, occlusion, and legibility, then iterate until checks pass.
-12. Start a local preview and give the user the URL. Render only after the normal HyperFrames preview-and-approval gate.
+## How to run the job
 
-## Outputs
+Work through this order. Earlier steps protect later ones, so do not skip ahead to markup.
 
-Leave the project with:
+**1 — Load the framework.** Read the active project's own instructions and the mandatory `hyperframes` skill. Pull in `talking-head-recut`, `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative`, and `hyperframes-cli` where they exist. If you will add or alter audio, also load `media-use` and `hyperframes-audio`.
 
-- `cinematic-caption-plan.json`;
+**2 — Read the composition before changing it.** Inspect the duration, dimensions, tracks, media paths, current type, palette, and motion sidecar. Note what is already there so you extend it rather than overwrite unrelated scenes.
+
+**3 — Get word-level timing you can trust.** Prefer a transcript that already exists. If there is none, run the documented HyperFrames transcription workflow and keep the result as a project artifact. If a single long transcription pass drifts from what you can hear, re-transcribe short overlapping windows and align each window locally. Never stretch bad timings proportionally across the whole clip to make them "fit" — that hides the drift rather than fixing it.
+
+**4 — Turn speech into scored cues.** Cut the transcript into semantic groups and the ordered fragments that display inside them. Give each cue a role and an emphasis level using `references/style-system.md`. For every hero candidate, run the score in that reference — semantic load, proof value, spoken stress, legibility — and write down the reason the winning word won. A word does not earn hero scale just for being a noun or looking good large.
+
+**5 — Map the subject before you place type.** Sample each designed cue at its start, middle, and end. Record where the face, mouth, hair, shoulders, hands, any product, UI, and existing text travel across that span, and where the usable calm space sits. Pick a coherent run of subject-relative anchor zones from that map. Change layout between argument beats, but hold one steady anchor for fragments that belong to the same sentence or the same parallel list. When a cue will use a foreground cutout, additionally check the cutout's start time, frame rate, duration, scale, and crop against the base footage, and inspect moving hair, hands, and shoulders at several timestamps. If a faint doubled edge survives even with timing matched, rebuild the cutout from the original source pixels plus the matte alpha rather than compositing an independently compressed RGB copy.
+
+**6 — Commit the design to a plan file.** Write `caption-design-plan.json` before implementation. Each cue records its timing, the exact displayed text, `semanticGroupId`, `orderIndex`, role, emphasis, `heroReason`, placement, `anchorZone`, `layoutState`, `buildMode`, `flowDirection`, optional `persistenceGroup`, `foregroundText`, `heroText`, `stackGap`, the subject motion envelope, the depth strategy, `fillSource`, palette, `occlusionBudget`, motion preset, optional graphic support, and optional audio accent. The schema lives in `references/style-system.md`.
+
+**7 — Reuse before you rebuild.** Search the local HyperFrames catalogue for caption blocks that fit before hand-authoring anything. Adapt a strong match to this composition and this brand. Never lift another creator's logo, identity, or proprietary assets.
+
+**8 — Implement with the lightest touch.** Add captions either as one dedicated high-numbered overlay track in the current composition, or as a reusable `compositions/editorial-captions.html` sub-composition. Namespace every new ID and variable with `ecap-`.
+
+**9 — Keep timing outside, motion inside.** Let the outer clip elements own timing, placement, and bounds; animate only the inner wrapper. Drive everything from one paused, seek-safe timeline on the HyperFrames time source, and record every animated selector in the motion sidecar. When a phrase is built up in speech, reveal its words or semantic fragments at their real word starts instead of dropping the finished lockup in early.
+
+**10 — Handle sound as punctuation.** If accents are requested, source local files through `media-use`, place them on their own audio tracks, land each transient on the visual moment it marks, and keep them mixed under intelligible narration. Choosing silence is always allowed.
+
+**11 — Verify against the frame, not the DOM.** Run HyperFrames lint/check at cue midpoints and motion boundaries. Capture early, middle, and late frames for any subject-layered hero, plus one chronological contact sheet of the whole passage. Judge semantic timing, reading order, within-group spacing, controlled variation, face clearance, occlusion, and legibility from those frames, and iterate until the checks pass.
+
+**12 — Preview, then stop.** Start a local preview and hand the user the URL. Render only after the normal HyperFrames preview-and-approval gate.
+
+## What to leave behind
+
+A finished job leaves the project with:
+
+- `caption-design-plan.json`;
 - caption markup or a reusable caption sub-composition;
 - a complete motion sidecar;
-- local media and SFX references only;
+- only local media and SFX references;
 - representative cue snapshots;
-- a chronological caption contact sheet for judging variation;
+- a chronological contact sheet for judging variation;
 - a passing HyperFrames check;
-- a preview URL and a short note describing hero and audio-accent choices.
+- a preview URL and a short note on the hero and audio choices you made.
 
-## Guardrails
+## Non-negotiables
 
-- Keep phrases concise and semantic; do not reproduce every filler word.
-- Use mixed case for ordinary support captions. Reserve all caps for acronyms, short proof labels, or a deliberately chosen CTA keyword.
-- Build typography as a hierarchy: a clean sans for support, a genuine heavy or condensed display face for hero words, and an occasional editorial serif or italic accent for conversational actions such as a CTA. Bundle every chosen face locally.
-- Declare only font weights that exist in the bundled file. Never synthesize a heavy weight from a lighter font, force thickness with oversized strokes, or tighten tracking until adjacent glyphs merge. Inspect repeated, narrow, and crossbar-heavy letters at full resolution.
-- Keep one primary visual idea per cue and one dominant hero moment per sentence or argument beat.
-- Prefer white for normal support captions. Use black only when the actual frame makes white illegible after a restrained outline, shadow, or localized scrim.
-- Do not cover a face, mouth, key gesture, product, UI, or important property detail.
-- When a clean matte exists, create power through proximity: place important hero words close enough to the subject for intentional depth instead of floating them high in unused negative space. Prefer 10–22% overlap around hair or outer head contours and reposition whenever identifying letters become ambiguous.
-- Do not repeat a complete layout recipe across unrelated argument beats. When adjacent fragments form one sentence or parallel grammatical list, lock them to one anchor zone and treatment unless the subject or shot changes; vary timing or scale subtly instead of making the viewer chase the text.
-- Choose one reading direction for each semantic group. Later fragments must continue that path; do not jump down, back up, and down again for the sake of variety.
-- Keep captions level by default. Use rotation only when the source brand or explicit direction makes the angle meaningful; arbitrary tilting is not a substitute for composition.
-- Preserve identifying letters in hero words. Subject depth may cross outer strokes, but reposition or resize whenever the overlap makes the spelling uncertain.
-- For sequential instructional graphics, keep completed evidence visible when the next action depends on it. Place standalone screenshots, folders, and files natively; do not wrap every asset in a generic card.
-- Build CTAs as one compact ordered cluster whose setup, action, keyword, and closing line reveal in reading order.
-- Keep the CTA action word visually adjacent to its keyword; treat them as one unit rather than two labels in competing zones.
-- Do not default to bottom-center karaoke, word pills, rainbow coloring, permanent neon, or a large word on every cue.
-- Use glow as a brief emphasis treatment, not as the base caption style.
-- Default translucent hero words to neutral silver-white tinted glass with visible source footage, a fine rim, and an optional soft light sweep. Introduce a restrained hue only when the brand, footage, or meaning justifies it. Do not add repeating scan lines or banded textures unless the user explicitly requests that graphic treatment. Avoid pastel rainbow fills, heavy bevel/extrusion, and decorative depth that makes the word feel like a detached title.
-- Do not claim that text is behind a person unless a real subject matte, cutout, or defensible occlusion mask creates that depth. Without one, place the oversized word in verified negative space.
-- A subject cutout must be frame-locked to the base footage and free of visible halos, doubled silhouettes, shadows, or color shifts. Do not add drop shadow to the subject layer. Prefer original source RGB recombined with the matte alpha and an alpha-capable high-quality local encode.
-- Use sound effects as punctuation, not wallpaper. Do not add an effect to every phrase. Rotate the palette across adjacent hero beats: reserve shimmer for one luminous reveal, use no more than one primary accent per landing, and stack effects only when the combination has a specific narrative purpose.
-- Preserve creator-safe margins and the project's platform safe zone.
-- Match the user's brand before the reference aesthetic.
+These are the rules that keep the output editorial rather than gimmicky.
+
+**On the writing**
+
+- Keep every phrase short and semantic. Do not caption filler word for word.
+- Use mixed case for ordinary support copy. Reserve all caps for acronyms, tight proof labels, or one deliberately forceful CTA keyword.
+- Give a cue one primary visual idea, and give a sentence or argument beat one dominant hero moment.
+- Do not caption every spoken word large. Hero treatments must stay outnumbered by clean support cues.
+
+**On the type**
+
+- Build a real hierarchy: a clean sans for support, a genuinely heavy or condensed display face for heroes, and an occasional serif or italic accent for a conversational action such as a CTA. Bundle every face locally.
+- Only declare weights that exist in the bundled font file. Never synthesise a heavy weight from a lighter one, fake thickness with an oversized stroke, or crush tracking until glyphs touch. Check repeated, narrow, and crossbar-heavy letters at full resolution.
+- Default support copy to white. Switch to black only when the actual frame makes white illegible even after a restrained outline, shadow, or local scrim.
+
+**On placement and depth**
+
+- Never cover a face, mouth, key gesture, product, UI, or a property detail that matters.
+- When a clean matte exists, build power through proximity: sit important hero words close to the subject so depth reads as intentional, rather than floating them in dead space up top. Aim for 10–22% overlap around hair or the outer head contour, and move the word the moment identifying letters turn ambiguous.
+- Only claim text sits behind a person when a real matte, cutout, or defensible occlusion mask actually creates that depth. Without one, place the oversized word in verified negative space.
+- Keep a subject cutout frame-locked to the base footage and free of halos, doubled silhouettes, cast shadows, or colour shifts. Do not drop-shadow the subject layer. Prefer original source RGB recombined with the matte alpha, encoded locally with a real alpha channel.
+- Protect identifying letters in hero words. Depth may cross an outer stroke, but reposition or resize the moment the overlap makes spelling uncertain.
+- Hold creator-safe margins and the project's platform safe zone.
+
+**On the sequence**
+
+- Do not replay one full layout recipe across unrelated argument beats. When adjacent fragments form one sentence or a parallel list, lock them to a single anchor and treatment unless the subject or shot changes; vary timing or scale a touch instead of sending the eye chasing.
+- Pick one reading direction per semantic group and keep every later fragment on that path. No down, back-up, down-again zigzag for the sake of motion.
+- Keep captions level by default. Rotate only when the source brand or an explicit instruction makes the angle meaningful.
+- For step-by-step instructional graphics, keep completed evidence on screen while the next action still depends on it. Place standalone screenshots, folders, and files natively rather than wrapping every asset in a generic card.
+- Build a CTA as one compact ordered cluster — setup, action, keyword, closing line — revealed in reading order, with the action word visually next to its keyword so they read as one instruction.
+
+**On effects**
+
+- Do not default to bottom-centre karaoke, word pills, rainbow colour, permanent neon, or a giant word on every cue.
+- Treat glow as a brief accent, never the base style.
+- Default translucent heroes to neutral silver-white glass: visible source footage through the fill, a fine rim, and an optional soft light sweep. Bring in a hue only when brand, footage, or meaning justifies it. Skip repeating scan lines or banded textures unless the user explicitly asks. Avoid pastel rainbow fills, heavy bevel or extrusion, and decorative depth that turns a word into a detached title card.
+- Use sound as punctuation, not wallpaper. Do not accent every phrase. Rotate the palette across adjacent hero beats — reserve shimmer for a single luminous reveal, allow at most one primary accent per landing, and only stack effects when the combination serves a specific narrative purpose.
+- Match the user's brand before any reference aesthetic.
 - Do not publish, upload, or replace source media without explicit approval.
 
-## Completion standard
+## When it is done
 
-The result is complete when the captions are timed to meaning, visually integrated with the subject, restrained enough to preserve hierarchy, seek-safe, locally reproducible, and verified in HyperFrames. A technically valid fixed subtitle strip is not a cinematic-caption result.
+The captions are finished when they are timed to meaning, integrated with the subject, restrained enough to hold their hierarchy, seek-safe, reproducible from local assets, and verified inside HyperFrames. A technically valid fixed subtitle strip does not count as a cinematic-caption result.

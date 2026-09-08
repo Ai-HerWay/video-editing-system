@@ -1,6 +1,6 @@
 # Font setup
 
-The skill bundles both webfonts it needs — Playfair Display (display serif) and Montserrat (UI sans). Both are licensed under the SIL Open Font License and are redistributable, so no user-supplied font files are required. Copy them from this skill's `assets/fonts/` directory into the composition's `public/fonts/` directory, keeping these exact names:
+This skill ships the two webfonts it depends on — Playfair Display (the display serif) and Montserrat (the UI sans). Both are licensed under the SIL Open Font License and are free to redistribute, so the user never has to supply their own. Copy them out of this skill's `assets/fonts/` directory into the composition's `public/fonts/` directory, keeping these exact filenames:
 
 ```text
 PlayfairDisplay-var.woff2
@@ -8,17 +8,17 @@ PlayfairDisplay-Italic-var.woff2
 Montserrat-var.woff2
 ```
 
-Each is a variable font covering the full 400–900 weight range; do not rename another serif or sans to these families.
+Each is a variable font spanning the full 400–900 weight range. Never rename some other serif or sans onto these families.
 
-Run:
+Then run:
 
 ```bash
 node <skill-dir>/scripts/preflight.mjs <composition-dir>
 ```
 
-The preflight checks for valid WOFF2 signatures and exits nonzero when a required face is unavailable. Treat failure as render-blocking. Do not use a system-font fallback because HyperFrames renders in a clean browser environment that may not have desktop fonts installed.
+The preflight verifies the WOFF2 signatures and exits non-zero if any required face is missing. Treat a failure as render-blocking: HyperFrames renders inside a clean browser environment that may have no desktop fonts installed, so a system fallback is not an option.
 
-Use these declarations in project compositions:
+Declare the faces in your compositions like this:
 
 ```css
 @font-face {
@@ -43,4 +43,4 @@ Use these declarations in project compositions:
 }
 ```
 
-Reference the internal family names `Playfair Display` and `Montserrat` so the composition cannot silently resolve to a machine-installed copy.
+Refer to the internal family names `Playfair Display` and `Montserrat` so a composition can't silently resolve to a copy installed on the rendering machine.

@@ -1,34 +1,21 @@
-# Cinematic Caption for HyperFrames
+# Cinematic Caption
 
-A portable AI skill for adding premium spatial editorial captions to HyperFrames videos.
+AI Her Way's cinematic caption system for HyperFrames videos — a way to treat captions as part of the picture instead of subtitles stapled to the bottom of the frame.
 
-Instead of placing every subtitle in a fixed strip, the skill turns speech into short semantic caption moments. It scores the words that actually carry the claim, builds each sentence in spoken order, keeps related fragments in one spatial group, and uses mixed-case support copy, heavy display typography, translucent glass heroes, real subject depth, and restrained sound accents.
+Rather than dropping every line into a fixed strip, the skill turns speech into a short run of designed editorial moments. It scores the words that actually carry the claim, builds each sentence in the order it is spoken, holds related fragments together in one spatial group, and dresses them with mixed-case support copy, heavy display heroes, translucent glass fills, real subject depth, and restrained sound accents — all pinned to AI Her Way's locked Social/Reels brand system.
 
-## Requirements
+## What you need
 
 - A local [HyperFrames](https://github.com/heygen-com/hyperframes) project
 - An AI coding agent that supports installable `SKILL.md` skills
-- Source footage or an existing HyperFrames composition
+- Source footage or an existing HyperFrames composition to caption
 
 ## Install
 
-Clone the repository into the skills directory used by your AI coding agent.
+This skill is distributed to AI Her Way Pro Hub members. Copy the `cinematic-caption` folder into your agent's skills directory, then restart the agent so it discovers the skill.
 
-### Codex and compatible agents
-
-```bash
-git clone https://github.com/audrey-560/hyperframes-cinematic-caption.git \
-  ~/.agents/skills/cinematic-caption
-```
-
-### Claude Code
-
-```bash
-git clone https://github.com/audrey-560/hyperframes-cinematic-caption.git \
-  ~/.claude/skills/cinematic-caption
-```
-
-Restart the agent after installation so it can discover the skill.
+- **Claude Code:** copy it into `~/.claude/skills/cinematic-caption`
+- **Other compatible agents:** copy it into that agent's skills directory (commonly `~/.agents/skills/cinematic-caption`)
 
 ## Use
 
@@ -38,33 +25,27 @@ Invoke it directly:
 $cinematic-caption
 ```
 
-Or ask naturally:
+Or just ask:
 
-- “Apply the Cinematic Caption skill to this video.”
-- “Add cinematic spatial captions to this HyperFrames project.”
-- “Make the important words large, translucent, and animated.”
-- “Give these captions a premium real-estate editorial style.”
+- "Apply the cinematic caption skill to this video."
+- "Add cinematic spatial captions to this HyperFrames project."
+- "Make the important words large, translucent, and animated."
+- "Give these captions a premium real-estate editorial style."
 
-The skill analyzes word timing, scores hero candidates for meaning and proof value, edits speech into ordered semantic groups, maps the speaker’s movement across each cue, plans controlled layout changes around that motion envelope, implements progressive mixed-depth overlays, and verifies both representative frames and the complete visual sequence before rendering.
+The skill reads word timing, scores hero candidates for meaning and proof value, edits speech into ordered semantic groups, maps how the speaker moves across each cue, plans controlled layout changes around that motion, implements progressive mixed-depth overlays, and verifies both representative frames and the whole visual sequence before rendering.
 
-Designed passages avoid both fixed-template repetition and random movement. Each sentence has one reading direction, consistent internal spacing, and a subject-relative anchor. Parallel hero lists can hold one stable placement instead of moving on every word; unrelated beats change only one or two design properties at a time. The default translucent treatment is neutral silver-white glass: source footage remains visible through a 32–55% fill, a fine rim preserves readability, and lower strokes can sit behind the subject when a clean matte exists.
+Designed passages avoid both template repetition and random movement. Each sentence gets one reading direction, consistent internal spacing, and a subject-relative anchor. Parallel hero lists can hold a single placement instead of moving on every word, while unrelated beats change only one or two design properties at a time. The default translucent treatment is neutral silver-white glass: the source footage stays visible through a 32–55% fill, a fine rim preserves readability, and lower strokes can tuck behind the subject when a clean matte exists.
 
 ## What it produces
 
-- A `cinematic-caption-plan.json` timing and design plan
+- A `caption-design-plan.json` timing and design plan
 - Caption markup or a reusable caption sub-composition
 - Seek-safe motion metadata
 - Local media and optional sound-effect references
 - Verification snapshots and a passing HyperFrames check
-- A chronological caption contact sheet for reviewing layout variety
+- A chronological contact sheet for reviewing layout variety
 - A local preview for approval
-
-## Validate
-
-```bash
-python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
-```
 
 ## License
 
-The skill instructions and reference materials are available under the MIT License.
+Proprietary to AI Her Way. See [LICENSE](LICENSE). Provided to Pro Hub members for their own use; not for redistribution or resale.

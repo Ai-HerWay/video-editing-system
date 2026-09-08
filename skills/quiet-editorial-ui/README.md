@@ -1,33 +1,35 @@
 # Quiet Editorial UI
 
-An installable, brand-neutral design skill for applying a refined editorial software look to
-HyperFrames projects.
+AI Her Way's quiet editorial system for HyperFrames videos — a restrained, serif-led software look for graphics that sit beside or over footage without ever fighting for attention.
 
-It works with talking heads, B-roll, screen recordings, mixed media, empty-space overlays,
-direct-to-footage graphics, and full-frame motion compositions. It does not change the project's
-story, timing, footage, audio, or approved identity.
+It works with talking heads, B-roll, screen recordings, mixed media, empty-space overlays, direct-to-footage graphics, and full-frame motion compositions. It does not change the project's story, timing, footage, audio, or approved identity.
+
+## What you need
+
+- A local [HyperFrames](https://github.com/heygen-com/hyperframes) project
+- An AI coding agent that supports installable `SKILL.md` skills
+- Source footage or an existing HyperFrames composition to style
 
 ## Install
 
-```bash
-npx skills add audrey-560/quiet-editorial-ui
-```
+This skill is distributed to AI Her Way Pro Hub members. Copy the `quiet-editorial-ui` folder into your agent's skills directory, then restart the agent so it discovers the skill.
 
-Or clone the repository into your agent's skills directory.
+- **Claude Code:** copy it into `~/.claude/skills/quiet-editorial-ui`
+- **Other compatible agents:** copy it into that agent's skills directory (commonly `~/.agents/skills/quiet-editorial-ui`)
 
 ## Use
 
-Invoke the skill directly:
+Invoke it directly:
 
 ```text
-/quiet-editorial-ui [HyperFrames project path]
+$quiet-editorial-ui [HyperFrames project path]
 ```
 
-You can also ask naturally:
+Or just ask:
 
-```text
-Apply Quiet Editorial UI to this HyperFrames project.
-```
+- "Apply Quiet Editorial UI to this HyperFrames project."
+- "Give this a refined editorial software look."
+- "Add restrained serif overlays in the negative space around the footage."
 
 The skill automatically chooses between three layout modes:
 
@@ -39,13 +41,13 @@ The skill automatically chooses between three layout modes:
 
 - Playfair Display (regular and italic) for editorial display typography
 - Montserrat for interface copy, labels, body text, and captions
-- Warm near-white surfaces, black ink, thin rules, subtle depth, and generous negative space
-- Green reserved for genuine completion or confirmation
-- Cursor-led interactions, selections, document objects, cards, and progress paths
+- Warm near-white surfaces, ink-dark text, thin rules, subtle depth, and generous negative space
+- Sage green reserved for genuine completion or confirmation
+- Cursor-led interactions, selections, document objects, cards, and progress paths — all pinned to AI Her Way's locked Social/Reels brand system
 
 ## Captions and safety
 
-The skill includes reusable caption and safe-zone components with:
+The skill includes reusable caption and safe-zone components (`ahw-editorial-*`) with:
 
 - Natural 2–4 word phrase grouping
 - One visible line at a time
@@ -73,7 +75,7 @@ The included preflight blocks rendering when any file is missing or invalid. See
 - `assets/frame.md` — machine-readable design specification
 - `references/` — style, layout, caption, motion, font, and safe-zone guidance
 - `assets/components/` — reusable caption and safety overlays
-- `assets/examples/` — brand-neutral golden frames
+- `assets/examples/` — golden frames illustrating each layout mode
 - `scripts/` — font preflight and package validation
 
 ## Validate
@@ -81,3 +83,7 @@ The included preflight blocks rendering when any file is missing or invalid. See
 ```bash
 node scripts/validate-package.mjs .
 ```
+
+## License
+
+Proprietary to AI Her Way. See [LICENSE](LICENSE). Provided to Pro Hub members for their own use; not for redistribution or resale.

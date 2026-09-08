@@ -1,53 +1,53 @@
 # Style system
 
-Treat the tokens in `assets/frame.md` as normative. Use this reference for visual judgment.
+The normative values live in `assets/frame.md`. This page is for the judgement calls the tokens can't make for you.
 
-## Identity
+## The feeling to aim for
 
-Quiet Editorial UI combines literary display typography with precise software-interface structure. It should feel composed, calm, useful, and tactile without becoming nostalgic or ornamental.
+Quiet Editorial UI is what you get when you set literary display type against the structure of a well-made piece of software. It should read as composed, calm, useful, and slightly tactile — never nostalgic, never ornamental. If a frame feels like a magazine spread that happens to contain an interface, you are close. If it feels like a template, start again.
 
-## Hierarchy
+## Building hierarchy
 
-- Give each beat one dominant sentence, object, or state change.
-- Use Playfair Display for display language and Montserrat for everything operational.
-- Use italic display type once per beat at most.
-- Set small labels in Montserrat 700 uppercase with `0.12em–0.18em` tracking.
-- Use size and serif/sans contrast before adding color or weight.
-- Preserve generous negative space; do not fill every open region.
+- Give each beat a single dominant thing — one sentence, one object, or one state change. Not two.
+- Playfair Display is the display voice; Montserrat is the operational voice. Never blur the two.
+- One italic display word per beat is the ceiling, not a target.
+- Small labels are Montserrat 700, uppercase, tracked `0.12em–0.18em`.
+- Reach for size and serif/sans contrast first. Colour and weight are later resorts, not first moves.
+- Protect the negative space. An open region is doing work; don't fill it because you can.
 
-## Surfaces
+## Working with surfaces
 
-- Use the warm canvas continuously across graphic-only scenes.
-- Use active white for the selected or foreground surface and quiet gray for supporting surfaces.
-- Use 2px borders at 1080px short-edge resolution; scale proportionally.
-- Use 16–26px radii for cards and windows, full pills only for compact labels or controls.
-- Keep shadows black at 6–12% opacity with broad, soft falloff.
-- Avoid gradients, glass blur, neon, heavy glow, thick borders, and decorative particles.
+- The warm canvas runs continuously underneath graphic-only scenes.
+- Active white is the selected or foreground surface; quiet grey is for supporting surfaces.
+- Borders read as 2px at 1080px short-edge; scale that proportionally at other sizes.
+- Cards and windows take 16–26px radii. Full pills are only for compact labels or controls.
+- Shadows stay black at 6–12% opacity with a broad, soft falloff.
+- Nothing glassy, gradient, neon, glowing, thickly outlined, or particle-strewn.
 
-## Color semantics
+## What the colours mean
 
-- Ink carries hierarchy.
-- Secondary gray carries metadata and de-emphasized copy.
-- The success green means complete, confirmed, ready, or passed. Use it once at a time.
-- A system-object color may describe a real object, such as a file type or status, but must not spread into general decoration.
-- When a supplied brand color must remain, use it only on the supplied brand entity or its semantic state.
+- Ink is hierarchy.
+- Secondary grey is metadata and anything deliberately de-emphasised.
+- The success green means complete / confirmed / ready / passed, and it appears once at a time.
+- A system-object colour may describe a real object — a file type, a status — but must never leak into general decoration.
+- When a supplied brand colour has to stay, keep it on the supplied brand entity or its semantic state, nowhere else.
 
-## Components
+## The component grammar
 
-- Editorial headline: large Playfair Display, sentence case, exactly one restrained Playfair-italic accent word (Walnut on light grounds, Dusty Blue on dark grounds).
-- Kicker: Montserrat 700 uppercase, tracked, optionally preceded by a short gold hairline rule.
-- Document card: active white, gray hairline, modest radius, soft shadow.
-- Window: quiet toolbar, thin divider, centered utility label, no ornamental chrome.
-- Progress path: ink hairline with compact nodes and one semantic success state.
-- Cursor: crisp black-and-white pointer; use only when it causes a visible state change.
-- Selection: change border, scale, clarity, underline, or position rather than adding a loud glow.
+- **Editorial headline** — large Playfair Display, sentence case, exactly one restrained Playfair-italic accent word (Walnut on light, Dusty Blue on dark).
+- **Kicker** — Montserrat 700 uppercase, tracked, optionally led by a short gold hairline rule.
+- **Document card** — active white, grey hairline, modest radius, soft shadow.
+- **Window** — quiet toolbar, thin divider, a centred utility label, no ornamental chrome.
+- **Progress path** — an ink hairline with compact nodes and one semantic success state.
+- **Cursor** — a crisp black-and-white pointer, present only when it drives a visible change.
+- **Selection** — signalled by a change in border, scale, clarity, underline, or position, never by a loud glow.
 
-## Failure signatures
+## Signs you have drifted
 
-- Generic SaaS dashboard grids.
-- Repeated equal-weight cards.
-- Every headline italicized.
-- Green applied decoratively.
-- Tiny interface copy that works only at desktop zoom.
-- Floating fades with no causal action.
-- Empty footage covered merely because an overlay is available.
+- SaaS dashboard grids.
+- Repeated cards of equal weight.
+- Every headline italicised.
+- Green used as decoration.
+- Interface copy so small it only works at desktop zoom.
+- Fades with no causal action behind them.
+- Empty footage covered simply because an overlay was available.

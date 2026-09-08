@@ -1,69 +1,105 @@
 ---
 name: hyperframes-tactile-collage
-description: Apply a brand-neutral Tactile Paper Collage style to a HyperFrames video using warm paper, cutout layers, ink marks, tape, stamps, notebook diagrams, editorial typography, and playful physical motion. Use when someone asks for a tactile paper collage edit, animated scrapbook, mixed-media notebook graphics, paper-cutout editorial styling, analog collage motion, or this visual treatment on talking-head footage or a full-frame HyperFrames composition.
+description: Dress a HyperFrames video in AI Her Way's tactile paper-collage look — warm paper grounds, cut-out cards, ink marks, tape, stamps, notebook diagrams, editorial type, and movement that reads as physically placed. Use when someone asks for a tactile paper collage edit, an animated scrapbook, mixed-media notebook graphics, paper-cutout editorial styling, analog collage motion, or this treatment applied to talking-head footage or a full-frame HyperFrames composition.
 ---
 
 # Tactile Paper Collage
 
-Apply this skill as a visual companion after the owning HyperFrames workflow is known. Preserve the project's story, timing, footage, audio, claims, copy, and approved brand assets unless the user separately requests editorial changes.
+This is a styling companion, not a story workflow. Run it after the owning
+HyperFrames workflow is already chosen. It decides how each beat looks in paper;
+it never touches the underlying story, timing, footage, audio, spoken claims,
+copy, or approved brand assets unless the user separately asks for an editorial
+change.
 
-## Load the contracts
+## What this style is
 
-1. Read `/hyperframes` first.
-2. Read `/hyperframes-core` before editing composition HTML.
-3. Read `/hyperframes-creative` for design-spec precedence.
-4. Read `/hyperframes-animation` before authoring motion.
-5. Read `/media-use` before changing footage, creating a subject cutout, or styling captions.
+A HyperFrames beat rebuilt as a small physical scene: paper cards, folders,
+taped photographs, ink marks, stamps, dotted routes, checklists, and documents
+that get handed across the frame. It should feel assembled by hand — warm,
+legible, and deliberately composed — and never slide like flat digital panels.
+One clear metaphor per beat carries the idea; decoration never stands in for
+that metaphor.
 
-Resolve this skill's directory as `<skill-dir>`. Read:
+## Read before you build
 
-- `references/style-system.md` for the visual tokens and component grammar.
-- `references/scene-grammar.md` for translating narrative functions into collage scenes.
-- `references/layering-safe-zones.md` for layout modes, subject layering, fallbacks, and platform safety.
-- `references/motion-captions-audio.md` before implementing animation, captions, or sound.
+Load the HyperFrames contracts in this order:
 
-## Apply the style
+1. `/hyperframes` — the entry point.
+2. `/hyperframes-core` — required before editing any composition HTML.
+3. `/hyperframes-creative` — how design-spec precedence works.
+4. `/hyperframes-animation` — required before authoring motion.
+5. `/media-use` — required before changing footage, cutting a subject out, or styling captions.
 
-1. Resolve the HyperFrames composition directory. Read its brief, design spec, storyboard or motion board, transcript, composition files, and representative frames.
-2. Inventory faces, gestures, logos, source UI, load-bearing text, approved brand colors, negative space, and existing media treatments.
-3. Divide the story into beats with one dominant idea each. Record the chosen physical metaphor and layout mode for every beat.
-4. Select the first viable mode:
-   - `behind-subject`: place the photographic base below illustrated plates and a transparent subject above them.
-   - `direct-overlay`: keep intact footage as the base and place bounded paper objects only in stable clear regions.
-   - `full-frame`: hand a beat completely to the paper world when no useful footage or cutout exists.
-5. Start from `assets/frame.md`. Copy it into the project as the active design specification, preserving an existing conflicting spec once as `frame.pre-tactile-paper-collage.md`. Merge approved identity assets and semantic brand colors; do not import source-project content.
-6. Install the bundled fonts before rendering:
+Then resolve this skill's own directory as `<skill-dir>` and read its four
+references:
+
+- `references/style-system.md` — the visual tokens, surfaces, and component vocabulary.
+- `references/scene-grammar.md` — how to turn a narrative function into a paper scene.
+- `references/layering-safe-zones.md` — layout modes, subject layering, fallbacks, and platform-safe regions.
+- `references/motion-captions-audio.md` — before you animate, caption, or add sound.
+
+## Working sequence
+
+1. **Open the project.** Resolve the HyperFrames composition directory and read
+   its brief, design spec, storyboard or motion board, transcript, composition
+   files, and a spread of representative frames.
+2. **Inventory what must survive.** List faces, gestures, logos, source UI,
+   load-bearing text, approved brand colours, negative space, and any media
+   treatment already in place. These set the collision limits.
+3. **Break the story into beats.** Give each beat one dominant idea, and for each
+   record the physical metaphor you will use and the layout mode you will build in.
+4. **Pick a layout mode per beat**, choosing the first that fits:
+   - `behind-subject` — a photographic base underneath illustrated plates, with a transparent subject floating above them.
+   - `direct-overlay` — intact footage as the base, with bounded paper objects placed only in regions that stay clear across the whole beat.
+   - `full-frame` — the paper world takes the entire canvas when no footage or cutout is useful.
+5. **Adopt the design spec.** Copy `assets/frame.md` into the project as the
+   active specification. If a conflicting spec already exists, preserve it once
+   as `frame.pre-tactile-paper-collage.md` before overwriting. Merge in approved
+   identity assets and semantic brand colours; do not import content from the
+   source project.
+6. **Install the fonts** before rendering:
 
    ```bash
    node <skill-dir>/scripts/install-fonts.mjs <composition-dir>
    ```
 
-7. Build static hero frames before motion. Use separate sub-compositions for coherent scenes and reserve the caption lane before placing decorative elements.
-8. When captions are needed, copy `assets/components/tactile-caption.html` into the project's compositions directory and adapt its neutral word array. Temporarily copy and mount `assets/components/tactile-safe-zones.html` on the highest track while checking portrait collisions; remove or hide it before delivery. For other aspect ratios, update its internal dimensions and rectangles from `references/layering-safe-zones.md` before mounting.
-9. Animate only after every paused hero frame reads clearly at phone size. Keep all render-critical behavior deterministic and seek-safe.
-10. Run the project's current HyperFrames lint/check commands, create representative snapshots, and inspect the opening, every transition, the densest frame, and the final frame.
+7. **Build static hero frames first.** Compose each coherent scene as its own
+   sub-composition, and reserve the caption lane before dropping any decoration.
+8. **Add captions when needed.** Copy `assets/components/tactile-caption.html`
+   into the project's compositions directory and replace its placeholder word
+   array with real timings. To check portrait collisions, mount
+   `assets/components/tactile-safe-zones.html` on the top track temporarily, then
+   remove or hide it before delivery. For other aspect ratios, update its
+   internal dimensions and rectangles from `references/layering-safe-zones.md`
+   first.
+9. **Animate last.** Only start motion once every paused hero frame reads
+   clearly at phone size. Keep all render-critical behaviour deterministic and
+   seek-safe.
+10. **Check the result.** Run the project's current HyperFrames lint/check
+    commands, capture representative snapshots, and inspect the opening frame,
+    every transition, the densest frame, and the final frame.
 
-## Boundaries
+## Hold these lines
 
 - Do not replace the owning narrative workflow.
-- Do not change cuts, narration, timing, facts, claims, or copy solely to fit the style.
-- Do not require a transparent subject; use the documented overlay or full-frame fallback.
-- Do not force the default palette over approved brand colors. Preserve the paper/ink contrast roles and remap accents semantically.
+- Do not change cuts, narration, timing, facts, claims, or copy just to fit the style.
+- Do not require a transparent subject; fall back to overlay or full-frame instead.
+- Do not override approved brand colours with the default palette. Keep the paper/ink contrast roles and remap accents by meaning, not by hue.
 - Do not reproduce people, screenshots, transcripts, filenames, folder trees, palettes, or story concepts from any reference video.
-- Do not use decorative clutter as a substitute for a clear metaphor.
+- Do not let decorative clutter stand in for a clear metaphor.
 - Do not use unseeded randomness, infinite loops, runtime clocks, or forward-only animation callbacks.
 - Do not place critical content outside the destination platform's safe region.
 
-## Bundled resources
+## What ships in this skill
 
-- `assets/frame.md`: generic design-spec template.
-- `assets/components/tactile-caption.html`: configurable transcript-timed caption treatment.
-- `assets/components/tactile-safe-zones.html`: removable safe-zone overlay.
-- `assets/fonts/*.woff2.b64`: encoded open-licensed Permanent Marker, Playfair Display, and Montserrat fonts (Courier Prime retained under its OFL license for history, no longer installed or applied by default).
-- `scripts/install-fonts.mjs`: decode and install the fonts into a composition.
-- `scripts/validate-package.mjs`: validate structure, portability, licenses, and source isolation.
+- `assets/frame.md` — the design-spec template.
+- `assets/components/tactile-caption.html` — a configurable, transcript-timed caption treatment.
+- `assets/components/tactile-safe-zones.html` — a removable safe-zone overlay for collision checks.
+- `assets/fonts/*.woff2.b64` — encoded open-licensed Permanent Marker, Playfair Display, and Montserrat. (Courier Prime is retained under its OFL license for history but is no longer installed or applied by default.)
+- `scripts/install-fonts.mjs` — decodes and installs the fonts into a composition.
+- `scripts/validate-package.mjs` — validates structure, portability, licenses, and source isolation.
 
-Run package validation after changing the skill:
+After changing anything in the skill, revalidate the package:
 
 ```bash
 node <skill-dir>/scripts/validate-package.mjs <skill-dir>

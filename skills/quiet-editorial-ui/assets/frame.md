@@ -2,8 +2,8 @@
 version: 1
 name: Quiet Editorial UI
 description: >
-  The AI Her Way editorial frame system pairing literary Playfair Display typography with precise Montserrat UI
-  structure, warm cream surfaces, restrained depth, and cause-and-effect motion.
+  AI Her Way's editorial frame system: literary Playfair Display type set against precise Montserrat interface
+  structure, on warm cream surfaces, with restrained depth and motion that only ever reads as cause and effect.
 unit: frame
 principle: one clear idea · editorial hierarchy · operational precision
 
@@ -77,126 +77,115 @@ components:
 
 # Quiet Editorial UI
 
-## Overview
+## What this frame is for
 
-Build calm, editorial frames from literary display type, precise interface copy, warm paper-like
-surfaces, and observable state changes. The frame should feel authored rather than decorated.
+Every frame should read as something authored, not something dressed up. You are composing calm editorial pages out of four ingredients: literary display type, precise interface copy, warm paper-like surfaces, and state changes you can actually see happen. If a frame looks decorated rather than composed, it is wrong.
 
-## Typography
+## Type
 
-- Use `Playfair Display` for every headline, stat, pull quote, and italic accent, and Montserrat for all operational language, small-caps eyebrows, labels, footers, and list items.
-- Keep Playfair Display at weight 400. Use italic once per beat at most.
-- Set labels and small-caps eyebrows in Montserrat 700 uppercase with generous tracking, coloured Walnut (`accent-light`).
-- Make the display element at least three times the size of the nearest label.
-- Keep load-bearing UI copy at least 20px at 1080px short-edge resolution.
-- Keep captions at least 96px at 1080px portrait width and on one line.
+- Playfair Display carries every headline, statistic, pull quote, and italic accent. Montserrat carries everything operational — small-caps eyebrows, labels, footers, list rows, and body copy.
+- Hold Playfair Display at weight 400. Allow at most one italic word per beat.
+- Set eyebrows and small-caps labels in Montserrat 700, uppercase, generously tracked, in Walnut (`accent-light`).
+- The dominant display element should be at least three times the size of the nearest label.
+- Keep any load-bearing UI copy at 20px or larger at 1080px short-edge resolution.
+- Keep captions at 96px or larger at 1080px portrait width, always on a single line.
 
-### Italic accent
+### The italic accent
 
-- Set exactly one Playfair-italic word per headline as the accent. This single italic word is the most recognisable element of the brand — never lose it in a retrofit.
-- Colour the accent word Walnut (`accent-light`, #7B5A49) on light grounds and Dusty Blue (`accent-dark`, #C4D6DA) on dark grounds.
-- Do not italicise more than one word per headline, and do not use the accent colour for anything other than the accent word.
+- Exactly one Playfair-italic word per headline acts as the accent. This single italic word is the most recognisable signature in the whole system — never drop it in a retrofit.
+- Colour that accent word Walnut (`accent-light`, #7B5A49) on light grounds and Dusty Blue (`accent-dark`, #C4D6DA) on dark grounds.
+- Never italicise a second word in the same headline, and never spend the accent colour anywhere but on that one accent word.
 
-## Color
+## Colour
 
-- Use `canvas` (Linen Cream) as the warm graphic ground and `ink` (#2B1E19) for hierarchy.
-- Use `surface-active` (Ivory) for foreground cards and `surface-quiet` (Linen Cream) for supporting chrome.
-- Use `success` (Sage) only for complete, confirmed, ready, reassurance, or passed states, and `success-deep` (Deep Olive) for the strongest confirmed state.
-- Use `hairline` (Gold, #B08A62) for the thin ~2px rule sitting directly under a headline, and for rare hand-drawn or script accents only.
-- Use the italic accent colour — Walnut (`accent-light`) on light grounds, Dusty Blue (`accent-dark`) on dark grounds — only on the single italic accent word.
-- A highlight marker is permitted: one word may sit on a colour block (Dusty Blue, Espresso, Sage, or Walnut). Use at most one per beat.
-- These are the brand's signature devices, not free decoration — do not add any further decorative accent beyond the italic accent, the gold hairline, and one highlight marker.
+- `canvas` (Linen Cream) is the warm ground; `ink` (#2B1E19) carries hierarchy.
+- `surface-active` (Ivory) is for foreground cards; `surface-quiet` (Linen Cream) is for supporting chrome.
+- `success` (Sage) means only complete / confirmed / ready / reassured / passed. `success-deep` (Deep Olive) is the strongest confirmed state.
+- `hairline` (Gold, #B08A62) is the thin ~2px rule that sits directly under a headline, and the colour for the rare hand-drawn or script accent — nothing else.
+- The italic accent colour — Walnut on light, Dusty Blue on dark — belongs only to the one italic accent word.
+- One highlight marker is allowed: a single word may sit on a colour block (Dusty Blue, Espresso, Sage, or Walnut), at most once per beat.
+- These are signature devices, not a licence to decorate. Beyond the italic accent, the gold hairline, and one highlight marker, add no further accent.
 
 ## Depth and shape
 
-- Use 2px-equivalent borders, restrained shadows, and 16–26px-equivalent radii.
-- Use full pills only for compact labels, actions, or status.
-- Avoid glass blur, gradients, thick outlines, neon, heavy glow, and decorative particles.
-- Let the warm canvas show through; do not tile the frame with equal-weight cards.
+- Borders read as roughly 2px, shadows stay restrained, radii land in the 16–26px range.
+- Full pills are for compact labels, actions, or status only.
+- No glass blur, gradients, thick outlines, neon, heavy glow, or decorative particles.
+- Let the warm canvas breathe through — never tile the frame with equal-weight cards.
 
 ## Frame treatments
 
 ### Available-area stage
 
-Anchor one editorial headline and one operational object inside a stable negative-space region.
-Keep the source subject and source UI untouched. Allow cursor travel only inside the verified region.
+Anchor one editorial headline and one operational object inside a stable pocket of negative space. Leave the source subject and source UI untouched. Cursor travel stays inside the verified region.
 
 ### Direct overlay
 
-Place the message over footage only after mapping faces, source text, logos, and motion. Use a
-localized warm-white surface on busy footage. Use unboxed ink only when contrast is stable across
-the full beat.
+Only place the message over footage after you have mapped faces, source text, logos, and motion. Drop a localised warm-white surface onto busy footage. Reserve unboxed ink for moments where contrast holds steady across the whole beat.
 
 ### Full-frame editorial
 
-Use the warm canvas, one dominant headline, and one secondary object such as a document card,
-window, selection list, or progress path. Preserve substantial negative space.
+Warm canvas, one dominant headline, and one secondary object — a document card, a window, a selection list, or a progress path. Keep real negative space.
 
 ### Progress and completion
 
-Use an ink hairline, compact numbered nodes, and a single green completed state. Animate one object
-continuously through the path instead of replacing it with disconnected cards.
+An ink hairline, compact numbered nodes, and a single green completed state. Move one object continuously along the path rather than swapping in disconnected cards.
 
 ### Closing action
 
-Use a large serif phrase, one concise operational object, and a compact action or status. Do not
-introduce new claims or product identity.
+A large serif phrase, one tidy operational object, and a compact action or status. Introduce no new claims and no product identity.
 
 ## Motion
 
-- Reveal label, hero, then operational object.
-- Use 12–42px translation over 0.35–0.62s for primary entrances.
-- Use a cursor only when it selects, moves, groups, or confirms something.
-- Preserve spatial continuity between states.
-- Keep exits short and decisive.
-- Use opacity as support, never as the sole choreography.
+- Reveal in order: label, then hero, then operational object.
+- Primary entrances travel 12–42px over 0.35–0.62s.
+- A cursor appears only when it selects, moves, groups, or confirms something.
+- Keep spatial continuity between states.
+- Exits are short and decisive.
+- Opacity supports the move; it is never the whole move.
 
 ## Captions
 
-- Use Montserrat 700, 2–4 words, one line, and no punctuation.
-- Permit one Playfair Display italic emphasis word when editorially meaningful, coloured Walnut on light grounds or Dusty Blue on dark grounds.
-- Reserve the caption lane before composing overlays.
-- Use the clean treatment on quiet grounds and the card treatment on busy footage.
-- Move the lane around faces and source UI; never reduce below the legibility floor.
+- Montserrat 700, two to four words, one line, no punctuation.
+- One Playfair Display italic emphasis word is allowed when it genuinely matters, Walnut on light grounds or Dusty Blue on dark.
+- Reserve the caption lane before you compose the overlays.
+- Clean treatment on quiet grounds; card treatment on busy footage.
+- Shift the lane around faces and source UI; never drop below the legibility floor.
 
-## Aspect-ratio behavior
+## Aspect-ratio behaviour
 
-| Format | Behavior |
+| Format | Behaviour |
 |---|---|
-| 9:16 | Use a vertical hierarchy or bounded stage; do not assume a fixed speaker split |
-| 16:9 | Use an asymmetric split when a stable subject occupies one side; otherwise use a low wide overlay |
-| 1:1 | Use a compact vertical hierarchy and fewer simultaneous UI objects |
+| 9:16 | Vertical hierarchy or a bounded stage; never assume a fixed speaker split |
+| 16:9 | Asymmetric split when a stable subject holds one side; otherwise a low wide overlay |
+| 1:1 | Compact vertical hierarchy with fewer simultaneous UI objects |
 
 ## Approved Entities
 
-This is a project-specific fork for AI Her Way. The AI Her Way palette and typography specified in
-this file — Playfair Display and Montserrat, and the ten-colour brand palette with its italic-accent,
-gold-hairline, and highlight-marker devices — ARE the approved, supplied brand system for this
-project. No other names, logos, products, vendors, or claims are approved by default; add only
-further entities supplied or explicitly approved for the active project.
+This is AI Her Way's own editorial system. The palette and typography written into this file — Playfair Display and Montserrat, plus the ten-colour brand palette and its italic-accent, gold-hairline, and highlight-marker devices — ARE the approved, supplied brand system here. No other names, logos, products, vendors, or claims are approved by default; add only entities that are supplied or explicitly signed off for the active project.
 
 ## Do
 
-- Preserve one dominant idea per beat.
-- Use exact tokens from the frontmatter.
-- Inspect multiple source frames before placing overlays.
+- Hold one dominant idea per beat.
+- Use the frontmatter tokens exactly.
+- Study several source frames before placing overlays.
 - Reserve captions and platform safety before graphics.
-- Verify at phone scale.
+- Check at phone scale.
 
 ## Don't
 
-- Do not assume footage or talking-head placement.
-- Do not recreate a reference product interface.
-- Do not use success green decoratively.
-- Do not fill every open area.
-- Do not silently substitute the display font.
-- Do not change narrative content to make the style easier to apply.
+- Don't assume footage or talking-head placement.
+- Don't rebuild a reference product interface.
+- Don't spend success green on decoration.
+- Don't fill every open pocket.
+- Don't quietly swap the display font.
+- Don't reshape narrative content just to make the style land.
 
 ## Pre-render audit
 
-- Typography: Playfair Display loaded; Montserrat loaded; display/label hierarchy is obvious; exactly one Playfair-italic accent word per headline.
-- Palette: only declared neutrals, semantic success, and approved project exceptions.
-- Layout: selected mode matches the actual frame and all motion envelopes remain safe.
+- Type: Playfair Display loaded, Montserrat loaded, display/label hierarchy obvious, exactly one Playfair-italic accent word per headline.
+- Palette: only the declared neutrals, the semantic success, and any signed-off project exceptions.
+- Layout: the chosen mode matches the real frame, and every motion envelope stays safe.
 - Captions: one line, safe lane, no collisions, hard cue exits.
-- Motion: every cursor action has a visible consequence; no floaty fade sequence.
-- Source: footage, copy, timing, audio, and approved identity remain intact.
+- Motion: every cursor action has a visible consequence; no floaty fade sequences.
+- Source: footage, copy, timing, audio, and approved identity all intact.

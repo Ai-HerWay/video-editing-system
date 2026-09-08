@@ -9,59 +9,88 @@
           @font-face { font-family: "Montserrat"; src: url("assets/fonts/montserrat-var.woff2") format("woff2"); font-weight: 400 700; font-style: normal; }
           * { box-sizing: border-box; }
           #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; pointer-events: none; }
-          #caption-stage { position: absolute; left: 120px; right: 120px; top: 1190px; height: 150px; display: grid; place-items: center; }
-          .cue { position: absolute; max-width: 840px; padding: 16px 25px 18px; background: var(--tpc-sheet, #FAF6EF); border: 4px solid var(--tpc-ink, #2B1E19); box-shadow: 7px 7px 0 var(--tpc-ink, #2B1E19); color: var(--tpc-ink, #2B1E19); font: 700 46px/1.12 "Montserrat", sans-serif; text-align: center; opacity: 0; transform: rotate(-1deg); }
-          .word { display: inline-block; margin: 0 4px; }
-          .word.active { color: var(--tpc-primary, #C4D6DA); transform: scale(1.05); }
+          .ahw-tactile-caption { position: absolute; left: 120px; right: 120px; top: 1190px; height: 150px; display: grid; place-items: center; }
+          .ahw-tactile-cue {
+            position: absolute;
+            max-width: 840px;
+            padding: 16px 25px 18px;
+            text-align: center;
+            font: 700 46px/1.12 "Montserrat", sans-serif;
+            color: var(--ahw-ink, #2B1E19);
+            background: var(--ahw-card, #FAF6EF);
+            border: 4px solid var(--ahw-ink, #2B1E19);
+            box-shadow: 7px 7px 0 var(--ahw-ink, #2B1E19);
+            transform: rotate(-1deg);
+            opacity: 0;
+          }
+          .ahw-tactile-token { display: inline-block; margin: 0 4px; }
+          .ahw-tactile-token--lit { color: var(--ahw-accent, #C4D6DA); transform: scale(1.05); }
         </style>
-        <div id="caption-stage"></div>
+        <div class="ahw-tactile-caption"></div>
       </div>
       <script>
       (() => {
         const compositionId = "tactile-caption";
+
+        // Word-level timings for this cue lane. Replace with corrected timings.
         const words = [
           { text: "Replace", start: 0.2, end: 0.7 },
           { text: "with", start: 0.72, end: 1.0 },
           { text: "timed", start: 1.02, end: 1.45 },
           { text: "words", start: 1.47, end: 2.0 }
         ];
-        const groups = [];
-        let current = [];
-        words.forEach((word, index) => {
-          current.push(word);
-          const next = words[index + 1];
-          const pause = next ? next.start - word.end >= 0.15 : true;
-          const punctuation = /[,.!?]$/.test(word.text);
-          if (current.length >= 4 || pause || punctuation || !next) {
-            groups.push({ words: current, start: current[0].start, end: current[current.length - 1].end });
-            current = [];
-          }
+
+        // Break the stream into cues at punctuation, a >=0.15s gap, or four words.
+        const PAUSE = 0.15;
+        const MAX_WORDS = 4;
+        const cues = [];
+        let pending = [];
+        const flush = () => {
+          if (!pending.length) return;
+          cues.push({ tokens: pending, start: pending[0].start, end: pending[pending.length - 1].end });
+          pending = [];
+        };
+        words.forEach((word, i) => {
+          pending.push(word);
+          const nextWord = words[i + 1];
+          const gapBreak = !nextWord || nextWord.start - word.end >= PAUSE;
+          const punctBreak = /[,.!?]$/.test(word.text);
+          if (pending.length >= MAX_WORDS || gapBreak || punctBreak) flush();
         });
-        const stage = document.getElementById("caption-stage");
-        groups.forEach((group, groupIndex) => {
-          const cue = document.createElement("div");
-          cue.className = "cue";
-          cue.id = `tpc-cue-${groupIndex}`;
-          group.words.forEach((word, wordIndex) => {
-            const span = document.createElement("span");
-            span.className = "word";
-            span.id = `tpc-cue-${groupIndex}-word-${wordIndex}`;
-            span.textContent = word.text.replace(/[,.!?]+$/g, "");
-            cue.appendChild(span);
+
+        const stage = document.querySelector(".ahw-tactile-caption");
+        const cleanText = (raw) => raw.replace(/[,.!?]+$/g, "");
+        cues.forEach((cue, cueIndex) => {
+          const cueEl = document.createElement("div");
+          cueEl.className = "ahw-tactile-cue";
+          cueEl.id = `ahw-cue-${cueIndex}`;
+          cue.tokenIds = cue.tokens.map((word, tokenIndex) => {
+            const tokenId = `ahw-cue-${cueIndex}-tok-${tokenIndex}`;
+            const tokenEl = document.createElement("span");
+            tokenEl.className = "ahw-tactile-token";
+            tokenEl.id = tokenId;
+            tokenEl.textContent = cleanText(word.text);
+            cueEl.appendChild(tokenEl);
+            return tokenId;
           });
-          stage.appendChild(cue);
+          stage.appendChild(cueEl);
         });
+
+        const litColor = "var(--ahw-accent, #C4D6DA)";
+        const inkColor = "var(--ahw-ink, #2B1E19)";
         const timeline = gsap.timeline({ paused: true });
-        groups.forEach((group, groupIndex) => {
-          const cue = `#tpc-cue-${groupIndex}`;
-          timeline.set(cue, { opacity: 1 }, group.start);
-          timeline.set(cue, { opacity: 0 }, group.end + 0.12);
-          group.words.forEach((word, wordIndex) => {
-            const target = `#tpc-cue-${groupIndex}-word-${wordIndex}`;
-            if (wordIndex > 0) timeline.set(`#tpc-cue-${groupIndex}-word-${wordIndex - 1}`, { color: "var(--tpc-ink, #2B1E19)", scale: 1 }, word.start);
-            timeline.set(target, { color: "var(--tpc-primary, #C4D6DA)", scale: 1.05 }, word.start);
+        cues.forEach((cue, cueIndex) => {
+          const cueSelector = `#ahw-cue-${cueIndex}`;
+          timeline.set(cueSelector, { opacity: 1 }, cue.start);
+          timeline.set(cueSelector, { opacity: 0 }, cue.end + 0.12);
+          cue.tokens.forEach((word, tokenIndex) => {
+            if (tokenIndex > 0) {
+              timeline.set(`#${cue.tokenIds[tokenIndex - 1]}`, { color: inkColor, scale: 1 }, word.start);
+            }
+            timeline.set(`#${cue.tokenIds[tokenIndex]}`, { color: litColor, scale: 1.05 }, word.start);
           });
         });
+
         window.__timelines = window.__timelines || {};
         window.__timelines[compositionId] = timeline;
       })();
