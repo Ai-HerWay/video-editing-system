@@ -12,13 +12,13 @@ Act as a sharp creative director, story producer, and hands-on editor. Preserve 
 1. Read `references/taste-profile.md` for the current creative defaults. It is derived from a frame-by-frame study of 12 curated high-performing reference reels and names three Primary Aesthetic Anchors, a Hook Pattern Library, a Caption System Spec, and CTA Mechanics — treat these as the default toolkit rather than inventing generic social-video conventions from scratch.
 2. Pick one Primary Aesthetic Anchor as the skin and one Hook Pattern for the opening before drafting a beat map. Name both choices explicitly in the creative treatment. Do not mix skins within one edit (e.g. frosted-glass panels with torn-paper stickers).
 3. If the user provides new reference videos or describes a new preference, compare them with the profile and propose precise profile updates to `references/taste-profile.md`. Treat explicit current-turn preferences as authoritative over the file.
-4. Normalize transcript files with `scripts/normalize_transcript.py` when useful.
+4. If a transcript arrives as SRT/VTT rather than a flat word/segment list, convert it to a flat list of `{text, start, end}` entries before use.
 5. Choose one mode:
    - **Repurpose:** find and edit the best moments from a real recording.
    - **Explain:** turn one core concept into a standalone animated explainer.
    - **Hybrid:** lead with the real speaker and use generated or motion-designed visuals to clarify the idea.
-6. Read `references/edit-playbook.md` for the chosen mode. For Repurpose mode, also read `references/retention-repurposer.md`. For Explain mode, also read `references/motion-design-system.md`. Follow the mode-specific reference as the stricter specification.
-7. Read `references/higgsfield-workflow.md` before using Higgsfield.
+6. Follow the matching mode section below (**Repurpose Mode** / **Explain Mode**) as the operative spec for that mode.
+7. See **Higgsfield Use** below before using Higgsfield.
 8. Produce an approval-friendly creative treatment before spending credits or rendering a large batch.
 
 If only a transcript is available, create a complete editorial plan but label all timestamps as transcript-derived or unavailable. Never pretend a text transcript is enough to make frame-accurate cuts.
@@ -60,11 +60,7 @@ For each proposed video, deliver:
 9. **Caption and CTA** - two-register captions per the Caption System Spec, and a CTA per the CTA Mechanics in `references/taste-profile.md`; natural, specific, and proportionate to the content.
 10. **Render specs** - duration, aspect ratio, resolution, caption treatment, and audio target.
 
-Use JSON when an edit will be rendered or validated. Follow `references/edit-plan-schema.md`, then run:
-
-```bash
-python3 scripts/validate_edit_plan.py edit-plan.json
-```
+Use JSON when an edit will be rendered or validated, with one object per field above (title/thesis, audience/job, hook options, source range, paper edit, beat map, asset list, Higgsfield prompts, caption/CTA, render specs). Sanity-check the plan by hand against those ten fields before rendering — every field present, timestamps ordered and within source bounds, no orphaned assets.
 
 ## Retention Rules
 
@@ -83,8 +79,6 @@ python3 scripts/validate_edit_plan.py edit-plan.json
 
 ## Repurpose Mode
 
-Read `references/retention-repurposer.md` and treat it as required.
-
 Mine the entire source for the strongest complete hook, even when it appears later. Open with that line when it truthfully represents the clip, then backfill only the context needed to understand it. Remove fumbles, filler, duplicated thoughts, dead pauses, and low-value transitions. Reorder complete clauses or sentences for clarity and retention; use J-cuts, L-cuts, jump cuts, B-roll, image flashes, captions, stickers, emoji, and sound accents to hide seams. Never splice words into a statement the speaker did not make or change causality, certainty, chronology, or meaning.
 
 Give every beat an explicit `attention_event`. Default to a new event every 2-3 seconds, with an opening event in the first second. Vary the interrupt type and intensity so the edit feels playful and native to social video rather than mechanically overloaded.
@@ -97,11 +91,11 @@ Create a ranked clip slate before rendering. Default slate:
 
 Adapt the mix to the source. Seek variety: contrarian insight, story, framework, practical step, and identity/emotion. When source video is provided, inspect audio and framing as well as transcript meaning.
 
-For approved cuts, use `scripts/render_cut.py` for clean source assembly when appropriate. Use an NLE or equivalent workflow for complex layering, tracked graphics, multi-camera edits, or manual performance choices. Render a draft, watch it end-to-end, then revise pacing, captions, audio, and visual logic.
+For approved cuts, use `ffmpeg` directly for clean source assembly (trim, concat, re-encode to a locked frame rate) when appropriate. Use an NLE or equivalent workflow for complex layering, tracked graphics, multi-camera edits, or manual performance choices. Render a draft, watch it end-to-end, then revise pacing, captions, audio, and visual logic.
 
 ## Explain Mode
 
-Read `references/motion-design-system.md` and treat it as required. Use the **Ai Her Way Editorial Motion Collage** system: calm editorial brand foundations, tactile paper-and-photo collage, bold type, stop-motion-inspired movement, cut-out objects, and controlled high-energy colour flashes. Keep it recognisably Ai Her Way rather than copying any single reference design.
+Use the **Ai Her Way Editorial Motion Collage** system: calm editorial brand foundations, tactile paper-and-photo collage, bold type, stop-motion-inspired movement, cut-out objects, and controlled high-energy colour flashes. Keep it recognisably Ai Her Way rather than copying any single reference design.
 
 Choose concepts that can be understood without the full masterclass. Build the explainer around:
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit Videos My Way"
+  short_description: "Turn raw recordings into hook-first, high-retention short-form videos"
+  default_prompt: "Use $edit-videos-my-way to turn this recording and its transcript into a hook-first, high-retention edit, then apply one of AI Her Way's style skills for the visual treatment."
