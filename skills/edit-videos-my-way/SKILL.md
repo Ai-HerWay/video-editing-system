@@ -10,16 +10,17 @@ Act as a sharp creative director, story producer, and hands-on editor. Preserve 
 ## Start Here
 
 1. Read `references/taste-profile.md` for the current creative defaults. It is derived from a frame-by-frame study of 12 curated high-performing reference reels and names three Primary Aesthetic Anchors, a Hook Pattern Library, a Caption System Spec, and CTA Mechanics — treat these as the default toolkit rather than inventing generic social-video conventions from scratch.
-2. Pick one Primary Aesthetic Anchor as the skin and one Hook Pattern for the opening before drafting a beat map. Name both choices explicitly in the creative treatment. Do not mix skins within one edit (e.g. frosted-glass panels with torn-paper stickers).
-3. If the user provides new reference videos or describes a new preference, compare them with the profile and propose precise profile updates to `references/taste-profile.md`. Treat explicit current-turn preferences as authoritative over the file.
-4. If a transcript arrives as SRT/VTT rather than a flat word/segment list, convert it to a flat list of `{text, start, end}` entries before use.
-5. Choose one mode:
+2. Read the most recent 5-10 entries of `references/edit-log.md` — the per-reel history of what was tried and how the user reacted. Recent verdicts there override older defaults: never re-propose a device the log shows was rejected, and reach first for devices the log shows landed.
+3. Pick one Primary Aesthetic Anchor as the skin and one Hook Pattern for the opening before drafting a beat map. Name both choices explicitly in the creative treatment. Do not mix skins within one edit (e.g. frosted-glass panels with torn-paper stickers).
+4. If the user provides new reference videos or describes a new preference, compare them with the profile and propose precise profile updates to `references/taste-profile.md`. Treat explicit current-turn preferences as authoritative over the file.
+5. If a transcript arrives as SRT/VTT rather than a flat word/segment list, convert it to a flat list of `{text, start, end}` entries before use.
+6. Choose one mode:
    - **Repurpose:** find and edit the best moments from a real recording.
    - **Explain:** turn one core concept into a standalone animated explainer.
    - **Hybrid:** lead with the real speaker and use generated or motion-designed visuals to clarify the idea.
-6. Follow the matching mode section below (**Repurpose Mode** / **Explain Mode**) as the operative spec for that mode.
-7. See **Higgsfield Use** below before using Higgsfield.
-8. Produce an approval-friendly creative treatment before spending credits or rendering a large batch.
+7. Follow the matching mode section below (**Repurpose Mode** / **Explain Mode**) as the operative spec for that mode.
+8. See **Higgsfield Use** below before using Higgsfield.
+9. Produce an approval-friendly creative treatment before spending credits or rendering a large batch.
 
 If only a transcript is available, create a complete editorial plan but label all timestamps as transcript-derived or unavailable. Never pretend a text transcript is enough to make frame-accurate cuts.
 
@@ -138,3 +139,12 @@ Review every final cut against this checklist:
 - CTA is a single short held keyword (or, for authority/portfolio pieces, the payoff itself) and earns its place instead of being stapled on
 
 Return the final media when rendering is possible. Otherwise return the edit decision list, asset pack, generation prompts, and exact next production action rather than implying the video has been edited.
+
+## Log the Outcome
+
+The taste profile only compounds if outcomes are recorded. After every finished edit — and whenever the user reacts to a cut mid-session — update `references/edit-log.md`:
+
+- **On delivery:** append a new entry at the top of Entries using the template in that file. Record the project dir, source, mode, anchor/skin, hook pattern, length/aspect, CTA, and the 1-3 notable creative decisions. Write `not recorded` for anything unknown; never invent a verdict.
+- **On feedback:** the moment the user approves, rejects, or tweaks something, write their reaction into that edit's `verdict` field — short verbatim quotes beat paraphrase. This is the highest-value data in the whole system; do not let a session end with feedback left only in chat.
+- **On recurrence:** when the same learning shows up across 2-3 entries, propose promoting it into `references/taste-profile.md` as a general default and mark the entry's `promoted` field. The log is evidence; the profile is law.
+- **On performance data:** if the user shares platform numbers for a past reel (views, saves, comments, keyword DMs), backfill that entry's `performance` field and check whether the numbers confirm or contradict the recorded learnings.

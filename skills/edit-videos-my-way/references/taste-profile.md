@@ -1,6 +1,6 @@
 # Taste Profile — Reference-Derived Creative Defaults
 
-Derived from a frame-by-frame and waveform study of 12 curated high-performing reels on 2026-09-03 (source files in `C:\Users\nici\brand-design-system\ref video\`). These are not generic best practices — every rule below traces to a specific observed technique in a specific reel. Treat this file as the current creative defaults referenced in `SKILL.md` Start Here step 1. Update it when the user provides new reference videos or gives explicit current-turn preferences (those always win over this file).
+Derived from a frame-by-frame and waveform study of 12 curated high-performing reels on 2026-09-03 (source files in `C:\Users\nici\brand-design-system\ref video\`). These are not generic best practices — every rule below traces to a specific observed technique in a specific reel. Treat this file as the current creative defaults referenced in `SKILL.md` Start Here step 1. Update it when the user provides new reference videos or gives explicit current-turn preferences (those always win over this file). Per-edit outcomes and user verdicts live in `edit-log.md` — recurring learnings there get promoted into this file, and recent verdicts there override this file's older habits.
 
 ## Locked Brand System (AI Her Way — Social/Reels)
 
