@@ -59,6 +59,8 @@ When the user gives no visual-style steer, default to anchor 1 or 2 for short/pu
 
 ## Caption System Spec
 
+**Hero/display type preference (Nici, 2026-09-18):** Playfair Display is the confirmed direction for designed caption moments. Nici also specifically likes **Advercase** (Indieground Design — retro serif based on Apple Garamond, the face she uses in the Edits app). Once licensed (US$19 desktop, Creative Market), pilot Advercase as the hero-word voice with Playfair holding section titles/structure; judge on footage and record the verdict in `edit-log.md`. Until the license is bought, Playfair Display Black carries hero words.
+
 For the full hero-word scoring, placement, and motion framework, use the installed `/cinematic-caption` skill (brand-pinned: Montserrat support, Playfair Display Black hero, Playfair Display Italic editorial-accent in Walnut/Dusty Blue, Gold rule-draw). Quick reference:
 
 - Base layer: white or off-white, bold, sentence-case or single-word pop-on, centred, mid-lower third, no background pill for the editorial-anchor look (anchors 1-2) — a soft dark pill/shadow is acceptable for the transparency-anchor look (anchor 3).
