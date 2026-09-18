@@ -65,6 +65,8 @@ For the full hero-word scoring, placement, and motion framework, use the install
 - Word-reveal cadence: one to two words at a time for dense/fast content (listicles, contrarian hooks); full short phrases (2-7 words) for slower build-alongs.
 - Styled layer only when it reinforces the brand skin: serif "editorial" cards on frosted glass (anchor 1), handwritten red-marker asides (anchor 2), or torn-paper stickers via `/hyperframes-tactile-collage` (secondary — use selectively, see below).
 - Never let captions sit in a fixed bottom safe-zone band that the rest of the composition has to avoid — they're an overlay on top of the frame, composited over whatever is there.
+- **Instagram keep-out zones are hard constraints (Nici, 2026-09-18):** all designed text — captions, marginalia, CTA chips — stays clear of the right action rail (~right 12%), the bottom caption/profile/audio zone (~bottom 22%), and the top menu margin (~top 10%). Meta captions ride at roughly 55–70% of frame height, never in the bottom quarter. Only footage may run under the IG UI.
+- **Camera language (Nici, 2026-09-18): calm base, designed moves — not locked.** Static source footage is fine, but the edit should include punch-ins on idea changes, slow push-ins under build-ups, and swipe/whip reframes to a slightly different angle or crop between sections. Every move lands on a beat; no idle drift.
 
 ## CTA Mechanics
 
