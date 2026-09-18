@@ -1,6 +1,6 @@
 ---
 name: edit-videos-my-way
-description: Turn long-form recordings, masterclasses, interviews, podcasts, webinars, and their transcripts into high-retention short-form videos, direct-to-camera yap-style social clips, and accessible branded animated explainers. Use when Codex needs to mine strong hooks, restructure truthful source audio, remove fumbles and dead space, create timestamped cut plans, edit source footage, write captions, plan clicks/sound bites/image flashes/stickers/emoji/punch-ins every 2-3 seconds, create Ai Her Way editorial motion-collage graphics, generate supporting footage or voice with Higgsfield, or refine a video style from references the user loves. Supports MP4/MOV audio-video, SRT/VTT/TXT transcripts, 9:16 reels, 1:1 posts, and 16:9 explainers.
+description: Turn long-form recordings, masterclasses, interviews, podcasts, webinars, and their transcripts into high-retention short-form videos, direct-to-camera yap-style social clips, and accessible branded animated explainers. Use when the agent needs to mine strong hooks, restructure truthful source audio, remove fumbles and dead space, create timestamped cut plans, edit source footage, write captions, plan clicks/sound bites/image flashes/stickers/emoji/punch-ins every 2-3 seconds, create AI Her Way editorial motion-collage graphics, generate supporting footage or voice with Higgsfield, or refine a video style from references the user loves. Supports MP4/MOV audio-video, SRT/VTT/TXT transcripts, 9:16 reels, 1:1 posts, and 16:9 explainers.
 ---
 
 # Edit Videos My Way
@@ -95,7 +95,7 @@ For approved cuts, use `ffmpeg` directly for clean source assembly (trim, concat
 
 ## Explain Mode
 
-Use the **Ai Her Way Editorial Motion Collage** system: calm editorial brand foundations, tactile paper-and-photo collage, bold type, stop-motion-inspired movement, cut-out objects, and controlled high-energy colour flashes. Keep it recognisably Ai Her Way rather than copying any single reference design.
+Use the **AI Her Way Editorial Motion Collage** system: calm editorial brand foundations, tactile paper-and-photo collage, bold type, stop-motion-inspired movement, cut-out objects, and controlled high-energy colour flashes. Keep it recognisably AI Her Way rather than copying any single reference design.
 
 Choose concepts that can be understood without the full masterclass. Build the explainer around:
 
