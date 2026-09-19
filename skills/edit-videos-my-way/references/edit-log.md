@@ -34,6 +34,20 @@ This is the memory that makes the taste profile compound instead of reset. `refe
 
 ## Entries
 
+### 2026-09-19 — skills-vs-os (Her Way Cut pilot #1)
+- **project dir:** `C:\Users\nici\brand-design-system\videos\skills-vs-os`
+- **source:** raw WhatsApp clip R05 (`4.24.41 PM.mp4`, 93.3s) — "custom GPT/Claude skill vs AI operating system"
+- **mode:** Repurpose
+- **anchor/skin:** The Her Way Cut spec v1 (first full outing) — quiet-editorial panels + marginalia + gold structure
+- **hook pattern:** borrowed comment/question — client-call question card supplied verbatim by Nici
+- **length / aspect:** 89.6s / 9:16 1080×1920
+- **CTA:** COMMENT "OS SYSTEM" → full 90-min workshop ⚠ keyword heard as "O P system"/"up system" by whisper — MUST be confirmed by Nici before posting
+- **tried:** (1) two-panel skill-vs-OS comparison as the persistent spine, with the skill panel collapsing to compact state after its section; (2) karaoke registers (Montserrat meta + Playfair-italic accent words) with a soft scrim, single home at 67%; (3) caption suppression wherever a designed element carries the words (✗-rows section, heroes, marginalia echo, CTA) — the reel-B "tags are the captions" move; (4) marginalia: "≠ staff", "you have to notice the *noticing*", greyed "noticed. nothing happens."; (5) two hero lockups ("not staff." / "it's not smarter → connected." with gold underline draw + ding); (6) espresso veils top/bottom for contrast + cinema; (7) step punch-in hiding the splice at 39.28s; (8) typed CTA chip in the top band after the title retires
+- **verdict:** not recorded — awaiting Nici's review of the draft render (and the Codex bake-off on the same clip)
+- **performance:** not recorded
+- **learnings:** close-framed footage forces adaptive captions DOWN to the 67% chin band and makes mid-frame caption homes unusable — check subject scale before planning caption zones; designed panels can replace captions entirely for list-y sections; contrast checker demands veils/scrims over bright footage — build them in from the start
+- **promoted:** no (pending verdict)
+
 ### 2026-09-11 — style-explainers
 - **project dir:** `C:\Users\nici\brand-design-system\videos\style-explainers`
 - **source:** not recorded (outputs only in folder: `2d-illustrator.mp4`, `hand-drawn.mp4`)
