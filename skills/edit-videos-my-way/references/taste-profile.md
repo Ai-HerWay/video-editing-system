@@ -59,6 +59,12 @@ When the user gives no visual-style steer, default to anchor 1 or 2 for short/pu
 
 ## Caption System Spec
 
+**APPROVED DECISIONS (Nici, 2026-09-19, via Review Board):**
+- **Hero words: Playfair Display (F-A).** Picture Serif Clean lost the face-off; it stays available but Playfair carries heroes, section titles, and stat numerals.
+- **Marginalia voice: Playfair Italic (M-A).**
+- **Caption placement: ADAPTIVE, not fixed.** Height depends on the film and where Nici is in frame — pick per shot: clear of her face/hands/gestures, inside the IG-safe band (roughly 50–72% of frame height, clear of right rail ~12%, bottom zone ~22%, top ~10%). Hold one anchor within a scene; move only when the shot or section changes (cinematic-caption's subject-mapping rules apply).
+- **Diagram kit (P1–P6) + figure furniture: approved as specced.**
+
 **Hero/display type preference (Nici, 2026-09-18):** Playfair Display is the confirmed direction for designed caption moments. Nici also specifically likes **Advercase** (Indieground Design — retro serif based on Apple Garamond, the face she uses in the Edits app). **Production face for this direction (2026-09-19): "Picture Serif Clean"** at `brand-design-system\fonts\picture-serif-clean\` — an SIL-OFL EB Garamond adaptation narrowed to 75% width, capturing the same Apple-Garamond retro feel Advercase is based on. Legally clean for commercial use, full glyph set (% & @, European accents), real kerning (use `font-kerning: normal; font-synthesis: none`; animate whole words, not letters). Pilot it as the hero-word voice against Playfair Display Black and record the verdict in `edit-log.md`; Playfair holds section titles/structure regardless. The original Advercase (US$19, Creative Market) stays optional if the exact face is ever wanted. A v1 bitmap-trace exists at `brand-design-system\fonts\advercase\v1-trace-DO-NOT-USE\` — never render with it.
 
 For the full hero-word scoring, placement, and motion framework, use the installed `/cinematic-caption` skill (brand-pinned: Montserrat support, Playfair Display Black hero, Playfair Display Italic editorial-accent in Walnut/Dusty Blue, Gold rule-draw). Quick reference:
