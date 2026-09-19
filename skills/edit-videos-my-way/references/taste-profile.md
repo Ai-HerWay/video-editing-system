@@ -59,8 +59,10 @@ When the user gives no visual-style steer, default to anchor 1 or 2 for short/pu
 
 ## Caption System Spec
 
-**APPROVED DECISIONS (Nici, 2026-09-19, via Review Board):**
-- **Hero words: Playfair Display (F-A).** Picture Serif Clean lost the face-off; it stays available but Playfair carries heroes, section titles, and stat numerals.
+**APPROVED DECISIONS (Nici, 2026-09-19, via Review Board — amended same day on pilot v1 review):**
+- **Karaoke captions: ONE WORD AT A TIME ("usually better" — Nici), in licensed Advercase Bold**, white with a soft espresso pill, riding LOW in the safe band (~71% frame height, not 67). Accent words: Advercase Italic in warm cream.
+- **Hero words: Advercase Bold** (amended from F-A after the pilot; Nici bought the licence and asked for it). **Playfair Display keeps section titles, panel headers, and all structural/grid-linked type**; Playfair Italic keeps marginalia (M-A confirmed).
+- **Grade: darker + clearer + coffee.** Proven ffmpeg recipe (pilot v2): `eq=brightness=-0.028:contrast=1.05:saturation=0.84:gamma=0.965, colorbalance=rs=0.055:gs=0.018:bs=-0.05:rm=0.038:gm=0.01:bm=-0.032:rh=0.018:bh=-0.028, unsharp=13:13:0.55 + unsharp=5:5:0.35`, plus espresso gradient veils top/bottom in-comp for contrast.
 - **Marginalia voice: Playfair Italic (M-A).**
 - **Caption placement: ADAPTIVE, not fixed.** Height depends on the film and where Nici is in frame — pick per shot: clear of her face/hands/gestures, inside the IG-safe band (roughly 50–72% of frame height, clear of right rail ~12%, bottom zone ~22%, top ~10%). Hold one anchor within a scene; move only when the shot or section changes (cinematic-caption's subject-mapping rules apply).
 - **Diagram kit (P1–P6) + figure furniture: approved as specced.**
