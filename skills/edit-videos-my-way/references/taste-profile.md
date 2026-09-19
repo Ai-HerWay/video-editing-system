@@ -59,7 +59,7 @@ When the user gives no visual-style steer, default to anchor 1 or 2 for short/pu
 
 ## Caption System Spec
 
-**Hero/display type preference (Nici, 2026-09-18):** Playfair Display is the confirmed direction for designed caption moments. Nici also specifically likes **Advercase** (Indieground Design — retro serif based on Apple Garamond, the face she uses in the Edits app). Once licensed (US$19 desktop, Creative Market), pilot Advercase as the hero-word voice with Playfair holding section titles/structure; judge on footage and record the verdict in `edit-log.md`. Until the license is bought, Playfair Display Black carries hero words.
+**Hero/display type preference (Nici, 2026-09-18):** Playfair Display is the confirmed direction for designed caption moments. Nici also specifically likes **Advercase** (Indieground Design — retro serif based on Apple Garamond, the face she uses in the Edits app). Once licensed (US$19 desktop, Creative Market), pilot Advercase as the hero-word voice with Playfair holding section titles/structure; judge on footage and record the verdict in `edit-log.md`. Until the license is bought, Playfair Display Black carries hero words. **Note (2026-09-19):** a traced "Picture Serif Reconstruction" of Advercase exists at `brand-design-system\fonts\advercase\` — preview/placement use ONLY (wobbly outlines, no kerning, missing % & @ and accents, and it's an unofficial knockoff). Never render brand output with it; buy the real font for production.
 
 For the full hero-word scoring, placement, and motion framework, use the installed `/cinematic-caption` skill (brand-pinned: Montserrat support, Playfair Display Black hero, Playfair Display Italic editorial-accent in Walnut/Dusty Blue, Gold rule-draw). Quick reference:
 
