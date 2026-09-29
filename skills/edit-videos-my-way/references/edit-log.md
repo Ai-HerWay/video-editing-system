@@ -34,6 +34,12 @@ This is the memory that makes the taste profile compound instead of reset. `refe
 
 ## Entries
 
+### 2026-09-29 — Drawing sound correction V7
+- **verdict:** "It sounds like someone spraying rather than drawing." "Otherwise, that's looking really good."
+- **learnings:** Reject the procedural pencil timbre while preserving the visual/camera treatment and three drawing cue positions. Use dry recorded pencil strokes. V5 approval is qualified by this later sound correction.
+- **tried:** CC0 sketchbook pencil foley by thisisjoewells, Freesound 463848; two short excerpts and one continuous longer excerpt. Replacement listening verdict pending.
+- **promoted:** Sound-direction correction, style v1.1.1.
+
 ### 2026-09-29 — Signature camera refinement V6
 - **mode:** Hybrid; same 9.6-second source and V5 sound
 - **requested:** "slow zoom ins" and "1-2 second cuts" in some places, "not overly", for a cinematic effect.

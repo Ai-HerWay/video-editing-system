@@ -35,6 +35,8 @@ The style is editor-independent. HyperFrames can implement the HTML/SVG animatio
 
 ## Maintaining consistency
 
-Style version **1.1.0** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
+Style version **1.1.1** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
 
 Raw footage, reference creators' videos, credentials and commercial font files do not belong in ordinary skill changes. See [LICENSE](LICENSE) for repository terms.
+
+Latest feedback: the sample remains a visual and cue-placement reference, but its procedural drawing timbre was subsequently rejected as spray-like. Prefer dry recorded pencil foley; the replacement preview awaits listening review.

@@ -1,6 +1,8 @@
 # Approved reference: signature style pilot V5
 
-Approved by Nici on 29 September 2026: **“yes this is great!”**
+Initially approved by Nici on 29 September 2026: **“yes this is great!”**
+
+**Later correction:** the procedural pencil timbre was rejected after V6 as spray-like. Use this sample for visual treatment and cue placement, not as approval of that sound texture. See the latest listening feedback in [sound direction](sound-direction.md); the recorded-pencil V7 replacement awaits review.
 
 Watch [the approved 9.6-second reel](../assets/approved-pilot-v5.mp4). Compare [the contact sheet](../assets/approved-pilot-v5-contact-sheet.jpg) for layout, but use the video to judge motion and sound.
 

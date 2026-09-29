@@ -28,4 +28,4 @@ Use selective slow push-ins and occasional 1–2-second crop changes in presente
 - Compare the result to the approved example for typography, sticker character, diagram clarity and restraint. Confirm that typed text stops making sound when typing stops.
 - Deliver the actual preview, editable project, source range/cut map, font and asset provenance, cue list and relevant checks. Report actual user feedback separately from editorial inference; only mark a result approved when the user approves it.
 
-Style version: **1.1.0**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.
+Style version: **1.1.1**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.
