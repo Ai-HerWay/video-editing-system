@@ -1,0 +1,172 @@
+{
+  "id": "f4878a07-dc15-4dc7-b6f6-ad76527b89c8",
+  "video_input_id": "d97f9d35-4502-4954-ae69-862e1e9b1e3d",
+  "youtube_url": null,
+  "status": "completed",
+  "fail_reason": null,
+  "video_s3_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EnWSU2lJi9D9sl92FsWzSYlWDJ/d97f9d35-4502-4954-ae69-862e1e9b1e3d.mp4",
+  "scenes": [
+    {
+      "audio": "I have a list of over 1000 post ideas that grows every single day and I don't have to do any research for it.",
+      "label": "Opening Hook",
+      "visual": "A woman, approximately 20-30 years old with a tan complexion and dark brown hair tied in a high bun, sits at a white table. She is wearing a bicolor fleece pullover that is white on her right side and olive green on her left, featuring a black square patch on the left chest. She holds a beige ceramic mug decorated with a light blue arrow using both hands; a wooden spoon is inside the mug. The background is a clean white room with a ceiling fan visible. The lighting is soft and natural from the front.",
+      "shot_type": "Close-Up",
+      "scene_number": 1,
+      "timestamp_end": "0:05",
+      "timestamp_start": "0:00"
+    },
+    {
+      "audio": "This is honestly my gold mine that I use before filming any content.",
+      "label": "Product Information",
+      "visual": "The woman gestures with her right hand while holding the mug in her left. She looks directly at the camera with a confident expression. The environment and her attire remain the same as in the previous scene.",
+      "shot_type": "Close-Up",
+      "scene_number": 2,
+      "timestamp_end": "0:08",
+      "timestamp_start": "0:05"
+    },
+    {
+      "audio": "And the reason it works so well is because these ideas aren't coming from trends, ChatGPT, or guesswork. They're coming directly from my audience the exact moment they decide to follow me.",
+      "label": "Product Selling Points",
+      "visual": "The woman points both index fingers towards the camera and then brings her hands together in front of her chest. She uses expressive hand gestures to emphasize the points she is making.",
+      "shot_type": "Close-Up",
+      "scene_number": 3,
+      "timestamp_end": "0:17",
+      "timestamp_start": "0:08"
+    },
+    {
+      "audio": "Let me show you how I set this up.",
+      "label": "Usage Scenarios",
+      "visual": "The woman tilts her head slightly and waves her right hand, holding the wooden spoon, in a beckoning motion towards the camera.",
+      "shot_type": "Close-Up",
+      "scene_number": 4,
+      "timestamp_end": "0:19",
+      "timestamp_start": "0:17"
+    },
+    {
+      "audio": "Inside ManyChat, go to automations...",
+      "label": "Usage Scenarios",
+      "visual": "A screen recording of a mobile application interface is shown. A dark gray sidebar menu is open on the left, and a finger taps on the 'Automation' menu item. The rest of the screen shows the 'Home' page of the app with white background and black text.",
+      "shot_type": "POV Shot",
+      "scene_number": 5,
+      "timestamp_end": "0:21",
+      "timestamp_start": "0:19"
+    },
+    {
+      "audio": "...and select 'say hi to new followers'. This will automatically send a DM to somebody after they follow you.",
+      "label": "Product Selling Points",
+      "visual": "The woman is back on screen, sitting in the same position as before. She gestures with her right hand to explain the automation process.",
+      "shot_type": "Close-Up",
+      "scene_number": 6,
+      "timestamp_end": "0:26",
+      "timestamp_start": "0:21"
+    },
+    {
+      "audio": "You can customize the timing it sends out...",
+      "label": "Usage Scenarios",
+      "visual": "A screen recording shows a popup window within the app titled 'When to send the DM?'. Two radio button options are visible: 'After 5 minutes' and 'After 10 minutes'. The 'After 5 minutes' option is selected.",
+      "shot_type": "POV Shot",
+      "scene_number": 7,
+      "timestamp_end": "0:29",
+      "timestamp_start": "0:26"
+    },
+    {
+      "audio": "...and the message itself. Now, instead of just saying like, 'Hey, thanks for the follow', we send them a message...",
+      "label": "Product Selling Points",
+      "visual": "The woman looks slightly upward and to her left, then looks back at the camera, gesturing with both hands while holding the mug.",
+      "shot_type": "Close-Up",
+      "scene_number": 8,
+      "timestamp_end": "0:31",
+      "timestamp_start": "0:29"
+    },
+    {
+      "audio": "...where they could fill out a form with just their name, handle...",
+      "label": "Usage Scenarios",
+      "visual": "The screen recording shows the automation flow editor. A message block contains a button labeled 'Fill out form'. Below it, another block shows 'a DM (adding a link is optional)'.",
+      "shot_type": "POV Shot",
+      "scene_number": 9,
+      "timestamp_end": "0:34",
+      "timestamp_start": "0:31"
+    },
+    {
+      "audio": "...and what they're currently struggling with as a content creator.",
+      "label": "Problem Solving",
+      "visual": "The woman gestures with an open palm toward the camera, emphasizing the struggle mentioned in the audio.",
+      "shot_type": "Close-Up",
+      "scene_number": 10,
+      "timestamp_end": "0:36",
+      "timestamp_start": "0:34"
+    },
+    {
+      "audio": "There are a million different ways you can optimize this initial outreach message, but this is just the way that my team and I have this set up right now.",
+      "label": "Product Selling Points",
+      "visual": "The woman rotates her right hand in a circular motion while speaking, then adjusts her grip on the wooden spoon.",
+      "shot_type": "Close-Up",
+      "scene_number": 11,
+      "timestamp_end": "0:43",
+      "timestamp_start": "0:36"
+    },
+    {
+      "audio": "This is insanely invaluable for anyone to have because it's real-time insight into your followers' minds, what they're actively struggling with the moment they press that follow button while you're still top of mind.",
+      "label": "Problem Solving",
+      "visual": "The woman leans closer to the camera, using both hands to gesture broadly. She points her finger at the camera to highlight the importance of the insight.",
+      "shot_type": "Close-Up",
+      "scene_number": 12,
+      "timestamp_end": "0:55",
+      "timestamp_start": "0:43"
+    },
+    {
+      "audio": "It's those moments that you don't want to miss that will give you clearer direction than any sort of brainstorming session would.",
+      "label": "Problem Solving",
+      "visual": "The woman continues talking with a serious yet encouraging expression, gesturing with the wooden spoon in her right hand to emphasize her words.",
+      "shot_type": "Close-Up",
+      "scene_number": 13,
+      "timestamp_end": "1:01",
+      "timestamp_start": "0:55"
+    },
+    {
+      "audio": "The number one automation platform where you can automatically...",
+      "label": "Real Experience",
+      "visual": "A screen recording shows a website for an automation platform. At the top, a video plays featuring two men in casual attire talking in a studio setting. The page then scrolls down to show testimonial cards with profile pictures of diverse individuals and text descriptions of their success.",
+      "shot_type": "Wide Shot",
+      "scene_number": 14,
+      "timestamp_end": "1:06",
+      "timestamp_start": "1:01"
+    },
+    {
+      "audio": "...reply to comments, DMs, collect emails, and even reminds commenters to follow you.",
+      "label": "Product Selling Points",
+      "visual": "The woman is back in frame, gesturing with her right hand to list the features of the platform. She maintains a friendly and informative tone.",
+      "shot_type": "Close-Up",
+      "scene_number": 15,
+      "timestamp_end": "1:09",
+      "timestamp_start": "1:06"
+    },
+    {
+      "audio": "If you wanna build your own never-ending list of content ideas directly from your audience...",
+      "label": "Call to Action",
+      "visual": "The woman points her finger up to signal a key instruction, then opens her hands towards the viewer in a welcoming gesture.",
+      "shot_type": "Close-Up",
+      "scene_number": 16,
+      "timestamp_end": "1:13",
+      "timestamp_start": "1:09"
+    },
+    {
+      "audio": "...comment, 'Connect 30' and I'll send you the link where you could try ManyChat Pro for free...",
+      "label": "Usage Scenarios",
+      "visual": "A screen recording of a mobile device shows a text input field under the label 'And this comment has'. A digital keyboard appears, and the characters 'Connect30' are typed into the box.",
+      "shot_type": "POV Shot",
+      "scene_number": 17,
+      "timestamp_end": "1:17",
+      "timestamp_start": "1:13"
+    },
+    {
+      "audio": "...for 30 days.",
+      "label": "Call to Action",
+      "visual": "The woman smiles at the camera, holding the mug in front of her. The lighting remains soft and consistent with the previous scenes.",
+      "shot_type": "Close-Up",
+      "scene_number": 18,
+      "timestamp_end": "1:19",
+      "timestamp_start": "1:17"
+    }
+  ]
+}

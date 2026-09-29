@@ -1,0 +1,37 @@
+{
+  "title": "sketchbook-drawing-pencil-sounds.aif",
+  "creator": "thisisjoewells",
+  "page": "https://freesound.org/people/thisisjoewells/sounds/463848/",
+  "download": "https://cdn.freesound.org/previews/463/463848_9749052-hq.mp3",
+  "licence": "CC0 1.0",
+  "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_sha256": "cf0d030b15582a799088f3d3620f9fe8ef6c483cc0f05d09fbf72033a443b9c1",
+  "treatment": "Single excerpts, no loops; gentle high/low filtering, level adjustment and boundary fades. Real recorded sketchbook pencil foley, replacing procedural noise.",
+  "cues": [
+    {
+      "mark": "first-connector",
+      "source_offset": 13.25,
+      "start": 4.3,
+      "duration": 0.42,
+      "file": "v7-pencil-first-connector.wav",
+      "volume": 0.45
+    },
+    {
+      "mark": "second-connector",
+      "source_offset": 14.3,
+      "start": 4.8,
+      "duration": 0.42,
+      "file": "v7-pencil-second-connector.wav",
+      "volume": 0.45
+    },
+    {
+      "mark": "long-feedback-arrow",
+      "source_offset": 11.1,
+      "start": 6.05,
+      "duration": 1.15,
+      "file": "v7-pencil-long-feedback-arrow.wav",
+      "volume": 0.45
+    }
+  ],
+  "status": "Approved by user: yes so much better love it!"
+}

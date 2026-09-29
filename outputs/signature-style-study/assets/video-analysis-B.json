@@ -1,0 +1,163 @@
+{
+  "id": "7ec8e52e-7136-41ed-a704-f639126dfc4a",
+  "video_input_id": "3ac2682c-f4e6-4792-b5ab-fc010b2d3cc6",
+  "youtube_url": null,
+  "status": "completed",
+  "fail_reason": null,
+  "video_s3_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EnWSU2lJi9D9sl92FsWzSYlWDJ/3ac2682c-f4e6-4792-b5ab-fc010b2d3cc6.mp4",
+  "scenes": [
+    {
+      "audio": "15,000 followers, 90 days. And if not, back to the 9 to 5. Here's how we're going to do it.",
+      "label": "Opening Hook",
+      "visual": "A young woman in her mid-20s with a brown complexion, long wavy dark hair, and gold-rimmed glasses is sitting in a white chair. She wears a black tank top and gold jewelry, including a necklace and rings. She holds a small black Rode wireless microphone in her right hand close to her mouth. The background is a soft-lit indoor setting with a green plant and a staircase. The lighting is soft and neutral.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 1,
+      "timestamp_end": "0:04",
+      "timestamp_start": "0:00"
+    },
+    {
+      "audio": "If you're also trying to be the next 'it' girl and you want to grow on your platforms, you're in the right spot.",
+      "label": "Product Information",
+      "visual": "The same woman continues to speak, gesturing with her left hand toward the camera. She maintains eye contact and a confident posture. The lighting remains soft and consistent.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 2,
+      "timestamp_end": "0:07",
+      "timestamp_start": "0:04"
+    },
+    {
+      "audio": "Number one, and I know everybody's tired of hearing this, but consistency really is key.",
+      "label": "Product Selling Points",
+      "visual": "She raises her left index finger to emphasize the first point while still holding the microphone in her right hand. Her expression is serious but engaging.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 3,
+      "timestamp_end": "0:11",
+      "timestamp_start": "0:08"
+    },
+    {
+      "audio": "But we're focusing on quantity without risking the quality.",
+      "label": "Product Selling Points",
+      "visual": "She opens her left hand, palm facing the viewer, and moves it side-to-side to denote balance. She continues to hold the microphone steady.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 4,
+      "timestamp_end": "0:14",
+      "timestamp_start": "0:12"
+    },
+    {
+      "audio": "I want y'all to be so damn tired of seeing my face.",
+      "label": "Usage Scenarios",
+      "visual": "She leans forward slightly, looking directly into the camera lens with a determined expression, emphasizing the personal connection.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 5,
+      "timestamp_end": "0:17",
+      "timestamp_start": "0:15"
+    },
+    {
+      "audio": "I want you to see me on your feed and think, 'damn, again?!'",
+      "label": "Usage Scenarios",
+      "visual": "She points her left index finger directly at the camera while speaking, highlighting the intended audience reaction.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 6,
+      "timestamp_end": "0:20",
+      "timestamp_start": "0:18"
+    },
+    {
+      "audio": "You need to get people so used to seeing your face to the point where they're thinking, 'Oh, I wonder what she is doing next.'",
+      "label": "Real Experience",
+      "visual": "She moves her left hand in fluid motions while explaining her strategy, looking slightly to the side before returning her gaze to the lens.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 7,
+      "timestamp_end": "0:25",
+      "timestamp_start": "0:21"
+    },
+    {
+      "audio": "Ingrain yourself in their brain so that they cannot forget. Baby, I live in your hippocampus now.",
+      "label": "Real Experience",
+      "visual": "She taps her temple with her left index finger, emphasizing the mental impact of her strategy. The microphone remains in her right hand.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 8,
+      "timestamp_end": "0:30",
+      "timestamp_start": "0:26"
+    },
+    {
+      "audio": "What's the hippocampus? The hippocampus is a part of the brain that is primarily associated with memory.",
+      "label": "Real Experience",
+      "visual": "The video switches to a black and white color grade. The woman looks down at a white smartphone in her hands, appearing to scroll through information.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 9,
+      "timestamp_end": "0:35",
+      "timestamp_start": "0:31"
+    },
+    {
+      "audio": "There you go. Number two, SEO.",
+      "label": "Product Selling Points",
+      "visual": "The color returns to normal. She snaps the fingers of her left hand and points toward the camera as she introduces the next point.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 10,
+      "timestamp_end": "0:37",
+      "timestamp_start": "0:36"
+    },
+    {
+      "audio": "If you don't know, it stands for search engine optimization.",
+      "label": "Product Information",
+      "visual": "She moves both hands in horizontal, outward motions as she explains the technical term, maintaining a friendly expression.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 11,
+      "timestamp_end": "0:41",
+      "timestamp_start": "0:38"
+    },
+    {
+      "audio": "What's the point of good content if nobody can find it?",
+      "label": "Problem Solving",
+      "visual": "She performs a slight shrug with her left shoulder and hand, emphasizing the logic behind the second point.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 12,
+      "timestamp_end": "0:43",
+      "timestamp_start": "0:42"
+    },
+    {
+      "audio": "Number three, authenticity and transparency.",
+      "label": "Product Selling Points",
+      "visual": "She holds up three fingers on her left hand and then gives a thumbs-up gesture as she introduces the third strategy point.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 13,
+      "timestamp_end": "0:46",
+      "timestamp_start": "0:44"
+    },
+    {
+      "audio": "Zero BS. I'm showing you...",
+      "label": "Real Experience",
+      "visual": "The camera zooms in closer to her face as she speaks candidly, highlighting her directness and sincerity.",
+      "shot_type": "Close-Up",
+      "scene_number": 14,
+      "timestamp_end": "0:48",
+      "timestamp_start": "0:47"
+    },
+    {
+      "audio": "...all the successes, the failures, exactly what works and what doesn't work for me so that you guys can apply this to your growth strategy.",
+      "label": "Real Experience",
+      "visual": "She continues speaking, moving her left hand in a sweeping motion as she lists various aspects of her content journey.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 15,
+      "timestamp_end": "0:54",
+      "timestamp_start": "0:49"
+    },
+    {
+      "audio": "I'll be updating you guys every week on exactly what's working, what I'm trying, what needs to be fixed, and what I'm learning along the way so that you guys can go and apply this to your content.",
+      "label": "Product Selling Points",
+      "visual": "She speaks about the future of her channel, using both hands to illustrate consistency and the iterative process of learning.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 16,
+      "timestamp_end": "1:03",
+      "timestamp_start": "0:55"
+    },
+    {
+      "audio": "And with that, I'll see you in the next video. Go be great and I'll catch you on the flip.",
+      "label": "Call to Action",
+      "visual": "She smiles broadly, points her finger at the camera, and then waves her hand in a relaxed 'see you later' gesture to close the video.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 17,
+      "timestamp_end": "1:07",
+      "timestamp_start": "1:04"
+    }
+  ]
+}

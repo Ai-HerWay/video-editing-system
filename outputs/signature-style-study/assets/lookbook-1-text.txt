@@ -1,0 +1,269 @@
+AI Her Way Â· Social Design System â€” Look Book
+Social design system · look book · for review
+The feed,
+defined
+.
+Everything the grid needs to feel like one hand made it: the palette, the type, the cover families, the carousel anatomy, the tile types and the photography. Built from your own work and the references you chose. Read it, then tell me what to change before I code it in.
+Read-back
+What I heard in your references
+Foundation
+Locked palette, type and signature devices
+Look book
+Covers, carousel slides, tiles, the grid
+Then
+Your call, and the open decisions
+Scroll ↓
+01 â€” What I heard
+The thesis, in one line.
+An editorial quiet-luxury magazine that happens to be about AI, not a Canva template that happens to be pretty.
+Across all twenty references, the same brand keeps appearing. High-contrast serif headlines, each carrying exactly
+one italic accent word
+. Warm espresso and cream grounds with soft duck-egg blue and walnut. Photography that reads like a fashion editorial: travertine, brown tailoring, gold jewellery, a martini, a Chanel book. The technology never appears as tech. The woman, the sentence and the light do the work.
+Three of the references are already yours, and they are the strongest in the set. That matters: this is not a direction to invent, it is a direction to
+lock and repeat
+.
+Borrow the structure, not the palette
+The soft-girl references (yellow highlighter, cut-out faces, handwritten arrows, dotted cards) are borrowed for one thing only:
+devices
+. Your version recolours them into duck-egg, espresso and walnut and dials the energy right down. Pastel pink never ships.
+The two signature devices
+The
+italic accent word
+and the
+highlight marker
+(a word sitting on a colour block) are what make a stranger's screenshot unmistakably yours. Everything else can flex. These two do not.
+Light and dark, on purpose
+You already run both: espresso covers for story and confession, duck-egg and cream for frameworks and PSAs. The grid breathes because it alternates. That rhythm becomes a rule, not an accident.
+02 â€” Foundation
+The palette, with names that stop the confusion.
+One locked set for social. Each colour has a job, so the colour is decided before design starts. This is a different, warmer system than the v4 deck palette, and that is deliberate: decks are calm and cool, the feed is warm and has stopping power.
+Espresso
+#35241F
+Dark tiles, anchor slides, notification bars
+Dusty Blue
+#C4D6DA
+Flat blue tiles & frameworks. A saturated lift of brand Stone.
+Walnut
+#7B5A49
+Italic accents & small-caps eyebrows
+Linen Cream
+#F2EBDD
+Cream tiles, quotes & statements
+Ivory
+#FAF6EF
+Floated cards, lightest ground
+Sage
+#AAB6A0
+Reassurance & reframe tiles (green)
+Deep Olive
+#46513D
+Opinion & hot-take tiles
+Gold
+#B08A62
+Hairline rules under headlines
+Ink
+#2B1E19
+Body text on light grounds
+Type â€” non-negotiable
+Display
+Playfair Display
+Headlines, stats, pull quotes, the italic accent
+Alarmingly
+beautiful
+Body & labels
+Montserrat
+Light / Regular / Medium / SemiBold
+Body stays quiet and light so the serif and the photograph carry the tile. Short lines, generous leading, read from a distance. Small caps eyebrows tracked to 0.26em.
+Device 01 Â· the italic accent
+Every headline carries exactly one italic word or phrase. Walnut on light grounds, duck-egg on dark. One per headline, never two. The single most recognisable element of the brand.
+Device 02 Â· the highlight marker
+A word sitting on a colour block, set slightly loose. Duck-egg, espresso, sage or walnut. This is the borrowed soft-girl device, recoloured and calmed. Used for emphasis a stranger reads in half a second.
+Device 03 Â· the gold hairline
+A 2px gold rule, roughly 110px wide, directly under the headline. Small, but it is a large part of what makes a set read as a set.
+03 â€” Look book Â· cover families
+Three cover families, one voice.
+A cover headline
+is
+the hook, never a label. Below: two families rendered fresh on new photography, and your own work shown beside them so you can see the system is already true.
+AI Her Way
+Field Note 11
+The uncomfortable truth
+You bought the tool.
+You never built the
+system.
+That is why nothing changed.
+From an ex data scientist &
+Australian Female AI Leader of the Year
+Field-note photo cover
+Moody photo graded dark, cream serif on top, eyebrow + field-note counter, gold hairline, italic subline, credential foot.
+New render
+Espresso grade
+Story / confession
+AI Her Way
+Field Note 12
+PSA
+If your AI still feels
+useless,
+you skipped the
+boring
+part.
+It takes four numbers and about ten minutes.
+The three-lever set-up, inside →
+Flat cover Â· highlight marker
+Duck-egg ground, PSA tab, two highlight-marker words (espresso + walnut), gold hairline, italic subline. High stopping power, no photo needed.
+New render
+Framework / PSA
+Your work Â· "Client data private"
+Your live cover. Same anatomy exactly: AI Her Way eyebrow, cream Playfair, oversized headline, hairline, bracketed subline. This is the target, already hit.
+Your live work
+Your work Â· "super BORING thing"
+Your live duck-egg cover with the highlight-marker device already in use. This is where the borrowed device landed, fully on-brand.
+Your live work
+Highlight marker
+AI Her Way
+Field Note 13
+01
+Most AI advice is
+junk food.
+Fast, loud, gone in an hour. Here is the slow version that actually compounds.
+AI Her Way · The uncomfortable truth
+Cream statement cover
+Flat cream, single serif statement, italic accent, ghost numeral for a numbered series. For quotes, confessions and single statements.
+New render
+Statement
+AI Her Way
+Unpopular opinion
+Most "AI employees" are just buttons with
+job titles.
+If it waits for you to press go, it is not staff.
+AI Her Way · Field Note 08
+Olive opinion cover
+Deep Olive ground signals a hot take before a word is read. Cream serif, duck-egg italic accent. Colour carries the intent.
+New render
+Opinion
+04 â€” Look book Â· the interior slide
+One anatomy, every carousel.
+Every interior slide carries the same parts in the same places, so a set reads as a set and any single slide stands alone when screenshotted. Left: the anatomy rebuilt. Right: your live slide, same skeleton.
+The three-lever data test
+04 / 06
+03
+Lever three
+Do not use
+the cloud
+You can run a model on your own laptop. Offline. Nothing leaves the building.
+It is genuinely good enough now for a lot of everyday work.
+Offline.
+Nothing leaves the building.
+AI Her Way · Data safety
+Interior slide, rebuilt
+Edge bar Â· top mark + counter Â· kicker Â· Playfair headline with gold-underlined italic accent Â· body Â· the callout box (roman then italic) Â· ghost numeral Â· footer.
+New render
+Your work Â· the same slide, live
+Your "Do not use the cloud" slide. Every element above is already here. The rebuild simply documents what you are doing so any chat can reproduce it exactly.
+Your live work
+The callout box
+A filled box with a thick gold left border at the foot of the slide. Two lines: a roman statement, then an italic resolution. This is the shareable unit, the bit someone screenshots. Every interior slide gets one.
+The ghost numeral
+On numbered series, a large Playfair numeral sits behind the headline at low opacity, top-right. Duck-egg on light, faint gold on dark.
+Stands alone
+Each slide carries its own context and source, so a stranger who has never heard of AI Her Way still understands a single screenshotted frame. The carousel works without the caption.
+05 â€” Look book Â· tile types
+The recurring tiles.
+Beyond covers, three tiles do most of the work: a floated quote card, a community post, and a Claude notification. Each recoloured into the palette, each one text-block-per-tile.
+Hub member · accountant
+"I built a tool in an afternoon that a software company quoted me twenty grand for."
+Steal This · she is one of seven
+Floated quote card
+Ivory card, soft-veiled photo behind. One block: who they are, the quote in italic serif, attribution above a rule.
+R
+Rachel M.
+Bookkeeper · Hub member
+Left the business for a week.
+Nothing broke.
+First time in nine years.
+Tuesday · #wins
+Community post card
+Styled as a community screenshot on espresso: avatar, name, role, message with the key phrase bolded, timestamp and channel.
+Claude
+now
+Memory is now on across chat and Cowork. Two things to check this week.
+Notification tile
+iOS-style translucent bar with the Claude icon, sitting in the lower third over a moody photo. For "what just changed" news.
+06 â€” Look book Â· the grid
+Colour is decided before design starts.
+Ask what a piece is â€” framework, statement, opinion, story â€” and the colour is chosen. Hold the ratio across every nine tiles and the grid stays balanced and alternating on its own. No more nine brown tiles in twelve.
+I left for a
+week.
+The 5
+levels
+of AI
+AI advice is
+junk food.
+Unpopular
+opinion
+39 tasks. one
+afternoon.
+You are not
+behind.
+A nine-tile window. Alternating light and dark, one photo per row, one olive, one sage.
+Content-to-colour logic
+Duck-egg
+â€” frameworks, diagnostics, anything with a list or a test
+Cream
+â€” quotes, single statements, personal confessions
+Olive
+â€” opinions and hot takes
+Sage
+â€” reassurance and reframes
+Brown photo
+â€” personal, confessional, story
+Espresso
+â€” the anchor slide, used once per set
+Target per nine tiles: 3 brown photo · 2 duck-egg · 2 cream · 1 olive · 1 light photo, with sage swapped in for reassurance.
+What glues a grid together
+Three things, borrowed from the most cohesive reference grids.
+One,
+the same eyebrow and footer tab on every single tile (AI Her Way up top, a "read the caption" style tab at the foot), so repetition does the cohering.
+Two,
+one grade family across a run of tiles, so the light never jumps.
+Three,
+flat colour quote tiles dropped in at a steady rhythm between photos, so the feed breathes.
+07 â€” Look book Â· photography
+The light is the brand.
+Quiet-luxury editorial: travertine and warm stone, brown tailoring, gold jewellery, a martini, books left open. Never a robot, never a blue hologram. Two grades, used deliberately.
+Grade A Â· espresso (dark covers)
+Warm the shadows, cool the highlights a touch so timber does not tip sepia, drop the brightness, soft radial vignette. Grade the photo darker so cream type has something to sit against. Never wash it out with a cream veil.
+Grade B Â· light & airy (flat tiles & quote backgrounds)
+Lift the shadows, gentle contrast, cool cast on studio and denim, warm on interiors. This is the grade behind cream and duck-egg tiles.
+Where Higgsfield comes in
+Once you sign off this system, I generate on-brand photography to fill the photo tiles: travertine still lifes, brown-tailoring flat-lays, warm studio scenes, all graded to Grade A or B. We can also train a Soul so your own face carries through generated covers consistently. Nothing pastel, nothing tech-theatre. It drops straight into these templates.
+08 â€” Your call
+Eight decisions, then I code it.
+None of these block you from liking the direction. They are the small forks where I need your taste before this becomes a locked, installable system.
+1 Â· The highlight marker
+The word-on-a-colour-block device. It is in your own "super BORING" cover and it earns stopping power.
+Locked: canon, all grounds
+2 Â· Hand-drawn, locked in
+Yes to refined hand-drawn touches and outline strokes around cut-out photos, for a personal, human feel. Not the childish scrawl.
+Locked: refined hand-drawn + photo outlines
+3 Â· Torn-paper & washi tape
+The editorial texture note ("the systems, not the shiny tools").
+Locked: canon, but rationed â€” one per set
+4 Â· The blue, locked
+Anchored to your brand Stone and saturated a step so it holds on the scroll without drifting to baby blue. Flat tiles use Dusty Blue #C4D6DA; Stone #C0CACE stays the bridge to the website.
+Locked: Dusty Blue #C4D6DA
+5 Â· Personal vs company grid
+Does Nici's personal feed share this exact system, extend it, or get its own tilt (lighter, more life)?
+Locked: shared system, personal runs warmer & more photo-led
+6 Â· Body font on web
+Montserrat renders everywhere. This look book uses it live.
+Locked: Montserrat confirmed, no substitution
+7 · Refined script accent
+An elegant italic script for the occasional subline or arrow, seen in the warm reference grids. This is the grown-up cousin of the childish soft-girl scrawl, which stays out.
+Locked: yes, in gold, used rarely
+8 · A pop accent
+One reference grid used acid lime type, which your own spec bans. If the muted feed needs more stopping power, a single high-contrast pop could earn its place, but not neon.
+Locked: no lime; test bolder duck-egg or brighter gold first
+If you like this, say so and pick on the six above.
+Then I lock it into an installable Claude design system â€” the palette, the type, the slide anatomy, the tile types, the grid ratio and the copy rules, written so any content chat produces this exactly â€” and we start generating on-brand imagery with Higgsfield. If something here is off, tell me what and I will re-cut the look book before any of it gets coded.
+Social design system look book. Prepared for review, August 2026. Built from your own work and your chosen references. Type shown is genuine Playfair Display and Montserrat. Photography embedded here is your reference and brand imagery, for internal review only.

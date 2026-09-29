@@ -1,0 +1,208 @@
+{
+  "id": "8f66ad2a-4c57-41dd-a9cb-cd12a6697aa9",
+  "video_input_id": "e43402d9-6cae-413d-8f7e-46520f33ea5e",
+  "youtube_url": null,
+  "status": "completed",
+  "fail_reason": null,
+  "video_s3_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EnWSU2lJi9D9sl92FsWzSYlWDJ/e43402d9-6cae-413d-8f7e-46520f33ea5e.mp4",
+  "scenes": [
+    {
+      "audio": "So I heard you want to edit videos like I do.",
+      "label": "Opening Hook",
+      "visual": "A woman in her late 20s with a light complexion and dark brown hair slicked back into a high bun is seated at a white desk. She wears a beige and cream horizontally striped knit shirt with a large white collar, gold hoop earrings, a gold necklace, and a ring on her right hand. She holds a white ornate ceramic mug in her left hand and stirs a light brown beverage with a small wooden spoon. The lighting is soft and natural from the front. The background is a clean home office with a white desk and a blurred white shelving unit. A white mechanical keyboard sits on the desk in front of her.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 1,
+      "timestamp_end": "0:02",
+      "timestamp_start": "0:00"
+    },
+    {
+      "audio": "When I wanted to uplevel my video editing, this is exactly what I did.",
+      "label": "Product Information",
+      "visual": "The woman continues speaking at the desk, looking slightly away from the camera and then back. She holds the mug with both hands, gesturing slightly with her fingers. The camera is static. The color grading is warm with soft highlights.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 2,
+      "timestamp_end": "0:05",
+      "timestamp_start": "0:02"
+    },
+    {
+      "audio": "First, I picked a font bundle that was available on my preferred editor.",
+      "label": "Product Selling Points",
+      "visual": "The woman gestures with her right hand, pointing upwards and then moving her hand in a circular motion as she speaks. She remains seated at the white desk holding the white mug in her left hand.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 3,
+      "timestamp_end": "0:09",
+      "timestamp_start": "0:05"
+    },
+    {
+      "audio": "I paired: one serif, one sans serif, one script, and one handwriting.",
+      "label": "Product Selling Points",
+      "visual": "The woman holds up her right hand and counts out four fingers one by one. She looks directly into the camera lens. Her posture is upright and engaging.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 4,
+      "timestamp_end": "0:13",
+      "timestamp_start": "0:09"
+    },
+    {
+      "audio": "I was looking for fonts that were simple and easy to read,",
+      "label": "Usage Scenarios",
+      "visual": "A digital screen displays a vertical interface with a grid of various graphical selection boxes. A light blue highlight indicates a selected item. The overall background of the interface shows a blurred video of the subject.",
+      "shot_type": "Extreme Close-Up",
+      "scene_number": 5,
+      "timestamp_end": "0:15",
+      "timestamp_start": "0:13"
+    },
+    {
+      "audio": "matched my goal brand aesthetic,",
+      "label": "Product Selling Points",
+      "visual": "A digital document layout is shown, featuring structured rows of graphical circles in shades of blue, green, and brown. Beside them are various styles of typeface samples. A small rectangular photo of the woman in a cream blazer is placed within the layout.",
+      "shot_type": "Wide Shot",
+      "scene_number": 6,
+      "timestamp_end": "0:17",
+      "timestamp_start": "0:15"
+    },
+    {
+      "audio": "while also still felt like me. Like the handwriting font, I feel like, looks like my handwriting.",
+      "label": "Real Experience",
+      "visual": "Back to the woman at the desk. She leans in slightly toward the camera while gesturing with her right hand to emphasize her point. She holds the wooden spoon inside the mug.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 7,
+      "timestamp_end": "0:22",
+      "timestamp_start": "0:17"
+    },
+    {
+      "audio": "Then I decide to stick to like go-to text animations. Typewriter, bounce in, blur right, and golden dust are my favorites.",
+      "label": "Product Selling Points",
+      "visual": "The woman continues to list items, holding up her fingers as she mentions different styles. Her facial expressions are animated. She pauses briefly between each item mentioned.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 8,
+      "timestamp_end": "0:31",
+      "timestamp_start": "0:22"
+    },
+    {
+      "audio": "These are the ones that you see all over my videos.",
+      "label": "Usage Scenarios",
+      "visual": "The woman rests her right hand on the mug and looks directly at the viewer with a knowing smile. The background depth of field remains shallow, keeping the focus on her.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 9,
+      "timestamp_end": "0:33",
+      "timestamp_start": "0:31"
+    },
+    {
+      "audio": "Then I paired the animations with a matching sound. I found my favorite typing, whoosh, and pop sound effects.",
+      "label": "Product Selling Points",
+      "visual": "The woman uses her right hand to gesture outward. She maintains eye contact and speaks with a clear, instructional tone.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 10,
+      "timestamp_end": "0:40",
+      "timestamp_start": "0:33"
+    },
+    {
+      "audio": "Sometimes I'll add a little buzzer or ding depending on what I'm talking about in the video.",
+      "label": "Product Selling Points",
+      "visual": "She continues talking, moving her hands to describe the variety of sounds. Her expression is thoughtful.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 11,
+      "timestamp_end": "0:44",
+      "timestamp_start": "0:40"
+    },
+    {
+      "audio": "What's funny is I actually picked a color palette initially that I was in love with.",
+      "label": "Product Selling Points",
+      "visual": "She gestures with both hands in a wide motion. A row of six circular color swatches appears at the top of the frame, showing olive, dark green, blue, brown, cream, and navy colors.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 12,
+      "timestamp_end": "0:50",
+      "timestamp_start": "0:44"
+    },
+    {
+      "audio": "But, I've noticed I actually just stick to mostly white. I feel like it's simple, easy to read, and goes with every video that I post.",
+      "label": "Product Selling Points",
+      "visual": "The woman looks down at the desk and then back up, gesturing with her palm flat against her chest. She seems to be reflecting on her design choices.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 13,
+      "timestamp_end": "0:56",
+      "timestamp_start": "0:50"
+    },
+    {
+      "audio": "And then I actually implement my brand colors with what I'm wearing.",
+      "label": "Product Selling Points",
+      "visual": "She touches the collar of her shirt with her right hand, drawing attention to her clothing choice. She maintains an informative demeanor.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 14,
+      "timestamp_end": "0:59",
+      "timestamp_start": "0:56"
+    },
+    {
+      "audio": "Finally, my favorite thing to do is color grading.",
+      "label": "Product Selling Points",
+      "visual": "The camera angle tightens slightly on the woman's face as she speaks more emphatically. She snaps her fingers on her right hand for emphasis.",
+      "shot_type": "Close-Up",
+      "scene_number": 15,
+      "timestamp_end": "1:04",
+      "timestamp_start": "0:59"
+    },
+    {
+      "audio": "I feel like this is where you can edit your videos to have the aesthetic that you're going for, and I'll usually choose one or two go-to filters,",
+      "label": "Product Selling Points",
+      "visual": "The camera pulls back to the original framing. She gestures downward with both hands as if indicating a workspace on the desk.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 16,
+      "timestamp_end": "1:12",
+      "timestamp_start": "1:04"
+    },
+    {
+      "audio": "when I apply them, I'll only apply them at 20 or 30 percent.",
+      "label": "Usage Scenarios",
+      "visual": "A digital interface shows a row of image thumbnails at the bottom. A blue slider bar is adjusted to the left, decreasing a numerical value shown next to a circular icon.",
+      "shot_type": "Extreme Close-Up",
+      "scene_number": 17,
+      "timestamp_end": "1:15",
+      "timestamp_start": "1:12"
+    },
+    {
+      "audio": "Creators with a strong and immediately recognizable brand can connect deeper and grow faster.",
+      "label": "Real Experience",
+      "visual": "The woman sits at the desk, looking at the camera and gesturing with open palms. Her expression is encouraging and authoritative.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 18,
+      "timestamp_end": "1:21",
+      "timestamp_start": "1:15"
+    },
+    {
+      "audio": "If you're just getting started as a content creator and you're barely figuring out editing, you don't need to have all of this,",
+      "label": "Real Experience",
+      "visual": "She shrugs her shoulders slightly and waves her right hand dismissively. She smiles broadly, looking relaxed.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 19,
+      "timestamp_end": "1:27",
+      "timestamp_start": "1:21"
+    },
+    {
+      "audio": "But when you're ready to uplevel your videos and become more recognizable as a content creator, you can implement things like brand fonts, colors, animations, sound effects, color grading, etc.",
+      "label": "Product Selling Points",
+      "visual": "She leans forward slightly and uses her right hand to point in the air as she lists elements. The lighting highlights the contours of her face and the texture of her knit shirt.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 20,
+      "timestamp_end": "1:37",
+      "timestamp_start": "1:27"
+    },
+    {
+      "audio": "Over time, you will find your signature style and become instantly recognizable.",
+      "label": "Call to Action",
+      "visual": "The woman gives a final nod and a small point toward the camera. She looks satisfied and confident. She holds the mug steady with both hands as the scene begins to fade.",
+      "shot_type": "Medium Close-Up",
+      "scene_number": 21,
+      "timestamp_end": "1:42",
+      "timestamp_start": "1:37"
+    },
+    {
+      "audio": "The audio cuts to silence.",
+      "label": "Call to Action",
+      "visual": "The screen transitions to a solid black frame.",
+      "shot_type": "Wide Shot",
+      "scene_number": 22,
+      "timestamp_end": "1:43",
+      "timestamp_start": "1:42"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+AI Her Way — The Social Lookbook
+AI HER WAY / DESIGN LIBRARY
+Covers
+Carousels
+Style rules
+Motion
+AI handoff
+The social lookbook · Review edition 02
+Recognisably
+her way.
+An editorial system for a feed with presence. Warm, intelligent, personal and confident. Enough consistency to feel like one brand. Enough variety to keep people looking.
+12 cover families. A complete carousel. Photography, copy, motion and production rules.
+Explore the cover library ↓
+Working designer handoff · Based on your supplied aesthetic references and stock library. Sample copy is illustrative.
+Approved visual direction. Generated concept portraits are references, not final founder photography.
+01 / Choose the communication job
+A cover for every kind of story.
+Choose the family that best carries the idea. Full photographs, useful screenshots and social proof belong here alongside editorial statements. The hook earns attention; the supporting line explains why to keep going.
+All 12 styles
+Reel covers
+Carousel covers
+Screenshots & proof
+AI HER WAY
+Your time.
+Back.
+Three tasks to take off your plate this week.
+WATCH THE WALKTHROUGH →
+C01 · Full photo
+Use an atmospheric, on-brand full photo. Place words in genuine negative space; use a local wash only when needed.
+reels
+AI HER WAY
+Work smarter.
+Log off earlier.
+Build a workflow that gives you room to breathe.
+WATCH THE WALKTHROUGH →
+C02 · Lifestyle hook
+Objects and spaces can carry the story. Keep the device secondary to the human benefit.
+reels
+AI HER WAY
+Before you build
+an
+AI agent.
+Three questions to ask first.
+AI HER WAY / FIELD NOTES
+C03 · Blue field note
+A blue field with one restrained image strip. Use for useful explanations and frameworks.
+carousels
+AI HER WAY
+WATCH THE WALKTHROUGH →
+C04 · Founder cutout
+Existing supplied composition reference. Rebuild with the chosen original founder photo and editable copy; keep outlines restrained.
+reels
+AI HER WAY
+A better prompt
+starts with a
+better brief.
+Give your AI these four things.
+AI HER WAY / FIELD NOTES
+C05 · Cream statement
+Use short, confident type with plenty of space. One italic phrase; no decorative clutter.
+carousels
+AI HER WAY
+You don’t need
+to automate
+everything.
+Start with the work you keep repeating.
+AI HER WAY / FIELD NOTES
+C06 · Green opinion
+Green becomes a real visual field. Pair a clear point of view with a practical promise.
+carousels
+AI HER WAY
+Your grid needs
+a
+system.
+See what changes when the covers work together.
+AI HER WAY / FIELD NOTES
+C07 · Screenshot
+Use a genuine screenshot inside a branded frame. Show only the part viewers need; retain source context.
+proof
+AI HER WAY
+DR NICI SWEANEY · AI HER WAY
+Your business doesn’t need AI everywhere.
+It needs a clear reason to use it.
+LAYOUT EXAMPLE · DRAFT COPY
+AI HER WAY / FIELD NOTES
+C08 · Tweet-style
+Text-first opinion with simple author identity. This is draft copy, not an actual posted tweet.
+proof
+AI HER WAY
+Let the experience
+speak.
+“
+[Exact approved review goes here.]
+[NAME / ROLE, WITH PERMISSION]
+PLACEHOLDER · NOT A TESTIMONIAL
+AI HER WAY / FIELD NOTES
+C09 · Review
+Insert an exact, approved customer quote or authentic review screenshot. Never invent praise, names, ratings or results.
+proof
+AI HER WAY / WORKFLOW 01
+One workflow.
+Less busywork.
+This week: turn meeting notes into next steps.
+WATCH THE WALKTHROUGH →
+C10 · Series cover
+Repeat the series label and structure; vary imagery and the episode-specific promise.
+reels
+AI HER WAY
+WATCH THE WALKTHROUGH →
+C11 · Media / authority
+Supplied existing cover: authentic speaking photography and a specific practical topic. Use real appearances, not fabricated media proof.
+reels
+AI HER WAY
+Make room for
+the work that
+matters.
+A simpler way to plan your AI week.
+AI HER WAY / FIELD NOTES
+C12 · Editorial collage
+One image panel and one typographic field. Optional refined cutout or torn-paper accent, never a pile of stickers.
+carousels
+02 / Beyond the first slide
+Make the swipe worth it.
+A seven-slide sample sequence. Give every slide one job: promise, reframe, checklist, process, decision, example, action. The light and dark changes create rhythm without changing the brand.
+AI HER WAY / THE AGENT TEST
+Before you build
+an
+AI agent.
+Three questions to ask first.
+01 / HOOK
+01 / HOOK · Earn the swipe with a specific promise.
+AI HER WAY / THE AGENT TEST
+Start with
+the
+job.
+“Use more AI” is not a task.
+Pick one repeated piece of work and define what a good result looks like.
+02 / REFRAME
+02 / REFRAME · Deliver the reframe immediately.
+AI HER WAY / THE AGENT TEST
+Is the task
+clear enough?
+01 · What starts the task?
+02 · What information does it need?
+03 · What should the output look like?
+03 / CHECKLIST
+03 / CHECKLIST · Make the idea scannable and useful.
+AI HER WAY / THE AGENT TEST
+Keep a person
+at the
+right step.
+A simple workflow to map before you build.
+Input → Draft
+Human review → Approved action
+04 / PROCESS
+04 / PROCESS · Use a diagram when it clarifies the process.
+AI HER WAY / THE AGENT TEST
+Start
+smaller.
+If the steps are fixed, a simpler automation may be enough.
+If the next step needs judgment, define the boundaries and review points.
+05 / DECISION
+05 / DECISION · Explain the decision without cramming.
+AI HER WAY / THE AGENT TEST
+Make the output
+specific.
+Try: “Turn these meeting notes into actions, owners and due dates. Flag anything missing.”
+06 / EXAMPLE
+06 / EXAMPLE · Provide an example the audience can use.
+AI HER WAY / THE AGENT TEST
+Map one task.
+Then
+build.
+Save these questions for your next AI planning session.
+07 / CTA
+07 / CTA · One action, matched to the value delivered.
+Evidence-slide variant:
+use the C07 screenshot frame inside the carousel, with a short takeaway above, one highlighted region and source/date below. If details cannot be read at phone size, split the evidence across slides. Charts need real sourced numbers, clear units and an honest scale.
+03 / The constants
+Colour with a point of view.
+Espresso
+#35241F
+Ink
+#2B1E19
+Dusty blue
+#C4D6DA
+Stone
+#C0CACE
+Walnut
+#7B5A49
+Linen
+#F2EBDD
+Ivory
+#FAF6EF
+Sage
+#AAB6A0
+Olive
+#46513D
+Gold
+#B08A62
+The palette in practice
+Espresso and ink provide depth. Linen and ivory give the grid air. Dusty blue is a signature field; olive and sage add richness. Walnut supports photographic tones. Gold is a fine detail, never a body-text colour.
+Use ink on cream or blue; ivory on espresso or olive. Avoid low-contrast sage text, faint labels, sepia washes and rust.
+The recognisable details
+One expressive serif headline. One italic word or short phrase. Clean sans-serif supporting copy. A small brand label. An optional thin gold line.
+Photography brings texture. Layout brings restraint. One collage device per composition is enough.
+Type that feels editorial.
+Copy that stays useful.
+ROLE
+FACE / SIZE AT 1080 PX
+RULE
+Main hook
+Playfair Display · 88–124 px
+Sentence case; 2–4 lines. Prefer 4–10 words, always fewer than 16.
+Italic accent
+Playfair Display Italic · same scale
+One phrase. Emphasise meaning, not random words.
+Supporting hook
+Montserrat · 34–44 px
+One or two lines. State a benefit, tension or specific payoff.
+Inside heading
+Playfair Display · 72–96 px
+One idea; shorten before shrinking.
+Inside body
+Montserrat · 40–52 px
+About 25–45 words maximum; split dense explanations.
+Labels / source
+Montserrat · 24–30 px
+Navigation and attribution only. No essential meaning in tiny text.
+Sizes are production starting points. Use the actual font metrics and verify on a phone. Main artwork margins: 72–96 px; 24 px spacing unit; body line height around 1.4–1.55.
+04 / Attention, then substance
+The hook + reason to care.
+Specific promise
+“A better prompt starts with a better brief.”
+Supporting line:
+Give your AI these four things.
+Useful tension
+“You don’t need to automate everything.”
+Supporting line:
+Start with the work you keep repeating.
+Copy guardrails
+Write directly to the reader; sound intelligent, warm and practical.
+Replace vague “game-changing AI tips” with the specific job or outcome.
+Use curiosity with a real payoff; deliver it early.
+A supporting line adds information, rather than repeating the hook.
+Use one CTA: save, swipe, watch, reply or visit. Match it to the content.
+Only use quantified results or quotations when evidence supports them.
+05 / Photography & layering
+Life around the work.
+Tailoring & texture
+Brown, cream, natural fabric, a close crop. Use for confidence, clarity and intentional work.
+Space & ease
+Soft daylight, generous negative space, natural work moments. Preserve the airy whites.
+Green & presence
+Deep green, sculptural shapes, restrained accessories. Let the image carry the colour.
+Layer order
+Photo → local contrast wash → optional paper or cutout → headline → supporting line → brand and page furniture. Keep all typography editable. Place graphics around the subject; avoid covering eyes, hands or the meaningful object.
+Image generation brief
+Editorial lifestyle photography; natural directional light; warm neutrals with cool blue or olive accents; tactile fabric and stone; realistic proportions; intentional negative space for text. No lettering, logos or invented founder likeness. Use supplied stock before generating more.
+06 / The whole feed
+Rhythm, not repetition.
+AI HER WAY
+Your time.
+Back.
+Three tasks to take off your plate this week.
+WATCH THE WALKTHROUGH →
+AI HER WAY
+Before you build
+an
+AI agent.
+Three questions to ask first.
+AI HER WAY / FIELD NOTES
+AI HER WAY
+Let the experience
+speak.
+“
+[Exact approved review goes here.]
+[NAME / ROLE, WITH PERMISSION]
+PLACEHOLDER · NOT A TESTIMONIAL
+AI HER WAY / FIELD NOTES
+AI HER WAY
+A better prompt
+starts with a
+better brief.
+Give your AI these four things.
+AI HER WAY / FIELD NOTES
+AI HER WAY
+You don’t need
+to automate
+everything.
+Start with the work you keep repeating.
+AI HER WAY / FIELD NOTES
+AI HER WAY
+Your grid needs
+a
+system.
+See what changes when the covers work together.
+AI HER WAY / FIELD NOTES
+AI HER WAY
+DR NICI SWEANEY · AI HER WAY
+Your business doesn’t need AI everywhere.
+It needs a clear reason to use it.
+LAYOUT EXAMPLE · DRAFT COPY
+AI HER WAY / FIELD NOTES
+AI HER WAY / WORKFLOW 01
+One workflow.
+Less busywork.
+This week: turn meeting notes into next steps.
+WATCH THE WALKTHROUGH →
+AI HER WAY
+Work smarter.
+Log off earlier.
+Build a workflow that gives you room to breathe.
+WATCH THE WALKTHROUGH →
+A flexible nine-post rhythm
+This composition study mixes photo, blue, cream, green, opinion and proof. Judge the balance across the whole nine, rather than forcing a checkerboard.
+At least one light or mid-tone tile in each row.
+No identical photograph within the visible nine.
+Use founder images selectively, usually two or three per nine when suitable originals are available.
+Keep blue, cream and green substantial; cap dark covers at roughly four per nine.
+Try two or three proof-led covers per twelve posts when there is genuine proof to share.
+Ratios are suggested starting points. The screenshot and review shown here demonstrate layout, not publish-ready proof.
+07 / Reel covers
+Design the cover.
+Check the crop.
+AI HER WAY
+Work smarter.
+Log off earlier.
+Three tasks to simplify this week.
+AI HER WAY
+CONSERVATIVE CENTRAL SQUARE
+Two canvases, one system
+Carousel:
+1080 × 1350.
+Reel cover:
+1080 × 1920.
+Compose separately for the taller cover. Keep the complete hook and essential subject inside a conservative central region. The dashed square is a design check, not an official Instagram safe-area guarantee.
+Preview 3:4, 4:5 and square centre crops, then verify the actual profile crop in the app before publishing. Keep important copy away from UI overlays. A beautiful frame still fails if the hook disappears.
+Full-photo covers are encouraged when their lighting, colour and subject fit the aesthetic. Avoid defaulting to an arbitrary talking-head frame with subtitle boxes.
+08 / Quiet, purposeful movement
+Let the idea move.
+AI HER WAY
+Less busywork.
+More room.
+Build a workflow around the work that matters.
+AI HER WAY
+Replay motion study
+Motion recipe
+Hook visible from the first frame.
+Supporting copy: a 350–650 ms fade with a subtle 12–24 px rise at full resolution.
+Hairline: one restrained reveal; no bouncing words.
+Photo: a slow push of no more than 4% over about 6 seconds.
+Diagrams: reveal one meaningful step at a time.
+Hold each slide long enough to read; use the spoken delivery or an actual reading check, not a fixed fast timer.
+Use static equivalents for reduced motion. Keep captions readable and away from platform controls. Sound is optional; never make the meaning depend on it.
+This browser study demonstrates timing and restraint. It is not a rendered video export.
+09 / Make it repeatable
+The designer & AI handoff.
+Before production
+Define the audience, one idea and the promised payoff.
+Choose a named cover family and real source assets.
+Write the hook, optional supporting line and one CTA.
+Map the carousel sequence or Reel first-frame promise.
+Before publishing
+Check type, contrast, clipping and thumbnail legibility.
+Check crop, face and object placement.
+Check surrounding nine for tonal balance and duplicates.
+Verify every claim, screenshot, quote and attribution.
+Export stills as PNG; keep editable source and copy with versioned filenames.
+Reusable instruction
+Create an AI Her Way Instagram asset using this design system. First specify: audience, one idea, hook, optional supporting line, content type, cover family, source assets, and intended action. Use Playfair Display + Montserrat, the exact palette, real supplied photography, editable text and restrained editorial graphics. Build carousel slides at 1080×1350 and Reel covers at 1080×1920. Check the hook at thumbnail size, complete the promised payoff, preview Reel crops, and check the surrounding nine for image repetition and tonal balance. Do not fabricate evidence or founder identity. If an authentic screenshot or review is missing, leave a clearly labelled placeholder. Return the content, layout choices, source list and final QA result.
+Copy design brief
+Download design context
+Attach the downloaded JSON and this HTML to another AI system or designer brief. Context does not automatically transfer between tools.
+Source of truth:
+palette and editorial direction come from the supplied lookbook and references. Cover families incorporate your requests for supporting hooks, full-photo Reels, screenshots, tweet-style posts and reviews. Layouts, sample copy, numerical sizes and motion timings are proposed production defaults for review.
+AI HER WAY · Social design system / v2 review edition · Built to be shared as one HTML file.
