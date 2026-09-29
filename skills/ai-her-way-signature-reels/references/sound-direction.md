@@ -30,4 +30,7 @@ Use licensed library sounds or original foley. The pilot's pencil sounds were pr
 
 After V6, the user rejected the procedural drawing texture: "It sounds like someone spraying rather than drawing." The visuals otherwise received positive feedback. Prefer dry, tactile recorded pencil-on-paper strokes; avoid airy spray-like hiss. Preserve the three-cue placement in this pilot, including one uninterrupted long-arrow sound. The earlier V5 approval no longer endorses its pencil timbre.
 
-V7 replaces those cues with excerpts of [sketchbook-drawing-pencil-sounds.aif by thisisjoewells](https://freesound.org/people/thisisjoewells/sounds/463848/), licensed CC0. The candidate is recorded foley, with light filtering, level adjustment and boundary fades; no repeated loop on the long arrow. Its final sound is awaiting the user's listening review. Do not mark it approved yet.
+V7 replaces those cues with excerpts of [sketchbook-drawing-pencil-sounds.aif by thisisjoewells](https://freesound.org/people/thisisjoewells/sounds/463848/), licensed CC0. The candidate is recorded foley, with light filtering, level adjustment and boundary fades; no repeated loop on the long arrow. The user approved V7: “yes so much better love it!” Use the bundled recorded-pencil excerpts as the current sound reference.
+
+
+The V7 pencil excerpts and a portable editable starter are packaged with the skill; see [starter instructions](starter.md).

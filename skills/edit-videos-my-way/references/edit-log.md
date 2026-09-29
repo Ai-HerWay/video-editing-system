@@ -34,6 +34,12 @@ This is the memory that makes the taste profile compound instead of reset. `refe
 
 ## Entries
 
+### 2026-09-29 — V7 final signature approval
+- **verdict:** "yes so much better love it! lets code this all so its repeatable skill"
+- **approved:** V7 visual treatment, gentle camera variation, raised captions, sticker pops and recorded pencil sounds. Three drawing cues; one continuous long-arrow sound.
+- **implementation:** Portable editable starter, local-input setup script and bundled approved CC0 pencil excerpts; style v1.2.0.
+- **reference:** Packaged approved-pilot-v7.mp4. Earlier V5 sound is superseded; no new performance data reported.
+
 ### 2026-09-29 — Drawing sound correction V7
 - **verdict:** "It sounds like someone spraying rather than drawing." "Otherwise, that's looking really good."
 - **learnings:** Reject the procedural pencil timbre while preserving the visual/camera treatment and three drawing cue positions. Use dry recorded pencil strokes. V5 approval is qualified by this later sound correction.

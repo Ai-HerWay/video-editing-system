@@ -1,10 +1,10 @@
-# Approved reference: signature style pilot V5
+# Approved reference: signature style pilot V7
 
-Initially approved by Nici on 29 September 2026: **“yes this is great!”**
+Approved by Nici on 29 September 2026: **“yes so much better love it!”**
 
-**Later correction:** the procedural pencil timbre was rejected after V6 as spray-like. Use this sample for visual treatment and cue placement, not as approval of that sound texture. See the latest listening feedback in [sound direction](sound-direction.md); the recorded-pencil V7 replacement awaits review.
+V7 combines the accepted visuals and gentle camera variation with the approved recorded-pencil replacement. Earlier procedural pencil sounds were rejected as spray-like and must not be used as the sound reference.
 
-Watch [the approved 9.6-second reel](../assets/approved-pilot-v5.mp4). Compare [the contact sheet](../assets/approved-pilot-v5-contact-sheet.jpg) for layout, but use the video to judge motion and sound.
+Watch [the approved 9.6-second reel](../assets/approved-pilot-v7.mp4). Compare [the contact sheet](../assets/approved-pilot-v7-contact-sheet.jpg) for layout, but use the video to judge motion and sound.
 
 The example is packaged for other machines; raw footage, reference creators' reels, commercial fonts and the original machine's working folders are not required to watch it.
 
@@ -19,8 +19,10 @@ Source: a 28.2–37.8 s excerpt of the supplied “How to Build your first OS”
 | 6.05–7.20 s | Big feedback arrow with one continuous draw sound |
 | Closing | Return to presenter and editorial takeaway; accepted closing chime |
 
-Other pop accents in the accepted sample occur on diagram landings and response movements. Do not interpret those as additional scribbles. Heading underlines and the internal sticker drawings have no drawing audio in V5.
+Other pop accents in the accepted sample occur on diagram landings and response movements. Do not interpret those as additional scribbles. Heading underlines and the internal sticker drawings have no drawing audio in V7.
 
-Export checks: duration, dimensions, frame rate and audio stream verified; audio measured mean −24.0 dB and peak −6.8 dB. Those measurements describe this sample, not a target mix specification for future reels. User approval is the evidence for the treatment; do not claim that every possible social interface layout has been tested.
+Export checks: duration, dimensions, frame rate and audio stream verified; audio measured mean −23.9 dB and peak −6.6 dB. Those measurements describe this sample, not a target mix specification for future reels. User approval is the evidence for the treatment; do not claim that every possible social interface layout has been tested.
 
 Typewriter sounds for questions and quotes are an additional user-confirmed convention documented in [sound direction](sound-direction.md); they are not demonstrated here.
+
+The opening and closing presenter passages use gentle push-ins, with a tighter crop cut at 1.26 seconds. This is a digital reframe of one continuous source. The editable code and approved pencil excerpts are included in the [starter kit](starter.md).

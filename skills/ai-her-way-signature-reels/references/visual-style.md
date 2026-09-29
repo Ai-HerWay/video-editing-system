@@ -50,4 +50,4 @@ User-requested addition after V5 approval: gentle slow zoom-ins and occasional 1
 - Preserve source speech and timing when only camera variation is requested. No automatic whoosh, pop or extra sound for each push-in or crop cut.
 - For HTML compositions, animate a non-timed crop wrapper around the footage on the registered seekable timeline. Check before/after crop cuts and the final frame, including faces, hands and social-interface clearance.
 
-V6 demonstrates this refinement with a crop cut at 1.26 s and gentle opening/closing pushes. The direction is user-requested; that rendered revision is awaiting review. V5 remains the approved packaged reference until the user approves a replacement.
+V6 demonstrates this refinement with a crop cut at 1.26 s and gentle opening/closing pushes. V7 retains these camera moves and is now approved: “yes so much better love it!” It is the current packaged reference.

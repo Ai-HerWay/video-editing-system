@@ -9,6 +9,8 @@ Produce sophisticated, warm reels in the style Nici approved on 29 September 202
 
 Read [the visual specification](references/visual-style.md) and [sound direction](references/sound-direction.md) before composing. Consult [the approved example](references/approved-example.md) when matching movement, layout or sound density. These resources are packaged with this skill; they do not depend on the original editor's computer.
 
+For repeatable implementation, use the [portable starter and bundled approved pencil cues](references/starter.md). The starter contains the actual approved animation code; supply the new source and its real caption timings.
+
 ## Apply the style
 
 1. Establish the reel's purpose and exact retained speech. For source selection and restructuring, use the repository's `edit-videos-my-way` skill when available; this style also works with an already edited video. Preserve meaning, negations, numbers and the speaker's natural voice. Do not turn a style revision into a fresh cut.
@@ -28,4 +30,4 @@ Use selective slow push-ins and occasional 1–2-second crop changes in presente
 - Compare the result to the approved example for typography, sticker character, diagram clarity and restraint. Confirm that typed text stops making sound when typing stops.
 - Deliver the actual preview, editable project, source range/cut map, font and asset provenance, cue list and relevant checks. Report actual user feedback separately from editorial inference; only mark a result approved when the user approves it.
 
-Style version: **1.1.1**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.
+Style version: **1.2.0**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.
