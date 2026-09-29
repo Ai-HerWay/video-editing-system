@@ -15,6 +15,8 @@ Read [the visual specification](references/visual-style.md) and [sound direction
 2. Use Advercase for titles and speech captions, supported by Montserrat. Read the font requirements in the visual specification; do not silently substitute a legacy font.
 3. Map each important idea to a purposeful visual: hand-drawn sticker, connected diagram, question, quote, real evidence or presenter beat. Give the sequence room to be read. Rich animation does not require constant movement or a fixed event cadence.
 4. Build around the approved ingredients: warm paper surfaces, irregular ivory sticker rims, restrained shadows, soft spring arrivals, connected line drawings and expressive editorial type. Use the brand palette in [tokens.json](references/tokens.json). Preserve the visual identity across transitions; adapt the actual diagram to the spoken idea.
+Use selective slow push-ins and occasional 1–2-second crop changes in presenter passages, following the camera-variation section of the visual specification. Keep readable holds and avoid a compulsory cut cadence.
+
 5. Protect the face, hands, evidence and Instagram interface areas. Start from the approved caption placement and review representative moving frames with an interface overlay. Margins are review guides, not a guarantee across devices or expanded post captions.
 6. Choose sound by the visible action. Write a cue list with visual target, sound family, start and end; every cue should have an identifiable purpose. Keep the voice intelligible. In particular, a continuous arrow gets one draw, not a repeated scribble loop.
 7. Render a reviewable sample when the brief needs a new treatment, or continue an already approved treatment without repeating an approval interview. Use the available editor/compositor; when using HyperFrames, follow its installed composition/render instructions. No dependency on a particular user's absolute paths.
@@ -26,4 +28,4 @@ Read [the visual specification](references/visual-style.md) and [sound direction
 - Compare the result to the approved example for typography, sticker character, diagram clarity and restraint. Confirm that typed text stops making sound when typing stops.
 - Deliver the actual preview, editable project, source range/cut map, font and asset provenance, cue list and relevant checks. Report actual user feedback separately from editorial inference; only mark a result approved when the user approves it.
 
-Style version: **1.0.0**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.
+Style version: **1.1.0**. The approved pilot establishes a shared target, not a promise of identical outputs from every editor or renderer. Keep approval changes versioned with the skill and its example.

@@ -34,6 +34,15 @@ This is the memory that makes the taste profile compound instead of reset. `refe
 
 ## Entries
 
+### 2026-09-29 — Signature camera refinement V6
+- **mode:** Hybrid; same 9.6-second source and V5 sound
+- **requested:** "slow zoom ins" and "1-2 second cuts" in some places, "not overly", for a cinematic effect.
+- **tried:** Gentle presenter push-ins, tighter crop at 1.26 s, wider crop on return from diagram; overlays stay fixed.
+- **verdict:** Direction requested; rendered V6 approval not yet recorded.
+- **learnings:** Selective camera variation, not constant metronomic cutting. Single-source crops are not genuine alternate angles.
+- **promoted:** Camera preference in signature style v1.1.0; V5 remains the approved sample.
+
+
 ### 2026-09-29 — Signature style pilot V5
 - **source:** How to Build your first OS, source range 28.2–37.8 s
 - **mode:** Hybrid

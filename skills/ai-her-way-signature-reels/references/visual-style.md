@@ -37,3 +37,17 @@ Let each visual clarify the spoken thought. Alternate purposeful builds with rea
 Pilot timings are examples: sticker entrance 0.47 s with a soft spring, diagram relocation 0.68 s with slight stagger, paper entry 0.55 s, connector draw 0.42 s, long feedback draw 1.15 s. Scale timing to complexity and speech rather than stretching this 9.6-second sequence over a full reel.
 
 Questions and quotes must hold long enough to read after the reveal. Show real screenshots as evidence, and clearly distinguish illustrative diagrams from actual product results. Match footage with a restrained warm grade while keeping skin natural; graphics retain their exact brand colours.
+
+
+## Selective cinematic camera variation
+
+User-requested addition after V5 approval: gentle slow zoom-ins and occasional 1–2-second shots with slightly different framing. Use these selectively during presenter passages; avoid a mandatory cut on every one- or two-second beat.
+
+- Apply a slow push-in to the footage layer, with a small scale change over the shot. Keep titles, captions and the paper explanation stable unless their movement has a separate purpose.
+- Cut between a medium crop and a slightly tighter or laterally shifted crop at a phrase boundary or emphasis. With a single source this is a digital reframe, not a new camera angle. Use actual alternate angles only when supplied.
+- Start with roughly 3–5% zoom travel and modest crop offsets; these are tuning ranges, not fixed settings. Judge the visible result against source resolution, face/hand clearance, headroom and edge coverage. Never expose an empty border or stretch the image.
+- Use 1–2-second shots in selected short sequences, then allow longer holds for speech, typed questions, quotes and diagrams. Do not cut just because a timer has elapsed, or cut away before the viewer can understand the graphic.
+- Preserve source speech and timing when only camera variation is requested. No automatic whoosh, pop or extra sound for each push-in or crop cut.
+- For HTML compositions, animate a non-timed crop wrapper around the footage on the registered seekable timeline. Check before/after crop cuts and the final frame, including faces, hands and social-interface clearance.
+
+V6 demonstrates this refinement with a crop cut at 1.26 s and gentle opening/closing pushes. The direction is user-requested; that rendered revision is awaiting review. V5 remains the approved packaged reference until the user approves a replacement.

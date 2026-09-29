@@ -16,6 +16,7 @@ The style's [visual specification](skills/ai-her-way-signature-reels/references/
 - Brand palette: Espresso, Ink, Linen, Ivory, Dusty Blue, Stone, Walnut, Sage, Olive and Gold, with exact values in the tokens file.
 - Hand-drawn sticker arrivals, coherent paper explanations and deliberate movement with readable holds.
 - Pop for sticker arrivals; typewriter for typed questions/quotes; scribble or continuous draw matched to actual pen movement; whoosh for transitions; alert/ping for selected emphasis. No compulsory sound cadence.
+- Selective slow push-ins and occasional 1–2-second crop changes add camera variation; keep longer reading holds and avoid constant cutting. This direction extends the approved V5 example; the V6 preview awaits review.
 - Protect faces, hands and social interface areas. The sample's raised caption placement is a review starting point, not a universal Instagram safe-zone specification.
 
 Current user instructions take precedence. The signature style supersedes conflicting older Playfair-only, caption and cadence defaults for new AI Her Way reels. Preserve an existing project's requested style.
@@ -34,6 +35,6 @@ The style is editor-independent. HyperFrames can implement the HTML/SVG animatio
 
 ## Maintaining consistency
 
-Style version **1.0.0** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
+Style version **1.1.0** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
 
 Raw footage, reference creators' videos, credentials and commercial font files do not belong in ordinary skill changes. See [LICENSE](LICENSE) for repository terms.
