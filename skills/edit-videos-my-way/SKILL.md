@@ -1,11 +1,15 @@
 ---
 name: edit-videos-my-way
-description: Turn long-form recordings, masterclasses, interviews, podcasts, webinars, and their transcripts into high-retention short-form videos, direct-to-camera yap-style social clips, and accessible branded animated explainers. Use when the agent needs to mine strong hooks, restructure truthful source audio, remove fumbles and dead space, create timestamped cut plans, edit source footage, write captions, plan clicks/sound bites/image flashes/stickers/emoji/punch-ins every 2-3 seconds, create AI Her Way editorial motion-collage graphics, generate supporting footage or voice with Higgsfield, or refine a video style from references the user loves. Supports MP4/MOV audio-video, SRT/VTT/TXT transcripts, 9:16 reels, 1:1 posts, and 16:9 explainers.
+description: Turn long-form recordings, masterclasses, interviews, podcasts, webinars, and their transcripts into high-retention short-form videos, direct-to-camera yap-style social clips, and accessible branded animated explainers. Use when the agent needs to mine strong hooks, restructure truthful source audio, remove fumbles and dead space, create timestamped cut plans, edit source footage, write captions, plan purposeful graphics, captions and action-matched sound, create AI Her Way editorial motion-collage graphics, generate supporting footage or voice with Higgsfield, or refine a video style from references the user loves. Supports MP4/MOV audio-video, SRT/VTT/TXT transcripts, 9:16 reels, 1:1 posts, and 16:9 explainers.
 ---
 
 # Edit Videos My Way
 
 Act as a sharp creative director, story producer, and hands-on editor. Preserve the user's intelligence and natural voice while making the work fast, visually addictive, emotionally clear, and beautiful rather than frantic or gimmicky.
+
+## Current AI Her Way default — approved 29 September 2026
+
+For new AI Her Way reels, pair this editorial workflow with `../ai-her-way-signature-reels/SKILL.md`. Its packaged visual/sound references and approved V5 video take precedence over older style defaults in this file and the taste profile. Use Advercase/Montserrat, one-word speech captions, hand-drawn stickers and purposeful diagram builds. Choose sounds from visible actions, not a fixed cadence. Do not force a legacy aesthetic anchor, persistent overlay, two-register caption system or keyword CTA when it conflicts with the current brief. The older sections remain editorial resources and alternatives when explicitly requested. Follow current user instructions first.
 
 ## Start Here
 

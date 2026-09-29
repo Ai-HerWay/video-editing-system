@@ -1,41 +1,39 @@
 # AI Her Way — Video Editing System
 
-A public, versioned collection of Claude Skills for turning raw talking-head/WhatsApp footage into finished, on-brand reels. Built on [HyperFrames](https://hyperframes.heygen.com) (HTML-driven video composition + render). All four skills are original AI Her Way work — see [LICENSE](LICENSE) and each skill's own `LICENSE` file.
+A versioned editing workflow and approved reel style for human editors and AI agents. The default is **The Illustrated Editorial Edit**, approved by Nici on 29 September 2026: warm paper, hand-drawn animated stickers and diagrams, Advercase typography, raised captions and sound matched to the visible action.
 
-## Brand system (locked)
+## Start here
 
-- **Typography:** Playfair Display (headlines, stats, pull quotes, italic accent) + Montserrat (body, labels, eyebrows). No exceptions.
-- **Palette:** Espresso `#35241F` · Ink `#2B1E19` · Linen Cream `#F2EBDD` · Ivory `#FAF6EF` · Dusty Blue `#C4D6DA` · Stone `#C0CACE` · Sage `#AAB6A0` · Deep Olive `#46513D` · Walnut `#7B5A49` · Gold `#B08A62`.
-- **Signature devices:** one Playfair-italic accent word per headline (Walnut on light / Dusty Blue on dark) · a 2px Gold hairline under headlines · highlight-marker color blocks · rationed torn-paper + washi tape.
+1. Use [Edit Videos My Way](skills/edit-videos-my-way/SKILL.md) to select source material, preserve meaning and plan the cuts.
+2. Apply [AI Her Way Signature Reels](skills/ai-her-way-signature-reels/SKILL.md) for the current visual and sound treatment.
+3. Compare with the [approved 9.6-second sample](skills/ai-her-way-signature-reels/assets/approved-pilot-v5.mp4) and its [documented decisions](skills/ai-her-way-signature-reels/references/approved-example.md).
 
-Full spec: `C:\Users\nici\brand-design-system\AI-Her-Way-Social-Design-System.md` (source of truth — these skills are downstream of it, not the other way round). Each style skill also ships its own `assets/frame.md` token file (colours + typography) — edit that file (and swap the webfonts in `assets/fonts/`) to re-skin a skill to a different brand entirely; see "Adapting to a different brand" below.
+The style's [visual specification](skills/ai-her-way-signature-reels/references/visual-style.md), [sound direction](skills/ai-her-way-signature-reels/references/sound-direction.md) and [machine-readable tokens](skills/ai-her-way-signature-reels/references/tokens.json) travel with the skill. The sample is included so another editor can see and hear the intended result.
 
-## Skills in this repo — two different jobs, not four interchangeable options
+## Shared defaults
 
-| Skill | Job |
-|---|---|
-| `skills/edit-videos-my-way/` | **The editor.** Does the actual editing work: mines the transcript for the strongest hook, decides what gets cut/reordered/removed (fumbles, dead space, duplicated setup), plans the beat map and timestamped cuts, then picks which style skill below to invoke for the visual treatment. Run this first — it's the entry point, not an alternative to the other three. |
-| `skills/quiet-editorial-ui/` | **A visual/caption style.** Calm, editorial software-interface look — restrained cards, progress paths, serif captions. Assumes the cut/hook/structure decisions are already made (by `edit-videos-my-way` or a manual edit) and only designs what sits on top of that edit. |
-| `skills/hyperframes-tactile-collage/` | **A visual/caption style.** Warm paper/scrapbook collage look — ink marks, tape, cutout captions. Same assumption: styles an existing edit, doesn't create one. |
-| `skills/cinematic-caption/` | **A visual/caption style.** Hero-word caption system — scoring, placement, and motion for large dynamic captions. Same assumption: styles an existing edit, doesn't create one. |
+- Advercase titles and one-word speech captions; Montserrat support. Commercial Advercase files must be supplied under the editor's licence; they are not distributed here.
+- Brand palette: Espresso, Ink, Linen, Ivory, Dusty Blue, Stone, Walnut, Sage, Olive and Gold, with exact values in the tokens file.
+- Hand-drawn sticker arrivals, coherent paper explanations and deliberate movement with readable holds.
+- Pop for sticker arrivals; typewriter for typed questions/quotes; scribble or continuous draw matched to actual pen movement; whoosh for transitions; alert/ping for selected emphasis. No compulsory sound cadence.
+- Protect faces, hands and social interface areas. The sample's raised caption placement is a review starting point, not a universal Instagram safe-zone specification.
 
-In short: **`edit-videos-my-way` does the editing fundamentals** (hooks, cuts, pacing, retention structure) that have nothing to do with captions, graphics, or colour. The other three only decide how the already-edited video *looks* — none of them will cut footage, restructure a transcript, or place a hook for you on their own.
+Current user instructions take precedence. The signature style supersedes conflicting older Playfair-only, caption and cadence defaults for new AI Her Way reels. Preserve an existing project's requested style.
 
-## How they fit together
+## Using the skills
 
-`edit-videos-my-way` is the entry point for a new edit: it reads the raw footage/transcript, decides the hook and beat structure, plans the cuts, then invokes one of the three style skills for the visual treatment (see `taste-profile.md`'s "Primary Aesthetic Anchors"). All three style skills were originally forked from third-party HyperFrames skills, then rewritten from scratch — original prose, renamed code structure, proprietary license — into AI Her Way's own systems; nothing in this repo is a third-party reskin.
+Agents working in this checkout can follow [AGENTS.md](AGENTS.md) and read the skill files directly. For skill discovery outside the checkout, copy the two complete folders `skills/edit-videos-my-way` and `skills/ai-her-way-signature-reels` as siblings into your agent's configured skills directory. Keep their `references`, `assets` and `agents` folders together. Each skill has SKILL.md instructions and OpenAI UI metadata; a human editor can follow the same linked specification.
 
-## Works with Claude Code and OpenAI-compatible agents
+Example request: “Use edit-videos-my-way and ai-her-way-signature-reels to edit this raw reel in our approved style.”
 
-Every skill ships an `agents/openai.yaml` alongside its `SKILL.md`, so the same skill folder is usable from either Claude Code (`SKILL.md`) or Codex/OpenAI-style agent tooling (`agents/openai.yaml`) without any changes.
+The style is editor-independent. HyperFrames can implement the HTML/SVG animation; use its installed tooling and documentation when selected. The example is viewable without that runtime. Rendering new projects requires source footage, licensed fonts and suitable sound assets.
 
-## Adapting to a different brand
+## Alternative styles
 
-Two ways to do it:
+[Quiet Editorial UI](skills/quiet-editorial-ui/SKILL.md), [Tactile Collage](skills/hyperframes-tactile-collage/SKILL.md) and [Cinematic Caption](skills/cinematic-caption/SKILL.md) remain available for explicit alternative treatments and existing projects. Their historical fonts and rules are not the new signature default.
 
-1. **Ask the agent to do it.** Install the skills, then before your first edit say something like: *"Before we use these skills, adapt them to my own brand — here's my brand kit / mood board / reference images."* Point it at your brand doc or attach reference images; the agent edits each style skill's `assets/frame.md` token values (and swaps the bundled webfonts) to match.
-2. **Do it yourself.** Open `assets/frame.md` in any style skill, change the hex values and font names to your own brand, and swap the webfont files in `assets/fonts/` for your own (same filenames). The motion/layout logic underneath doesn't change — only the skin does.
+## Maintaining consistency
 
-## Installing locally
+Style version **1.0.0** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
 
-Each skill directory should be symlinked or copied into `~/.claude/skills/<name>/` (Claude Code) or your agent's equivalent skills directory, to be auto-discovered.
+Raw footage, reference creators' videos, credentials and commercial font files do not belong in ordinary skill changes. See [LICENSE](LICENSE) for repository terms.

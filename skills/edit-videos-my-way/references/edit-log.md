@@ -34,6 +34,20 @@ This is the memory that makes the taste profile compound instead of reset. `refe
 
 ## Entries
 
+### 2026-09-29 — Signature style pilot V5
+- **source:** How to Build your first OS, source range 28.2–37.8 s
+- **mode:** Hybrid
+- **anchor/skin:** AI Her Way signature illustrated editorial style
+- **hook pattern:** Contrast — separate files to one connected system
+- **length / aspect:** 9.6 s / 9:16, 1080 × 1920 at 30 fps
+- **CTA:** Payoff close; style test
+- **tried:** Hand-drawn spring stickers; paper diagram; raised Advercase captions; action-matched sound.
+- **verdict:** User: "yes this is great!" after V5 preview. Requested reusable skills in GitHub afterwards.
+- **performance:** Not recorded
+- **learnings:** V4's nine drawing cues were reduced to three: two connectors and one continuous long arrow. Keep pops and other accepted effects. Typewriter for featured typed questions/quotes is a separately confirmed preference, not demonstrated in this sample. The three-cue count is pilot-specific.
+- **promoted:** Yes — current default is `ai-her-way-signature-reels` v1.0.0, with a packaged approved sample.
+
+
 ### 2026-09-19 — skills-vs-os (Her Way Cut pilot #1)
 - **project dir:** `C:\Users\nici\brand-design-system\videos\skills-vs-os`
 - **source:** raw WhatsApp clip R05 (`4.24.41 PM.mp4`, 93.3s) — "custom GPT/Claude skill vs AI operating system"

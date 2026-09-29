@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Her Way Signature Reels"
+  short_description: "Approved illustrated reels, captions and matched sound"
+  default_prompt: "Use $ai-her-way-signature-reels to apply the approved AI Her Way visual and sound style to this reel."
