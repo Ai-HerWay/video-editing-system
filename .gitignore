@@ -1,0 +1,9 @@
+# Generated projects, supplied source media and licensed fonts stay local.
+__pycache__/
+*.pyc
+node_modules/
+.hyperframes/
+tmp/
+private/
+outputs/imessage-reel-*/
+studio/01 BRAND/fonts/advercase/

@@ -41,12 +41,12 @@ Questions and quotes must hold long enough to read after the reveal. Show real s
 
 ## Selective cinematic camera variation
 
-User-requested addition after V5 approval: gentle slow zoom-ins and occasional 1–2-second shots with slightly different framing. Use these selectively during presenter passages; avoid a mandatory cut on every one- or two-second beat.
+Latest direction (8 October, reaffirmed 20 October): gently cut in or zoom out about every 2–3 seconds during presenter passages. This supersedes the earlier selective 1–2-second suggestion for new reels. Preserve requested existing styles and readable holds for evidence and diagrams.
 
 - Apply a slow push-in to the footage layer, with a small scale change over the shot. Keep titles, captions and the paper explanation stable unless their movement has a separate purpose.
 - Cut between a medium crop and a slightly tighter or laterally shifted crop at a phrase boundary or emphasis. With a single source this is a digital reframe, not a new camera angle. Use actual alternate angles only when supplied.
 - Start with roughly 3–5% zoom travel and modest crop offsets; these are tuning ranges, not fixed settings. Judge the visible result against source resolution, face/hand clearance, headroom and edge coverage. Never expose an empty border or stretch the image.
-- Use 1–2-second shots in selected short sequences, then allow longer holds for speech, typed questions, quotes and diagrams. Do not cut just because a timer has elapsed, or cut away before the viewer can understand the graphic.
+- Use restrained 2–3-second crop variation in presenter passages, then allow longer holds for typed questions, quotes and diagrams. Protect gesture timing and intelligibility when choosing cut points.
 - Preserve source speech and timing when only camera variation is requested. No automatic whoosh, pop or extra sound for each push-in or crop cut.
 - For HTML compositions, animate a non-timed crop wrapper around the footage on the registered seekable timeline. Check before/after crop cuts and the final frame, including faces, hands and social-interface clearance.
 
