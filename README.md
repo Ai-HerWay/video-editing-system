@@ -1,6 +1,10 @@
 # AI Her Way — Video Editing System
 
-A versioned editing workflow and approved reel style for human editors and AI agents. The default is **The Illustrated Editorial Edit**, approved by Nici on 29 September 2026: warm paper, hand-drawn animated stickers and diagrams, Advercase typography, raised captions and sound matched to the visible action.
+A versioned editing workflow and approved reel style for human editors and AI agents. The default is **Signature Sketch** (previously called The Illustrated Editorial Edit): warm paper, hand-drawn animated stickers and diagrams, Advercase typography, raised captions and sound matched to the visible action. Its approved September foundation includes the October refinements documented below.
+
+Ask: **“Edit this in Signature Sketch.”** For the message variation: **“Use Signature Sketch with message stickers beside me.”** Both use `ai-her-way-signature-reels`; the existing technical skill name stays unchanged.
+
+Future styles should have distinct names, specifications and reference examples. Select the requested style rather than blending defaults. The existing alternative styles are listed below; Signature Sketch remains the default when no style is named.
 
 ## Start here
 
@@ -16,7 +20,8 @@ The style's [visual specification](skills/ai-her-way-signature-reels/references/
 - Brand palette: Espresso, Ink, Linen, Ivory, Dusty Blue, Stone, Walnut, Sage, Olive and Gold, with exact values in the tokens file.
 - Hand-drawn sticker arrivals, coherent paper explanations and deliberate movement with readable holds.
 - Pop for sticker arrivals; typewriter for typed questions/quotes; scribble or continuous draw matched to actual pen movement; whoosh for transitions; alert/ping for selected emphasis. No compulsory sound cadence.
-- Selective slow push-ins and occasional 1–2-second crop changes add camera variation; keep longer reading holds and avoid constant cutting. This direction extends the approved V7 example; the V7 preview is approved.
+- Gentle push-ins and crop changes roughly every 2–3 seconds in presenter passages; keep longer reading holds for evidence and diagrams. This October refinement extends the approved V7 example.
+- Real message screenshots pop beside the presenter on spoken cues, with identifying information already blurred. Featured typed text gets keyboard sounds; handwritten CTAs and underlines get matched dry-pencil sounds. Meaningful scene changes use soft notification pings.
 - Protect faces, hands and social interface areas. The sample's raised caption placement is a review starting point, not a universal Instagram safe-zone specification.
 
 Current user instructions take precedence. The signature style supersedes conflicting older Playfair-only, caption and cadence defaults for new AI Her Way reels. Preserve an existing project's requested style.
@@ -35,7 +40,9 @@ The style is editor-independent. HyperFrames can implement the HTML/SVG animatio
 
 ## Maintaining consistency
 
-Style version **1.2.0** lives in the signature skill and tokens file. Record explicit approvals in the edit log; update the specification and reference example when the approved style changes. Keep defaults separate from one-off requests. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
+Style version **1.3.0** lives in the signature skill and tokens file. The 20 October update packages the iMessage treatment and the latest camera/sound directions. Keep defaults separate from campaign-specific copy. The workflow makes the shared target repeatable, but each export still needs visual and audio review.
+
+For the latest message-sticker workflow, start with [the iMessage treatment](skills/ai-her-way-signature-reels/references/imessage-treatment.md). Its portable Python builder assembles a full editable 45.4-second template from your own local assets, with camera and sound cue records. It includes the TEXT lead-magnet handoff conventions and Hub CTA; private messages, raw footage and licensed fonts are not bundled.
 
 Raw footage, reference creators' videos, credentials and commercial font files do not belong in ordinary skill changes. See [LICENSE](LICENSE) for repository terms.
 

@@ -1,6 +1,16 @@
 # Signature sound palette
 
+## October refinement: featured writing and message proof
+
+Pop once at each message sticker's landing, aligned to the spoken demonstrative. Use typewriter audio while featured text such as "My AI workout buddy" actually appears. For handwritten CTA lettering and its drawn underline, use the approved dry recorded-pencil texture for precisely that visible action. Stop with the final letter/stroke and leave a quiet reading hold. A static handwritten note needs no continuous sound. These later requests refine new treatments; do not retrofit extra scribbles into the approved V7 pilot. See [the iMessage guide](imessage-treatment.md).
+
 User-confirmed families: **pop, typewriter, scribble/draw, whoosh, alert/ping**. Choose a small consistent library with variations. Sounds match visible actions and support the voice; there is no compulsory cue every 2–3 or 3–5 seconds.
+
+## Scene changes and longer text — 2 October 2026
+
+Nici requested: "as you change scenes ... use pings and notification type noises" and "sometimes use typewriting if we're writing out something longer". Prefer a soft, short notification accent on meaningful scene changes. Keep it below the voice and avoid stacking a whoosh and a ping on the same transition by default. Ordinary caption-word changes and subtle crop adjustments are not new scenes. Preserve the approved embedded pilot's existing mix unless specifically revising it.
+
+For selected longer questions, quotes or explanations, reveal the featured text by typing and synchronise the typewriter sound to that reveal. Stop the sound on the final character and leave a reading hold. This does not apply to every spoken caption. The full AI OS walkthrough v4 implements this with three sequential question reveals; that particular render is pending review, not yet an approved reference.
 
 | Family | Use | Synchronisation |
 |---|---|---|

@@ -1,5 +1,7 @@
 # Repeatable code and sound assets
 
+For message stickers beside a presenter, use the separate [45.4-second iMessage template](imessage-treatment.md). It adds scene pings, featured typing, handwritten CTA, privacy workflow and 2–3-second framing. The original V7 starter below remains an unchanged short visual reference.
+
 The [editable starter](../assets/starter/index.html) contains the approved V7 sticker SVGs, paper-stage animation, raised captions, three drawing cues, continuous long-arrow stroke, camera push-ins and crop cut. Motion is on one paused, registered GSAP timeline; footage and captions remain separate layers. It is a **9.6-second sequence to adapt**, not a full-reel generator or a universal three-sticker story.
 
 The [starter script](../scripts/create_starter.py) creates a portable project from user-supplied local assets. It requires Python 3 and the standard library. For rendering, the generated project pins HyperFrames 0.8.90, the version used for the approved sample. Follow the installed HyperFrames workflow when checking or upgrading the renderer.
