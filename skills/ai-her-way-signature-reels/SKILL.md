@@ -1,9 +1,13 @@
 ---
 name: ai-her-way-signature-reels
-description: Apply the approved AI Her Way illustrated editorial style to reels, including Advercase captions, animated hand-drawn stickers, diagrams and action-matched sound. Use for new branded reel treatments or refinements to this style; preserve the source edit unless restructuring is requested.
+description: Apply Signature Sketch, the approved AI Her Way illustrated editorial reel style, with Advercase captions, hand-drawn stickers, diagrams and matched sound. Use when asked for Signature Sketch or the default branded reel treatment; preserve source edits unless restructuring is requested.
 ---
 
-# AI Her Way signature reels
+# Signature Sketch — AI Her Way
+
+**Style name: Signature Sketch.** Requests such as "Edit this in Signature Sketch" select this complete visual, motion and sound treatment, including the iMessage variation. "The Illustrated Editorial Edit" and "AI Her Way signature style" are legacy aliases for the same style. Keep the technical skill ID `ai-her-way-signature-reels` stable. This naming update changes no approved visual or audio rules.
+
+Keep future styles separate: each needs its own name, specification and reference example. An explicit request for another style overrides this default; do not blend styles unless asked.
 
 Produce sophisticated, warm reels in the style Nici approved on 29 September 2026. This is the default visual and sound treatment for new AI Her Way reels. A current user request overrides these defaults. Older Playfair, frosted-glass, mandatory sound-cadence and caption rules in other skills do not override this style.
 

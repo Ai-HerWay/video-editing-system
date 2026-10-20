@@ -1,6 +1,10 @@
 # AI Her Way — Video Editing System
 
-A versioned editing workflow and approved reel style for human editors and AI agents. The default is **The Illustrated Editorial Edit**, approved by Nici on 29 September 2026: warm paper, hand-drawn animated stickers and diagrams, Advercase typography, raised captions and sound matched to the visible action.
+A versioned editing workflow and approved reel style for human editors and AI agents. The default is **Signature Sketch** (previously called The Illustrated Editorial Edit): warm paper, hand-drawn animated stickers and diagrams, Advercase typography, raised captions and sound matched to the visible action. Its approved September foundation includes the October refinements documented below.
+
+Ask: **“Edit this in Signature Sketch.”** For the message variation: **“Use Signature Sketch with message stickers beside me.”** Both use `ai-her-way-signature-reels`; the existing technical skill name stays unchanged.
+
+Future styles should have distinct names, specifications and reference examples. Select the requested style rather than blending defaults. The existing alternative styles are listed below; Signature Sketch remains the default when no style is named.
 
 ## Start here
 
