@@ -1,6 +1,8 @@
 # Taste Profile — Reference-Derived Creative Defaults
 
-Derived from a frame-by-frame and waveform study of 12 curated high-performing reels on 2026-09-03 (source files in `C:\Users\nici\brand-design-system\ref video\`). These are not generic best practices — every rule below traces to a specific observed technique in a specific reel. Treat this file as the current creative defaults referenced in `SKILL.md` Start Here step 1. Update it when the user provides new reference videos or gives explicit current-turn preferences (those always win over this file).
+> Current default for new AI Her Way reels: [the approved signature skill](../../ai-her-way-signature-reels/SKILL.md), confirmed 29 September 2026. Its Advercase typography, caption layout and selective sound rules supersede conflicting defaults below. This older profile remains reference material for alternate treatments.
+
+Derived from a frame-by-frame and waveform study of 12 curated high-performing reels on 2026-09-03 (source files in `C:\Users\nici\brand-design-system\ref video\`). These are not generic best practices — every rule below traces to a specific observed technique in a specific reel. Treat this file as the current creative defaults referenced in `SKILL.md` Start Here step 1. Update it when the user provides new reference videos or gives explicit current-turn preferences (those always win over this file). Per-edit outcomes and user verdicts live in `edit-log.md` — recurring learnings there get promoted into this file, and recent verdicts there override this file's older habits.
 
 ## Locked Brand System (AI Her Way — Social/Reels)
 
@@ -59,12 +61,26 @@ When the user gives no visual-style steer, default to anchor 1 or 2 for short/pu
 
 ## Caption System Spec
 
+**APPROVED DECISIONS (Nici, 2026-09-19, via Review Board — amended same day on pilot v1 review):**
+- **Karaoke captions: ONE WORD AT A TIME ("usually better" — Nici), in licensed Advercase Bold**, white with a soft espresso pill, riding LOW in the safe band (~71% frame height, not 67). Accent words: Advercase Italic in warm cream.
+- **Hero words: Advercase Bold** (amended from F-A after the pilot; Nici bought the licence and asked for it). **Playfair Display keeps section titles, panel headers, and all structural/grid-linked type**; Playfair Italic keeps marginalia (M-A confirmed).
+- **Grade: darker + clearer + coffee.** Proven ffmpeg recipe (pilot v2): `eq=brightness=-0.028:contrast=1.05:saturation=0.84:gamma=0.965, colorbalance=rs=0.055:gs=0.018:bs=-0.05:rm=0.038:gm=0.01:bm=-0.032:rh=0.018:bh=-0.028, unsharp=13:13:0.55 + unsharp=5:5:0.35`, plus espresso gradient veils top/bottom in-comp for contrast.
+- **Marginalia voice: Playfair Italic (M-A).**
+- **Caption placement: ADAPTIVE, not fixed.** Height depends on the film and where Nici is in frame — pick per shot: clear of her face/hands/gestures, inside the IG-safe band (roughly 50–72% of frame height, clear of right rail ~12%, bottom zone ~22%, top ~10%). Hold one anchor within a scene; move only when the shot or section changes (cinematic-caption's subject-mapping rules apply).
+- **Diagram kit (P1–P6) + figure furniture: approved as specced.**
+
+**Hero/display type preference (Nici, 2026-09-18):** Playfair Display is the confirmed direction for designed caption moments. Nici also specifically likes **Advercase** (Indieground Design — retro serif based on Apple Garamond, the face she uses in the Edits app). **Official Advercase licensed and installed (2026-09-19):** full family at `brand-design-system\fonts\advercase-official\Fonts\` (Indieground licence covers rendered video output; NEVER commit these font files to any public repo or bundle them in distributed skills — copy into a project's local `public/fonts/` only). Heroes remain Playfair per the approved F-A decision; Advercase is the sanctioned alternate for A/B tests on footage.
+
+**Fallback face: "Picture Serif Clean"** at `brand-design-system\fonts\picture-serif-clean\` — an SIL-OFL EB Garamond adaptation narrowed to 75% width, capturing the same Apple-Garamond retro feel Advercase is based on. Legally clean for commercial use, full glyph set (% & @, European accents), real kerning (use `font-kerning: normal; font-synthesis: none`; animate whole words, not letters). Pilot it as the hero-word voice against Playfair Display Black and record the verdict in `edit-log.md`; Playfair holds section titles/structure regardless. The original Advercase (US$19, Creative Market) stays optional if the exact face is ever wanted. A v1 bitmap-trace exists at `brand-design-system\fonts\advercase\v1-trace-DO-NOT-USE\` — never render with it.
+
 For the full hero-word scoring, placement, and motion framework, use the installed `/cinematic-caption` skill (brand-pinned: Montserrat support, Playfair Display Black hero, Playfair Display Italic editorial-accent in Walnut/Dusty Blue, Gold rule-draw). Quick reference:
 
 - Base layer: white or off-white, bold, sentence-case or single-word pop-on, centred, mid-lower third, no background pill for the editorial-anchor look (anchors 1-2) — a soft dark pill/shadow is acceptable for the transparency-anchor look (anchor 3).
 - Word-reveal cadence: one to two words at a time for dense/fast content (listicles, contrarian hooks); full short phrases (2-7 words) for slower build-alongs.
 - Styled layer only when it reinforces the brand skin: serif "editorial" cards on frosted glass (anchor 1), handwritten red-marker asides (anchor 2), or torn-paper stickers via `/hyperframes-tactile-collage` (secondary — use selectively, see below).
 - Never let captions sit in a fixed bottom safe-zone band that the rest of the composition has to avoid — they're an overlay on top of the frame, composited over whatever is there.
+- **Instagram keep-out zones are hard constraints (Nici, 2026-09-18):** all designed text — captions, marginalia, CTA chips — stays clear of the right action rail (~right 12%), the bottom caption/profile/audio zone (~bottom 22%), and the top menu margin (~top 10%). Meta captions ride at roughly 55–70% of frame height, never in the bottom quarter. Only footage may run under the IG UI.
+- **Camera language (Nici, 2026-09-18): calm base, designed moves — not locked.** Static source footage is fine, but the edit should include punch-ins on idea changes, slow push-ins under build-ups, and swipe/whip reframes to a slightly different angle or crop between sections. Every move lands on a beat; no idle drift.
 
 ## CTA Mechanics
 

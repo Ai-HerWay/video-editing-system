@@ -1,0 +1,116 @@
+[
+  {
+    "duration": 102.657,
+    "width": 720.0,
+    "height": 1280.0,
+    "id": "A",
+    "file": "C:\\Users\\nici\\brand-design-system\\ref video\\PinGrab_1789698582154.mp4",
+    "sha256": "486b9efdfa63e0934f76d1d3a15135b5beff6d2e358ad449460cf5467bf6d384",
+    "matches_previous_copy": true,
+    "words_approx": 340,
+    "wpm_approx": 199,
+    "detector_events": [
+      2.066667,
+      9.366667,
+      13.6,
+      16.0,
+      18.0,
+      19.933333,
+      23.1,
+      49.0,
+      52.3,
+      60.366667,
+      63.6,
+      68.333333,
+      75.066667,
+      81.1,
+      87.3,
+      97.866667,
+      102.433333
+    ]
+  },
+  {
+    "duration": 66.806,
+    "width": 720.0,
+    "height": 1280.0,
+    "id": "B",
+    "file": "C:\\Users\\nici\\brand-design-system\\ref video\\PinGrab_1789698621114.mp4",
+    "sha256": "a0061067a8971e43b645131a51e8f2813375a2745179e58ad0350a0ff33a168f",
+    "matches_previous_copy": true,
+    "words_approx": 270,
+    "wpm_approx": 242,
+    "detector_events": [
+      3.833333,
+      4.7,
+      8.233333,
+      12.166667,
+      14.666667,
+      26.0,
+      29.166667,
+      31.066667,
+      37.2,
+      44.133333,
+      44.833333,
+      47.1,
+      48.333333
+    ]
+  },
+  {
+    "duration": 78.834,
+    "width": 720.0,
+    "height": 1280.0,
+    "id": "C",
+    "file": "C:\\Users\\nici\\brand-design-system\\ref video\\PinGrab_1789698663494.mp4",
+    "sha256": "f8a73a56a2bc7e1c4550ba322b7ba89149042b1848d73ab3dca4d1ea77c0c2ff",
+    "matches_previous_copy": true,
+    "words_approx": 300,
+    "wpm_approx": 228,
+    "detector_events": [
+      5.066667,
+      19.833333,
+      20.966667,
+      27.1,
+      29.1,
+      29.5,
+      31.433333,
+      31.466667,
+      34.533333,
+      77.633333
+    ]
+  },
+  {
+    "duration": 48.508,
+    "width": 720.0,
+    "height": 1280.0,
+    "id": "D",
+    "file": "C:\\Users\\nici\\brand-design-system\\ref video\\PinGrab_1789698690231.mp4",
+    "sha256": "48e11369e5045cde7df31e9eb1458d44a8c3fe7a2a80a9f2a4faab190ec339f5",
+    "matches_previous_copy": true,
+    "words_approx": 134,
+    "wpm_approx": 166,
+    "detector_events": [
+      4.366667,
+      5.2,
+      5.266667,
+      9.366667,
+      9.933333,
+      46.066667
+    ]
+  },
+  {
+    "duration": 47.234,
+    "width": 720.0,
+    "height": 1280.0,
+    "id": "E",
+    "file": "C:\\Users\\nici\\brand-design-system\\ref video\\PinGrab_1789698702184.mp4",
+    "sha256": "9dd0b7a31ac8aa36637bd0e4bbd3e61ca3b9e9e6fbdc3d2af313e1b782a772b7",
+    "matches_previous_copy": true,
+    "words_approx": 193,
+    "wpm_approx": 245,
+    "detector_events": [
+      37.0,
+      38.566667,
+      40.2
+    ]
+  }
+]

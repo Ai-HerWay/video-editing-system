@@ -1,0 +1,154 @@
+{
+  "id": "e856581f-a34c-432f-9df8-851cafa47f8c",
+  "video_input_id": "4ebed0f6-3f06-43e3-982a-7ffa107c583c",
+  "youtube_url": null,
+  "status": "completed",
+  "fail_reason": null,
+  "video_s3_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EnWSU2lJi9D9sl92FsWzSYlWDJ/4ebed0f6-3f06-43e3-982a-7ffa107c583c.mp4",
+  "scenes": [
+    {
+      "audio": "The easiest way to make talking videos more engaging...",
+      "label": "Opening Hook",
+      "visual": "A woman in her late 20s or early 30s with East Asian features, long straight black hair, and a warm complexion is centered in the frame. She wears a beige sleeveless button-down vest, small gold hoop earrings, and a gold necklace with a round jade pendant. A small black wireless microphone is clipped to her vest. She looks directly at the camera with a smile, gesturing with both hands. The background is a plain, neutral-toned wall. The lighting is soft and even, highlighting her face with no harsh shadows.",
+      "shot_type": "Close-Up",
+      "scene_number": 1,
+      "timestamp_end": "0:03",
+      "timestamp_start": "0:00"
+    },
+    {
+      "audio": "...is by using a green screen.",
+      "label": "Product Information",
+      "visual": "A POV view of a smartphone screen displaying a video editing application. The woman from the previous scene is visible on the phone screen, centered against a vibrant green digital background. The app interface shows recording controls, including a large red record button and various feature icons on the left side. The lighting on her face in the phone footage remains soft and warm.",
+      "shot_type": "POV Shot",
+      "scene_number": 2,
+      "timestamp_end": "0:05",
+      "timestamp_start": "0:03"
+    },
+    {
+      "audio": "Welcome to part six of the Edits series. Let's open up the Edits app.",
+      "label": "Opening Hook",
+      "visual": "Back to the original setup from Scene 1. The woman is centered, speaking directly to the lens with an enthusiastic expression. She continues to use hand gestures to emphasize her points. The lighting remains static and professional against the neutral background.",
+      "shot_type": "Close-Up",
+      "scene_number": 3,
+      "timestamp_end": "0:08",
+      "timestamp_start": "0:05"
+    },
+    {
+      "audio": "Open up camera.",
+      "label": "Usage Scenarios",
+      "visual": "A POV view of the smartphone screen showing a 'Projects' menu within the app. A grid of video thumbnails featuring the woman is displayed. A digital cursor, represented by a white hand icon, moves to the bottom right and taps a '+' button to open the camera.",
+      "shot_type": "POV Shot",
+      "scene_number": 4,
+      "timestamp_end": "0:10",
+      "timestamp_start": "0:08"
+    },
+    {
+      "audio": "Select green screen on your left.",
+      "label": "Usage Scenarios",
+      "visual": "The screen switches to the live camera view. The woman is seen in her real-world environment. The digital hand cursor taps a 'Green screen' icon on the left sidebar of the camera interface.",
+      "shot_type": "POV Shot",
+      "scene_number": 5,
+      "timestamp_end": "0:12",
+      "timestamp_start": "0:10"
+    },
+    {
+      "audio": "As you can see you got the green background. In order to change the background...",
+      "label": "Product Selling Points",
+      "visual": "The camera view now shows the woman isolated against a solid bright green background. The digital hand cursor taps a 'Change background' button at the top of the screen, prompting a menu to appear.",
+      "shot_type": "POV Shot",
+      "scene_number": 6,
+      "timestamp_end": "0:18",
+      "timestamp_start": "0:12"
+    },
+    {
+      "audio": "...select a photo.",
+      "label": "Usage Scenarios",
+      "visual": "The screen briefly turns black as a new background is selected. The digital hand cursor selects a photo from the device's gallery.",
+      "shot_type": "POV Shot",
+      "scene_number": 7,
+      "timestamp_end": "0:20",
+      "timestamp_start": "0:18"
+    },
+    {
+      "audio": "Now I look like I am in a kitchen.",
+      "label": "Usage Scenarios",
+      "visual": "The woman now appears overlayed on a high-resolution photo of a modern, white kitchen with a window and a marble countertop. She smiles and nods, appearing as if she is physically in the kitchen.",
+      "shot_type": "POV Shot",
+      "scene_number": 8,
+      "timestamp_end": "0:23",
+      "timestamp_start": "0:20"
+    },
+    {
+      "audio": "You can also add a video...",
+      "label": "Usage Scenarios",
+      "visual": "The phone screen shows the media gallery again, displaying a variety of photos and videos. The cursor navigates through the grid.",
+      "shot_type": "POV Shot",
+      "scene_number": 9,
+      "timestamp_end": "0:24",
+      "timestamp_start": "0:23"
+    },
+    {
+      "audio": "...background as well.",
+      "label": "Usage Scenarios",
+      "visual": "A video background is selected. The woman is now overlayed on a video showing the back of her head as she holds a phone, creating a 'picture-in-picture' effect within the green screen context.",
+      "shot_type": "POV Shot",
+      "scene_number": 10,
+      "timestamp_end": "0:26",
+      "timestamp_start": "0:24"
+    },
+    {
+      "audio": "And you can pinch yourself...",
+      "label": "Product Selling Points",
+      "visual": "The digital hand cursor performs a pinching gesture on the image of the woman. Her overlay size decreases dynamically on the screen, revealing more of the video background behind her.",
+      "shot_type": "POV Shot",
+      "scene_number": 11,
+      "timestamp_end": "0:29",
+      "timestamp_start": "0:26"
+    },
+    {
+      "audio": "...to make yourself look smaller...",
+      "label": "Product Selling Points",
+      "visual": "The cursor grabs the small overlay of the woman and drags her from the center to the upper left corner of the frame.",
+      "shot_type": "POV Shot",
+      "scene_number": 12,
+      "timestamp_end": "0:32",
+      "timestamp_start": "0:29"
+    },
+    {
+      "audio": "...and place yourself anywhere on the screen.",
+      "label": "Product Selling Points",
+      "visual": "The cursor drags the woman's overlay from the upper left to the upper right corner. She remains smiling and talking throughout the movement.",
+      "shot_type": "POV Shot",
+      "scene_number": 13,
+      "timestamp_end": "0:35",
+      "timestamp_start": "0:32"
+    },
+    {
+      "audio": "And of course if you have better lighting your background will look a lot better. I know it's not perfect...",
+      "label": "Product Selling Points",
+      "visual": "The background changes again to a dim, cool-toned setting. The woman's lighting in the overlay shifts slightly to demonstrate how lighting affects the realism of the green screen composite. She continues talking, gesturing toward the background.",
+      "shot_type": "POV Shot",
+      "scene_number": 14,
+      "timestamp_end": "0:42",
+      "timestamp_start": "0:35"
+    },
+    {
+      "audio": "...I love videos with a backdrop, it makes the video a lot more interesting.",
+      "label": "Real Experience",
+      "visual": "The video quickly toggles between showing the raw green background and the final composite with the video background. This demonstrates the transformation power of the tool.",
+      "shot_type": "POV Shot",
+      "scene_number": 15,
+      "timestamp_end": "0:45",
+      "timestamp_start": "0:42"
+    },
+    {
+      "audio": "If you enjoy this series, like and follow for more.",
+      "label": "Call to Action",
+      "visual": "Cut back to the woman in the real-world setting. She is holding her smartphone in her right hand, showing the back of the device to the camera. She smiles warmly and nods, looking directly at the viewer.",
+      "shot_type": "Close-Up",
+      "scene_number": 16,
+      "timestamp_end": "0:48",
+      "timestamp_start": "0:45"
+    }
+  ]
+}

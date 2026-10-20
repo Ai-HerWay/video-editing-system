@@ -1,0 +1,136 @@
+{
+  "id": "3ee47463-2346-444f-9a08-d1cdc5d46374",
+  "video_input_id": "261023d4-8824-4986-8923-32745a486d2b",
+  "youtube_url": null,
+  "status": "completed",
+  "fail_reason": null,
+  "video_s3_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3EnWSU2lJi9D9sl92FsWzSYlWDJ/261023d4-8824-4986-8923-32745a486d2b.mp4",
+  "scenes": [
+    {
+      "audio": "Everyone's out here saying pick three to five content pillars, but no one shows you exactly what that looks like.",
+      "label": "Opening Hook",
+      "visual": "A woman in her mid-20s with a tan complexion and dark curly hair sits on a beige textured couch. She wears a white lace long-sleeved dress, gold hoop earrings, and a gold necklace. She holds a small pink pom-pom microphone in her right hand and gestures with her left hand while speaking. Two smaller video overlays appear at the bottom: on the left, a woman in a pink tank top with hair in a bun points upward; on the right, a woman in a black hoodie with glasses also points upward. The background is a plain, warm-toned tan wall with soft lighting from the upper right.",
+      "shot_type": "Medium Shot",
+      "scene_number": 1,
+      "timestamp_end": "0:04",
+      "timestamp_start": "0:00"
+    },
+    {
+      "audio": "Hi, my name is Azhai and this is episode one of my Creator Talk series.",
+      "label": "Opening Hook",
+      "visual": "The main subject continues to speak from the couch. The scene features a torn-paper border effect and yellow hand-drawn star graphics around her. She remains seated, holding the pink microphone and gesturing casually.",
+      "shot_type": "Medium Shot",
+      "scene_number": 2,
+      "timestamp_end": "0:08",
+      "timestamp_start": "0:04"
+    },
+    {
+      "audio": "You don't have to invent it, you're probably already doing it.",
+      "label": "Problem Solving",
+      "visual": "The camera remains static on the subject. She brings the microphone closer to her chin, her expression calm and helpful, as she continues to gesture with her left hand.",
+      "shot_type": "Medium Shot",
+      "scene_number": 3,
+      "timestamp_end": "0:11",
+      "timestamp_start": "0:08"
+    },
+    {
+      "audio": "Here's how I finally made sense of it. I looked at what I already do and what I naturally show up for: fashion, dance, life behind the scenes. That's it. That's the menu.",
+      "label": "Product Selling Points",
+      "visual": "The subject gestures toward a large graphic overlay shaped like a black chalkboard menu appearing to her right. She points toward it as bullet points appear on the graphic. The lighting is soft and consistent, highlighting her white dress.",
+      "shot_type": "Medium Shot",
+      "scene_number": 4,
+      "timestamp_end": "0:18",
+      "timestamp_start": "0:11"
+    },
+    {
+      "audio": "Just notice what comes naturally and what shows up when you're not trying too hard.",
+      "label": "Product Selling Points",
+      "visual": "The subject is shown in the same medium shot on the couch. The graphic overlay has disappeared. She speaks directly to the camera, holding the microphone and using her hands to emphasize her points.",
+      "shot_type": "Medium Shot",
+      "scene_number": 5,
+      "timestamp_end": "0:21",
+      "timestamp_start": "0:18"
+    },
+    {
+      "audio": "And from there you can break those three same pillars into different styles of content across platforms. For example:",
+      "label": "Product Selling Points",
+      "visual": "The subject gestures as floating social media icons and text elements appear around her. She moves her hands in a circular motion, mimicking the idea of breaking things down.",
+      "shot_type": "Medium Shot",
+      "scene_number": 6,
+      "timestamp_end": "0:26",
+      "timestamp_start": "0:21"
+    },
+    {
+      "audio": "Reels equal outfit transitions plus trending audio.",
+      "label": "Product Selling Points",
+      "visual": "A large, translucent tan graphic box overlays the subject, containing bulleted text. The subject is partially visible through the overlay, continuing to speak and gesture.",
+      "shot_type": "Close-Up",
+      "scene_number": 7,
+      "timestamp_end": "0:28",
+      "timestamp_start": "0:26"
+    },
+    {
+      "audio": "TikTok equals behind the scenes and real talk, more personality based.",
+      "label": "Product Selling Points",
+      "visual": "A new graphic overlay box with a different shade of tan appears over the subject, showing a different set of bullet points. The subject continues to speak into the microphone.",
+      "shot_type": "Close-Up",
+      "scene_number": 8,
+      "timestamp_end": "0:31",
+      "timestamp_start": "0:28"
+    },
+    {
+      "audio": "YouTube Shorts equals dance edits and longer style tips.",
+      "label": "Product Selling Points",
+      "visual": "A third graphic overlay box appears with updated bullet points. The subject's hands are visible at the bottom of the frame as she gestures.",
+      "shot_type": "Close-Up",
+      "scene_number": 9,
+      "timestamp_end": "0:34",
+      "timestamp_start": "0:31"
+    },
+    {
+      "audio": "While all of them still intertwine with your core branding.",
+      "label": "Product Selling Points",
+      "visual": "The graphic overlays are gone. The camera is static on the subject as she brings her hands together to emphasize the integration of the concepts.",
+      "shot_type": "Medium Shot",
+      "scene_number": 10,
+      "timestamp_end": "0:36",
+      "timestamp_start": "0:34"
+    },
+    {
+      "audio": "Once I started organizing it all per platform inside my Notion...",
+      "label": "Usage Scenarios",
+      "visual": "A top-down view shows the subject's hands typing on a rose gold laptop. The screen displays a complex organization dashboard with a calendar. Next to the laptop is a potted green plant and a gray electronic device on a wooden desk.",
+      "shot_type": "POV Shot",
+      "scene_number": 11,
+      "timestamp_end": "0:39",
+      "timestamp_start": "0:36"
+    },
+    {
+      "audio": "I finally stopped spiraling.",
+      "label": "Problem Solving",
+      "visual": "Return to the subject on the couch. She makes a rolling gesture with her hand as she finishes her thought about the benefits of her system.",
+      "shot_type": "Medium Shot",
+      "scene_number": 12,
+      "timestamp_end": "0:41",
+      "timestamp_start": "0:39"
+    },
+    {
+      "audio": "You can also grab my Notion template that I use daily to help you map yours out in minutes.",
+      "label": "Product Information",
+      "visual": "A clean graphic overlay shows an image of a laptop and a smartphone displaying digital planning templates. The background of the graphic is a light, minimalist aesthetic.",
+      "shot_type": "Close-Up",
+      "scene_number": 13,
+      "timestamp_end": "0:44",
+      "timestamp_start": "0:41"
+    },
+    {
+      "audio": "Link in my bio or comment plan. Until next time my beautiful people.",
+      "label": "Call to Action",
+      "visual": "The subject is back on the couch. She points toward the viewer and then to her side with a friendly smile. She concludes the video with a warm expression.",
+      "shot_type": "Medium Shot",
+      "scene_number": 14,
+      "timestamp_end": "0:48",
+      "timestamp_start": "0:44"
+    }
+  ]
+}
